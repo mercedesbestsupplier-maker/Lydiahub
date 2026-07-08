@@ -32067,7 +32067,7 @@ async function copyText(text) {
 function buildCollabPrompt(chain, linkedTeammates) {
   const teammateLine = linkedTeammates.map((teammate) => `${teammate.name}（${teammate.title}）`).join(" -> ");
   return [
-    `请按这条协作链协同完成任务。`,
+    `请按这个搭班方案协同完成任务。`,
     ``,
     `业务链：${chain.title}`,
     `适合场景：${(chain.audienceNames || []).join("、") || "一人公司 / 创作者 / 卖家 / 白领"}`,
@@ -32101,7 +32101,7 @@ function buildCollabBrief(chain, linkedTeammates, focusSkill) {
   return [
     `# ${chain.title} 协作简报`,
     ``,
-    `- 协作链类型：${chain.kicker}`,
+    `- 搭班方案类型：${chain.kicker}`,
     `- 当前上下文 Skill：${skillLine}`,
     `- 适合场景：${(chain.audienceNames || []).join("、") || "一人公司 / 创作者 / 卖家 / 白领"}`,
     `- 参与同事：${linkedTeammates.map((teammate) => `${teammate.name}（${teammate.title}）`).join(" -> ")}`,
@@ -32296,7 +32296,7 @@ function renderCompanyCollab() {
     return true;
   });
   if (els.companyCollabSummary) {
-    const summary = [`当前显示 ${chains.length} 条协作链`];
+    const summary = [`当前显示 ${chains.length} 种搭班方案`];
     if (collabState.chain !== "all") {
       const chain = chainOptions.find((item) => item.id === collabState.chain);
       if (chain) summary.push(`业务链：${chain.title}`);
@@ -32318,10 +32318,10 @@ function renderCompanyCollab() {
     els.companyCollabGrid.innerHTML = `
       <article class="collab-card">
         <span class="card-kicker">暂无匹配</span>
-        <h3>当前筛选下没有协作链</h3>
-        <p class="signal">可以先重置协作链，或者换一个岗位 / 工作场景重新看。</p>
+        <h3>当前筛选下没有搭班方案</h3>
+        <p class="signal">可以先重置搭班方式，或者换一个岗位 / 工作场景重新看。</p>
         <div class="card-actions">
-          <button class="card-action" type="button" data-reset-collab-grid="true">重置协作链</button>
+          <button class="card-action" type="button" data-reset-collab-grid="true">重置搭班方式</button>
         </div>
       </article>
     `;
@@ -32549,10 +32549,10 @@ function renderTeammates() {
         <div class="teammate-tags">
           ${teammate.bestFor.map((tag) => `<span class="pill">${tag}</span>`).join("")}
         </div>
-        <p class="small-muted">${bucket.count} 个 Skill，${bucket.five} 个五星；常搭 ${collabCount} 条协作链；正式执行包 ${teammate.packagedSkillCount || 0} 个，规划包 ${teammate.planningSkillCount || 0} 个，待整理 ${teammate.plannedSkillCount || 0} 个。</p>
+        <p class="small-muted">${bucket.count} 个 Skill，${bucket.five} 个五星；常搭 ${collabCount} 种搭班方案；正式执行包 ${teammate.packagedSkillCount || 0} 个，规划包 ${teammate.planningSkillCount || 0} 个，待整理 ${teammate.plannedSkillCount || 0} 个。</p>
         <div class="card-actions">
           <button class="card-action" type="button" data-teammate="${teammate.id}">一键调用这位同事</button>
-          <button class="github-link" type="button" data-open-collab="${teammate.id}">看协作链${collabCount ? `（${collabCount}）` : ""}</button>
+          <button class="github-link" type="button" data-open-collab="${teammate.id}">看搭班方案${collabCount ? `（${collabCount}）` : ""}</button>
           <button class="github-link" type="button" data-planning-teammate="${teammate.id}">看规划包</button>
           ${teammate.workbenchHref ? `<a class="github-link" href="${teammate.workbenchHref}">进入工作台</a>` : ""}
           ${teammate.landingPage ? `<a class="github-link" href="${teammate.landingPage}">进入专题页</a>` : ""}
@@ -33193,7 +33193,7 @@ function openCollabChain(chainId) {
   const resourceSteps = [
     ...(chain.bundleDownload ? [{
       title: chain.bundleLabel || "下载链路合集包",
-      body: "把这条协作链的说明、调用提示词、上下文 Skill、员工包和模板包一次带走。",
+      body: "把这种搭班方案的说明、调用提示词、上下文 Skill、员工包和模板包一次带走。",
       href: chain.bundleDownload,
       download: true,
       cta: chain.bundleLabel || "下载链路合集包"

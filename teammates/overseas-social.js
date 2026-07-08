@@ -3483,7 +3483,7 @@ const DATA = {
         }
       ],
       "primaryHref": "../index.html?collabChain=overseas-growth-chain#company-collab",
-      "primaryCta": "回到首页看这条协作链",
+      "primaryCta": "回到首页看这个搭班方案",
       "secondaryHref": "../research-workbench.html?desk=overseas-research",
       "secondaryCta": "让 Alice 先判断"
     }
@@ -3971,8 +3971,8 @@ function renderCollabChains() {
   if (!DATA.collabChains?.length) {
     els.collabChains.innerHTML = `
       <article class="featured-card">
-        <span class="card-kicker">协作链待补充</span>
-        <h3>这位同事暂时没有编入首页主协作链</h3>
+        <span class="card-kicker">搭班方案待补充</span>
+        <h3>这位同事暂时没有编入首页搭班方案</h3>
         <p class="signal">她仍然可以单独作为岗位能力使用；后续会继续把高需求业务链补齐。</p>
       </article>
     `;
