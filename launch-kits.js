@@ -3046,7 +3046,7 @@ function renderDetail(slug = "") {
         title: "看这位同事的可下载 Skill",
         body: "如果这套素材对路，下一步就回总库把同岗位可下载 Skill 一起装上。",
         href: './index.html?teammate=' + kit.teammateId + '&status=packaged&minStars=4#downloads',
-        cta: "回下载中心"
+        cta: "回公司大厅"
       }
     ].map((item) => `
       <article class="featured-card">
