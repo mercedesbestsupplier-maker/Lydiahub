@@ -32593,7 +32593,10 @@ function renderTeammates() {
 }
 
 function renderDownloadCollections() {
-  els.downloadCollectionGrid.innerHTML = DATA.downloadCollections.map((collection) => {
+  const container = els.downloadCollectionGrid;
+  container.className = "accordion-container";
+  
+  container.innerHTML = DATA.downloadCollections.map((collection, index) => {
     const teammate = DATA.teammates.find((item) => item.id === collection.teammateId) || DATA.teammates[0];
     const matched = sortedSkills(DATA.skills.filter((skill) => {
       if (collection.preset?.teammate && skill.teammateId !== collection.preset.teammate) return false;
@@ -32603,34 +32606,54 @@ function renderDownloadCollections() {
       return skill.stars >= (collection.preset?.minStars || 0);
     }));
     const packaged = matched.filter((skill) => skill.hasPackage).length;
+    
+    const skillHTML = matched.map(skill => `
+      <div class="skill-mini-card">
+        <strong>${skill.name}</strong>
+        <p>${skill.description}</p>
+        <a class="github-link ${skill.hasPackage ? '' : 'disabled'}" ${skill.hasPackage ? `href="${teammate.packageDownload}" download` : ''}>
+          ${skill.hasPackage ? '下载单项' : '私信获取'}
+        </a>
+      </div>
+    `).join("");
+
     return `
-      <article class="download-collection-card">
-        <span class="card-kicker">${collection.kicker}</span>
-        <h3>${collection.title}</h3>
-        <div class="teammate-mini" style="--teammate: ${teammate.color}">
-          <span class="teammate-avatar small">${teammate.avatar}</span>
-          <span>
-            <strong>${teammate.name} · ${teammate.title}</strong>
-            <span>${teammate.department}</span>
-          </span>
+      <div class="accordion-item" data-accordion-index="${index}">
+        <div class="accordion-header">
+          <div class="accordion-header-left">
+            <h3>${collection.title}</h3>
+            <p>${teammate.name} · ${teammate.department} | ${matched.length} 个相关 Skill</p>
+          </div>
+          <div class="accordion-icon">▼</div>
         </div>
-        <p class="signal">${collection.summary}</p>
-        <div class="value-tags">
-          ${collection.highlights.map((tag) => `<span class="pill">${tag}</span>`).join("")}
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p class="signal">${collection.summary}</p>
+            <div class="skill-mini-list">
+              ${skillHTML}
+            </div>
+            <div style="margin-top: 8px; display: flex; gap: 12px; align-items: center;">
+              ${teammate.packageDownload ? `<a class="github-link primary" href="${teammate.packageDownload}" download>打包下载全部 (${packaged})</a>` : ''}
+              ${teammate.landingPage ? `<a class="ghost-link" href="${teammate.landingPage}">查看专题页</a>` : ''}
+            </div>
+          </div>
         </div>
-        <p class="small-muted">${matched.length} 个相关 Skill，${packaged} 个当前可下载。</p>
-        <div class="collection-foot">
-          <button class="card-action" type="button" data-open-collection="${collection.id}">查看这批 Skill</button>
-          ${teammate.landingPage ? `<a class="github-link" href="${teammate.landingPage}">看专题页</a>` : ""}
-          ${teammate.packageDownload ? `<a class="github-link" href="${teammate.packageDownload}" download>下载员工包</a>` : `<span class="github-link disabled">员工包待生成</span>`}
-        </div>
-      </article>
+      </div>
     `;
   }).join("");
-  els.downloadCollectionGrid.querySelectorAll("[data-open-collection]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const collection = DATA.downloadCollections.find((item) => item.id === button.dataset.openCollection);
-      applyPreset(collection?.preset || {});
+
+  // Add click listeners for accordion
+  container.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      const isOpen = item.classList.contains('open');
+      
+      // Close all others (optional: remove this if you want multiple open at once)
+      container.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('open'));
+      
+      if (!isOpen) {
+        item.classList.add('open');
+      }
     });
   });
 }

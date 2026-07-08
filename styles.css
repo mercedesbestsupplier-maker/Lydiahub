@@ -1110,3 +1110,98 @@ select:focus {
     font-size: 48px;
   }
 }
+
+/* Progressive Disclosure (Accordion) Styles for Downloads */
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.accordion-item {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, 0.78);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(37, 44, 36, 0.04);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.accordion-item:hover {
+  box-shadow: 0 8px 24px rgba(37, 44, 36, 0.08);
+  border-color: var(--brand-line);
+}
+.accordion-header {
+  padding: 20px 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: radial-gradient(circle at 5% 50%, rgba(198, 92, 63, 0.08), transparent 15rem);
+}
+.accordion-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.accordion-header-left h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--fg);
+}
+.accordion-header-left p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.accordion-icon {
+  font-size: 1.2rem;
+  color: var(--brand);
+  transition: transform 0.3s ease;
+}
+.accordion-item.open .accordion-icon {
+  transform: rotate(180deg);
+}
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+  background: rgba(255, 255, 255, 0.5);
+}
+.accordion-item.open .accordion-body {
+  max-height: 2000px;
+  transition: max-height 0.6s ease-in-out;
+}
+.accordion-content {
+  padding: 0 24px 24px 24px;
+  border-top: 1px dashed var(--line);
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.skill-mini-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.skill-mini-card {
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.skill-mini-card strong {
+  font-size: 0.95rem;
+}
+.skill-mini-card p {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
+}
+.skill-mini-card .github-link {
+  align-self: flex-start;
+  margin-top: auto;
+}
