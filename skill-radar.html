@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>强 Skill 雷达中心</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .radar-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+      .radar-card { border: 1px solid var(--line); border-radius: 28px; padding: 20px; background: rgba(255,250,240,.82); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .radar-card.lead { grid-column: span 2; background: radial-gradient(circle at 95% 12%, rgba(135,199,214,.28), transparent 10rem), rgba(255,250,240,.88); }
+      .radar-score { font-size: 42px; font-weight: 950; letter-spacing: -.04em; }
+      .candidate-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+      .candidate-card { border: 1px solid var(--line); border-radius: 24px; padding: 16px; background: rgba(255,250,240,.78); }
+      .candidate-card strong { display: block; margin-bottom: 6px; }
+      .enhancement-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+      .enhancement-card { border: 1px solid var(--line); border-radius: 26px; padding: 18px; background: rgba(255,250,240,.82); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .enhancement-card.lead { background: radial-gradient(circle at 96% 12%, rgba(215,255,88,.34), transparent 10rem), rgba(255,250,240,.9); }
+      .enhancement-card strong { display: block; margin-bottom: 6px; }
+      .candidate-meta, .owner-tags, .focus-actions, .owner-strip { display: flex; flex-wrap: wrap; gap: 8px; }
+      .focus-card { margin: 0 auto 18px; max-width: 1240px; border: 1px solid var(--line); border-radius: 26px; padding: 18px; background: rgba(255,250,240,.82); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .focus-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+      .owner-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+      .owner-card { border: 1px solid var(--line); border-radius: 24px; padding: 16px; background: rgba(255,250,240,.78); }
+      .owner-head { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+      .owner-avatar { width: 46px; height: 46px; border-radius: 16px; display: grid; place-items: center; font-weight: 900; color: var(--ink); background: var(--employee-color, var(--acid)); }
+      .filter-card { border: 1px solid var(--line); border-radius: 26px; padding: 18px; background: rgba(255,250,240,.82); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .filter-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+      .filter-row select { border-radius: 16px; border: 1px solid var(--line); background: rgba(255,250,240,.92); padding: 12px 14px; font: inherit; color: inherit; min-width: 190px; }
+      .backlog-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 18px; align-items: start; }
+      .backlog-list { display: grid; gap: 10px; }
+      .backlog-button { cursor: pointer; text-align: left; border: 1px solid var(--line); border-radius: 18px; padding: 12px; background: rgba(255,250,240,.78); font: inherit; color: inherit; }
+      .backlog-button.active { background: var(--acid); font-weight: 900; }
+      .detail-box { white-space: pre-wrap; line-height: 1.7; border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,250,240,.7); }
+      .detail-box strong { display: block; margin-top: 6px; }
+      .detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
+      @media (max-width: 980px) {
+        .radar-grid, .candidate-grid, .enhancement-grid, .owner-grid, .detail-grid, .backlog-layout { grid-template-columns: 1fr; }
+        .radar-card.lead { grid-column: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">一人公司</span>
+          <span>和它的员工们</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./index.html">Skill 库</a>
+          <a class="ghost-link" href="./skill-radar.html">强 Skill 雷达</a>
+          <a class="ghost-link" href="./research-workbench.html">调研工作台</a>
+          <a class="ghost-link" href="./growth-board.html">运营作战板</a>
+          <a class="ghost-link" href="./launch-kits.html">发布素材包</a>
+          <a class="ghost-link" href="./conversion-funnel.html">私域转化</a>
+          <a class="ghost-link" href="./performance-review.html">数据复盘</a>
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Strong Skill Radar</p>
+          <h1>每天先看哪里有被市场验证过的强 Skill，再决定我们做什么。</h1>
+          <p class="hero-subtitle">这页把每日 GitHub / 工作流 / Skill 生态雷达的结果整理成一人公司可执行的选品中心。你可以先看 Top 候选，再看它该交给哪位同事，最后决定是复盘增强、优先制作还是先观察。</p>
+        </div>
+        <aside class="hero-panel">
+          <div class="metric"><strong id="candidateCount">0</strong><span>候选总数</span></div>
+          <div class="metric"><strong id="priorityCount">0</strong><span>优先改造</span></div>
+          <div class="metric"><strong id="backlogCount">0</strong><span>待处理条目</span></div>
+          <p class="panel-note">只把需求强、能复用、许可清晰的部分拿进来，不照搬整套项目。</p>
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Overview</p><h2>今日雷达总览</h2></div>
+        </div>
+        <div id="summaryCards" class="radar-grid"></div>
+      </section>
+      <section class="section" style="padding-bottom: 0;">
+        <article class="focus-card">
+          <p class="eyebrow">今天的判断原则</p>
+          <h2 id="focusTitle">先看最强信号，再决定交给谁做。</h2>
+          <p class="small-muted" id="focusSummary">高星不等于直接复用。我们优先看真实需求、付费可能、许可清晰度和能否拆成可安装 Skill。</p>
+          <div class="focus-meta" id="focusMeta"></div>
+          <div class="focus-actions">
+            <a class="card-action" href="./research-workbench.html">先去调研工作台</a>
+            <a class="github-link" href="../docs/daily-skill-radar/latest.md">看今日 Markdown 雷达</a>
+            <a class="github-link" href="../docs/daily-skill-radar/skill-backlog.md">看待制作 Backlog</a>
+            <a class="github-link" href="./radar-specs.html">看增强简报索引</a>
+          </div>
+        </article>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Top Candidates</p><h2>今天最值得看的候选</h2></div>
+        </div>
+        <div id="candidateGrid" class="candidate-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Dispatch</p><h2>今天应该交给谁判断</h2></div>
+        </div>
+        <div id="ownerGrid" class="owner-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Enhancement Board</p><h2>先增强哪一个现有 Skill</h2></div>
+        </div>
+        <div id="enhancementGrid" class="enhancement-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Backlog</p><h2>下一批 Skill 制作与增强队列</h2></div>
+        </div>
+        <div class="filter-card">
+          <p class="eyebrow">快速分诊</p>
+          <h3 style="margin:0;">按动作、接手人和现有 Skill 快速筛</h3>
+          <div class="filter-row">
+            <select id="actionFilter" aria-label="按动作筛选"></select>
+            <select id="marketFilter" aria-label="按市场线筛选"></select>
+            <select id="teammateFilter" aria-label="按接手人筛选"></select>
+            <select id="skillFilter" aria-label="按现有Skill筛选"></select>
+          </div>
+        </div>
+        <div class="backlog-layout">
+          <div id="backlogList" class="backlog-list"></div>
+          <article class="radar-card" id="backlogDetail"></article>
+        </div>
+      </section>
+    </main>
+    <script src="./skill-radar.js"></script>
+  </body>
+</html>

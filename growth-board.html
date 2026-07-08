@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skill 运营作战板</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .ops-hero { padding-bottom: 26px; }
+      .ops-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+      .ops-card { border: 1px solid var(--line); border-radius: 28px; padding: 20px; background: rgba(255,250,240,.8); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .ops-card.lead { grid-column: span 2; background: radial-gradient(circle at 96% 12%, rgba(215,255,88,.36), transparent 9rem), rgba(255,250,240,.86); }
+      .ops-score { font-size: 42px; font-weight: 950; letter-spacing: -.04em; }
+      .ops-table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 24px; background: rgba(255,250,240,.78); }
+      .ops-table th, .ops-table td { padding: 13px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+      .ops-table th { color: var(--clay); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+      .calendar-list { display: grid; gap: 12px; }
+      .calendar-item { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 14px; border: 1px solid var(--line); border-radius: 24px; padding: 16px; background: rgba(255,250,240,.78); }
+      .date-pill { display: grid; place-items: center; border-radius: 20px; background: var(--acid); font-weight: 950; text-align: center; min-height: 92px; }
+      .focus-card { margin: 0 auto 18px; max-width: 1240px; border: 1px solid var(--line); border-radius: 26px; padding: 18px; background: rgba(255,250,240,.82); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .focus-card[hidden] { display: none; }
+      .focus-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+      .focus-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+      .handoff-card { margin: 0 auto 18px; max-width: 1240px; border: 1px solid var(--line); border-radius: 28px; padding: 20px; background: rgba(23,33,28,.92); color: var(--paper); box-shadow: 0 14px 40px rgba(37,44,36,.18); }
+      .handoff-card .small-muted { color: rgba(247,241,228,.82); }
+      .handoff-head { display: flex; gap: 14px; align-items: center; }
+      .handoff-avatar { width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center; font-weight: 900; color: var(--ink); background: var(--employee-color, var(--acid)); }
+      .handoff-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+      .combo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+      .combo-card { border: 1px solid rgba(247,241,228,.18); border-radius: 18px; padding: 12px; background: rgba(247,241,228,.06); }
+      .combo-card strong { display: block; margin-bottom: 6px; }
+      .combo-card a { margin-top: 8px; }
+      @media (max-width: 860px) { .ops-grid { grid-template-columns: 1fr; } .ops-card.lead { grid-column: auto; } .calendar-item { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero ops-hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">一人公司</span>
+          <span>和它的员工们</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./index.html">返回 Skill 库</a>
+          <a class="ghost-link" href="./skill-radar.html">强 Skill 雷达</a>
+          <a class="ghost-link" href="./launch-kits.html">发布素材包</a>
+          <a class="ghost-link" href="./conversion-funnel.html">私域转化</a>
+          <a class="ghost-link" href="./performance-review.html">数据复盘</a>
+          <a class="ghost-link" href="../docs/skill-growth-priority-board.md">作战板 MD</a>
+          <a class="ghost-link" href="../docs/skill-launch-calendar-14days.md">14 天日历</a>
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">运营作战板</p>
+          <h1>先推能引流、能成交、能做案例的 Skill。</h1>
+          <p class="hero-subtitle">这页把已打包 Skill 按商业价值、传播难度、下载就绪和雷达命中重新排序，用来决定今天发什么笔记、挂哪个 Skill、怎么承接私信。</p>
+        </div>
+        <aside class="hero-panel">
+          <div class="metric"><strong id="metricTotal">0</strong><span>可运营 Skill</span></div>
+          <div class="metric"><strong id="metricTop">0</strong><span>首发候选</span></div>
+          <div class="metric"><strong id="metricCalendar">14</strong><span>发布日历</span></div>
+          <p class="panel-note">免费分享负责破圈，教程/答疑/定制负责变现。</p>
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section class="section" style="padding-bottom: 0;">
+        <article class="handoff-card" id="handoffCard" hidden></article>
+        <article class="focus-card" id="focusCard" hidden>
+          <p class="eyebrow">当前入口上下文</p>
+          <h2 id="focusTitle">这里会根据调研来源切换今日优先级。</h2>
+          <p class="small-muted" id="focusSummary">从市场调研工作台跳进来时，这里会先把更适合的 Skill 排到前面。</p>
+          <div class="focus-meta" id="focusMeta"></div>
+          <div class="focus-actions" id="focusActions"></div>
+        </article>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Priority</p><h2>今日优先推广</h2></div>
+        </div>
+        <div id="topCards" class="ops-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Decision Desk</p><h2>今日决策台</h2></div>
+        </div>
+        <div id="opsDecisionGrid" class="dialog-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Rank</p><h2>商业优先级表</h2></div>
+        </div>
+        <div style="overflow:auto"><table class="ops-table" id="rankTable"></table></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Calendar</p><h2>14 天引流发布日历</h2></div>
+        </div>
+        <div id="calendarList" class="calendar-list"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Routes</p><h2>重点推广路线</h2></div>
+        </div>
+        <div id="opsRouteGrid" class="featured-grid"></div>
+      </section>
+    </main>
+    <script src="./growth-board.js"></script>
+  </body>
+</html>

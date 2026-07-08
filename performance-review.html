@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skill 数据复盘</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .review-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+      .review-card { border: 1px solid var(--line); border-radius: 28px; padding: 20px; background: rgba(255,250,240,.82); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .review-card.lead { grid-column: span 2; background: radial-gradient(circle at 96% 10%, rgba(198,92,63,.18), transparent 10rem), rgba(255,250,240,.88); }
+      .review-score { font-size: 42px; font-weight: 950; letter-spacing: -.04em; }
+      .review-table { width: 100%; border-collapse: collapse; background: rgba(255,250,240,.78); border-radius: 24px; overflow: hidden; }
+      .review-table th, .review-table td { padding: 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+      .review-table th { color: var(--clay); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+      .experiment-list { display: grid; gap: 12px; }
+      .experiment-card { border: 1px solid var(--line); border-radius: 24px; padding: 16px; background: rgba(255,250,240,.78); }
+      .detail-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 18px; align-items: start; }
+      .detail-list { display: grid; gap: 10px; }
+      .detail-button { cursor: pointer; text-align: left; border: 1px solid var(--line); border-radius: 18px; padding: 12px; background: rgba(255,250,240,.78); font: inherit; color: inherit; }
+      .detail-button.active { background: var(--acid); font-weight: 900; }
+      .detail-box { white-space: pre-wrap; line-height: 1.7; border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,250,240,.7); }
+      @media (max-width: 920px) {
+        .review-grid,
+        .detail-layout { grid-template-columns: 1fr; }
+        .review-card.lead { grid-column: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">一人公司</span>
+          <span>和它的员工们</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./index.html">Skill 库</a>
+          <a class="ghost-link" href="./skill-radar.html">强 Skill 雷达</a>
+          <a class="ghost-link" href="./growth-board.html">运营作战板</a>
+          <a class="ghost-link" href="./launch-kits.html">发布素材包</a>
+          <a class="ghost-link" href="./conversion-funnel.html">私域转化</a>
+          <a class="ghost-link" href="../docs/skill-performance-dashboard.md">复盘 MD</a>
+          <a class="ghost-link" href="../docs/skill-performance-review-template.csv">复盘 CSV</a>
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Performance Review</p>
+          <h1>每天都找新 Skill，还不如先把会带线索的放大。</h1>
+          <p class="hero-subtitle">这页把发布日历、下载包、私信承接和数据记录连在一起。我们不只看曝光，更看收藏、领取、线索和付费，决定下一轮到底该改标题、封面、CTA 还是诊断流程。</p>
+        </div>
+        <aside class="hero-panel">
+          <div class="metric"><strong id="reviewTracked">0</strong><span>跟踪条目</span></div>
+          <div class="metric"><strong id="reviewLaunched">0</strong><span>已有数据</span></div>
+          <div class="metric"><strong id="reviewLeads">0</strong><span>累计线索</span></div>
+          <p class="panel-note">自动化只补模板和建议，人工数据会被保留。</p>
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Health</p><h2>复盘总览</h2></div>
+        </div>
+        <div id="summaryCards" class="review-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Priority</p><h2>优先处理队列</h2></div>
+        </div>
+        <div style="overflow:auto"><table class="review-table" id="reviewTable"></table></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Experiments</p><h2>本轮实验队列</h2></div>
+        </div>
+        <div id="experimentList" class="experiment-list"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Detail</p><h2>单条复盘详情</h2></div>
+        </div>
+        <div class="detail-layout">
+          <div id="detailList" class="detail-list"></div>
+          <article class="review-card" id="detailCard"></article>
+        </div>
+      </section>
+    </main>
+    <script src="./performance-review.js"></script>
+  </body>
+</html>

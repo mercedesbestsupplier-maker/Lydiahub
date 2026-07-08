@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>规划作战包中心</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">一人公司</span>
+          <span>和它的员工们</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./index.html#planning-center">返回首页规划中心</a>
+          <a class="ghost-link" href="./index.html#downloads">下载中心</a>
+          <a class="ghost-link" href="./skill-radar.html">强 Skill 雷达</a>
+          <a class="ghost-link" href="./growth-board.html">运营作战板</a>
+          <a class="ghost-link" href="./launch-kits.html">发布素材包</a>
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Planning Center</p>
+          <h1 id="planningCenterTitle">先判断哪些高需求方向值得优先升级。</h1>
+          <p id="planningCenterHeadline" class="hero-subtitle">
+            这里收的是已经有下载物、但更适合先验证、打样、排优先级的规划作战包。
+            先看适合谁、需要什么输入、怎么开始，再决定要不要升级成正式执行版 Skill。
+          </p>
+        </div>
+        <aside class="hero-panel">
+          <div class="metric"><strong id="planningCenterSkillCount">0</strong><span>规划包</span></div>
+          <div class="metric"><strong id="planningCenterFiveCount">0</strong><span>五星优先</span></div>
+          <div class="metric"><strong id="planningCenterTeammateCount">0</strong><span>覆盖岗位</span></div>
+          <p id="planningCenterNote" class="panel-note">先做验证，再做打包，再做分发和承接。不要一上来就把每个方向都做成重产品。</p>
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2>规划包总览</h2>
+        </div>
+        <div id="planningCenterOverview" class="demand-lab-overview"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Priority Queue</p>
+          <h2>先升级哪一批，回报会更大</h2>
+        </div>
+        <div id="planningCenterPriorityQueue" class="skill-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">By Employee</p>
+          <h2>先看哪位同事手上的方向最值得做</h2>
+        </div>
+        <div id="planningCenterTeammates" class="download-collection-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Current Brief</p>
+          <h2>当前规划包简报</h2>
+        </div>
+        <div id="planningCenterBrief" class="dialog-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Decision Desk</p>
+          <h2>升级判断台</h2>
+        </div>
+        <div id="planningCenterDecision" class="dialog-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Formalized Nearby</p>
+          <h2>附近已经成型的正式技能</h2>
+        </div>
+        <div id="planningCenterExecutionGrid" class="skill-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">How To Use</p>
+          <h2>适合谁、怎么开始、什么时候升级</h2>
+        </div>
+        <div id="planningCenterUsage" class="dialog-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Upgrade Routes</p>
+          <h2>升级之后该接到哪些工作台</h2>
+        </div>
+        <div id="planningCenterRoutes" class="featured-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Next</p>
+          <h2>下一步去哪里</h2>
+        </div>
+        <div id="planningCenterNext" class="featured-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Same Bucket</p>
+          <h2>同一位同事下的待升级队列</h2>
+        </div>
+        <div id="planningCenterSkillGrid" class="skill-grid"></div>
+      </section>
+    </main>
+    <script src="./planning-center.js"></script>
+  </body>
+</html>

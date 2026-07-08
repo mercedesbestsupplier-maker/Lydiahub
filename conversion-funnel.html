@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skill 私域转化漏斗</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .funnel-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+      .funnel-card { border: 1px solid var(--line); border-radius: 26px; padding: 18px; background: rgba(255,250,240,.8); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .lead-table { width: 100%; border-collapse: collapse; background: rgba(255,250,240,.78); border-radius: 24px; overflow: hidden; }
+      .lead-table th, .lead-table td { padding: 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+      .reply-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: 18px; align-items: start; }
+      .reply-list { display: grid; gap: 10px; }
+      .reply-button { cursor: pointer; text-align: left; border: 1px solid var(--line); border-radius: 18px; padding: 12px; background: rgba(255,250,240,.78); font: inherit; color: inherit; }
+      .reply-button.active { background: var(--acid); font-weight: 900; }
+      .reply-box { white-space: pre-wrap; line-height: 1.7; border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,250,240,.7); }
+      .reply-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+      .intake-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .intake-card { border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(255,250,240,.76); }
+      .intake-card strong { display: block; margin-bottom: 8px; }
+      .recommend-card { margin: 0 auto 18px; max-width: 1240px; border: 1px solid var(--line); border-radius: 26px; padding: 18px; background: rgba(23,33,28,.92); color: var(--paper); box-shadow: 0 14px 40px rgba(37,44,36,.18); }
+      .recommend-card .small-muted { color: rgba(247,241,228,.82); }
+      .recommend-next { margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(247,241,228,.18); }
+      .mini-note { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+      .focus-card { margin: 0 auto 18px; max-width: 1240px; border: 1px solid var(--line); border-radius: 26px; padding: 18px; background: rgba(255,250,240,.82); box-shadow: 0 14px 40px rgba(37,44,36,.08); }
+      .focus-card[hidden] { display: none; }
+      .focus-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+      .focus-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+      .handoff-card { margin: 0 auto 18px; max-width: 1240px; border: 1px solid var(--line); border-radius: 28px; padding: 20px; background: rgba(23,33,28,.92); color: var(--paper); box-shadow: 0 14px 40px rgba(37,44,36,.18); }
+      .handoff-card[hidden] { display: none; }
+      .handoff-card .small-muted { color: rgba(247,241,228,.82); }
+      .handoff-head { display: flex; gap: 14px; align-items: center; }
+      .handoff-avatar { width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center; font-weight: 900; color: var(--ink); background: var(--employee-color, var(--acid)); }
+      .combo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+      .combo-card { border: 1px solid rgba(247,241,228,.18); border-radius: 18px; padding: 12px; background: rgba(247,241,228,.06); }
+      .combo-card strong { display: block; margin-bottom: 6px; }
+      .combo-card a { margin-top: 8px; }
+      @media (max-width: 920px) { .funnel-grid, .reply-layout, .intake-grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">一人公司</span>
+          <span>和它的员工们</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./index.html">Skill 库</a>
+          <a class="ghost-link" href="./skill-radar.html">强 Skill 雷达</a>
+          <a class="ghost-link" href="./launch-kits.html">发布素材包</a>
+          <a class="ghost-link" href="./performance-review.html">数据复盘</a>
+          <a class="ghost-link" href="../docs/skill-conversion-funnel.md">漏斗 MD</a>
+          <a class="ghost-link" href="../docs/skill-lead-tracker-template.csv">线索表 CSV</a>
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Conversion</p>
+          <h1>评论来了之后，别靠临场发挥成交。</h1>
+          <p class="hero-subtitle">这里把免费 Skill 领取用户分成评论、领取、场景、诊断、成交五个阶段，并准备好回复、追问、报价前检查和线索表。</p>
+        </div>
+        <aside class="hero-panel">
+          <div class="metric"><strong id="leadCount">14</strong><span>主推 Skill</span></div>
+          <div class="metric"><strong>5</strong><span>线索阶段</span></div>
+          <div class="metric"><strong>4</strong><span>服务阶梯</span></div>
+          <p class="panel-note">只准备承接材料，不替你发消息、不替你收款。</p>
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section class="section" style="padding-bottom: 0;">
+        <article class="handoff-card" id="handoffCard" hidden></article>
+        <article class="focus-card" id="focusCard" hidden>
+          <p class="eyebrow">当前承接对象</p>
+          <h2 id="focusTitle">这页将自动聚焦对应同事和 Skill。</h2>
+          <p class="small-muted" id="focusSummary">从同事专题页跳进来时，这里会提示你当前更适合承接哪种需求。</p>
+          <div class="focus-meta" id="focusMeta"></div>
+          <div class="focus-actions" id="focusActions"></div>
+        </article>
+        <article class="recommend-card" id="recommendCard">
+          <p class="eyebrow">Recommend</p>
+          <h2 id="recommendTitle">这里会自动告诉你当前更适合卖哪一档服务。</h2>
+          <p class="small-muted" id="recommendSummary">线索分、默认阶段和业务价值会一起决定先卖免费包、教程、合集还是定制。</p>
+          <div class="recommend-next">
+            <strong id="recommendNextTitle">这里会自动告诉你当前更适合先做哪一步。</strong>
+            <p class="small-muted" id="recommendNextSummary">先发免费包、先问场景、先问预算，还是先约诊断，会根据当前 Skill 自动切换。</p>
+          </div>
+        </article>
+      </section>
+      <section class="section">
+        <div class="section-heading"><div><p class="eyebrow">Stages</p><h2>线索阶段</h2></div></div>
+        <div class="funnel-grid" id="stageGrid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading"><div><p class="eyebrow">Priority</p><h2>线索优先级</h2></div></div>
+        <div style="overflow:auto"><table class="lead-table" id="leadTable"></table></div>
+      </section>
+      <section class="section">
+        <div class="section-heading"><div><p class="eyebrow">Decision Desk</p><h2>当前线索判断台</h2></div></div>
+        <div id="funnelDecisionGrid" class="dialog-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading"><div><p class="eyebrow">Reply Bank</p><h2>回复话术</h2></div></div>
+        <div class="reply-layout">
+          <div class="reply-list" id="replyList"></div>
+          <article class="funnel-card" id="replyDetail"></article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-heading"><div><p class="eyebrow">Intake</p><h2>报价问诊表</h2></div></div>
+        <div class="intake-grid" id="intakeGrid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading"><div><p class="eyebrow">Routes</p><h2>从回复到报价与交付的下一步</h2></div></div>
+        <div id="funnelRouteGrid" class="featured-grid"></div>
+      </section>
+    </main>
+    <script src="./conversion-funnel.js"></script>
+  </body>
+</html>

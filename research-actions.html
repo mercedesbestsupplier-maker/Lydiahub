@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>调研后的执行工作台</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .handoff-card { margin: 0 auto 18px; max-width: 1240px; border: 1px solid var(--line); border-radius: 28px; padding: 20px; background: rgba(23,33,28,.92); color: var(--paper); box-shadow: 0 14px 40px rgba(37,44,36,.18); }
+      .handoff-card .small-muted { color: rgba(247,241,228,.82); }
+      .handoff-head { display: flex; gap: 14px; align-items: center; }
+      .handoff-avatar { width: 56px; height: 56px; border-radius: 18px; display: grid; place-items: center; font-weight: 900; color: var(--ink); background: var(--employee-color, var(--acid)); }
+      .handoff-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    </style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">一人公司</span>
+          <span>和它的员工们</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./research-workbench.html">返回调研工作台</a>
+          <a class="ghost-link" href="./launch-kits.html">发布素材包</a>
+          <a class="ghost-link" href="./conversion-funnel.html">私域转化</a>
+          <a class="ghost-link" href="./growth-board.html">运营作战板</a>
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Execution Desk</p>
+          <h1 id="executionTitle">调研后的执行工作台</h1>
+          <p id="executionHeadline" class="hero-subtitle">把调研结论真正推进到发布、试卖或成交，不要让结论停在文档里。</p>
+        </div>
+        <aside class="hero-panel">
+          <div class="metric"><strong id="executionStepCount">0</strong><span>执行步骤</span></div>
+          <div class="metric"><strong id="executionOutputCount">0</strong><span>目标输出</span></div>
+          <div class="metric"><strong id="executionDownloadCount">0</strong><span>可下载资源</span></div>
+          <p class="panel-note">先执行最小动作，再看反馈，再决定要不要继续放大。</p>
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section class="section" style="padding-bottom: 0;">
+        <article class="handoff-card" id="executionHandoffCard"></article>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Flow Queue</p>
+          <h2>先走哪条执行线，更接近结果</h2>
+        </div>
+        <div id="executionFlowGrid" class="skill-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Decision Desk</p>
+          <h2>当前执行判断台</h2>
+        </div>
+        <div id="executionDecisionGrid" class="dialog-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Steps</p>
+          <h2>执行步骤</h2>
+        </div>
+        <div id="executionStepGrid" class="dialog-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Input / Output</p>
+          <h2>输入与输出</h2>
+        </div>
+        <div id="executionIoGrid" class="dialog-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Signals</p>
+          <h2>这条执行线什么时候值得继续放大</h2>
+        </div>
+        <div id="executionSignalGrid" class="dialog-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Downloads</p>
+          <h2>执行资源</h2>
+        </div>
+        <div id="executionDownloadGrid" class="featured-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Routes</p>
+          <h2>执行之后该接到哪里</h2>
+        </div>
+        <div id="executionRouteGrid" class="featured-grid"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Next</p>
+          <h2>下一步该去哪里</h2>
+        </div>
+        <div id="executionNextGrid" class="featured-grid"></div>
+      </section>
+    </main>
+    <script src="./research-actions.js"></script>
+  </body>
+</html>

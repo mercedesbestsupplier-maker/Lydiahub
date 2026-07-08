@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>市场调研工作台</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">一人公司</span>
+          <span>和它的员工们</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./index.html#demand-office">返回市场调研办公室</a>
+          <a class="ghost-link" href="./index.html#downloads">下载中心</a>
+          <a class="ghost-link" href="./conversion-funnel.html">私域转化</a>
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Research Desk</p>
+          <h1 id="researchHeroTitle">先找真实需求，再决定要不要做。</h1>
+          <p id="researchHeroSubtitle" class="hero-subtitle">
+            这个工作台把市场调研拆成国内和海外两条线。你可以先看该准备什么资料、拿什么输出，再决定下载哪套 Skill、模板和资源包。
+          </p>
+        </div>
+        <aside class="hero-panel">
+          <div class="metric"><strong id="researchWorkbenchCount">2</strong><span>调研岗位</span></div>
+          <div class="metric"><strong id="researchSkillCount">0</strong><span>相关 Skill</span></div>
+          <div class="metric"><strong id="researchPackCount">0</strong><span>可下载资源</span></div>
+          <p id="researchPanelNote" class="panel-note">先判断需求真假、付费意愿和竞争缺口，再决定做内容、做服务还是做产品。</p>
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section class="section" style="padding-bottom: 0;">
+        <article class="handoff-card" id="researchHandoffCard"></article>
+      </section>
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Workbench</p>
+          <h2>选择调研岗位</h2>
+        </div>
+        <div id="researchWorkbenchGrid" class="pack-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Priority Queue</p>
+          <h2>先验证哪一批机会，回报更高</h2>
+        </div>
+        <div id="researchPriorityGrid" class="skill-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Decision Desk</p>
+          <h2>当前机会判断台</h2>
+        </div>
+        <div id="researchDecisionGrid" class="dialog-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">How To Use</p>
+          <h2>典型任务入口</h2>
+        </div>
+        <div id="researchScenarioGrid" class="dialog-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Input / Output</p>
+          <h2>你要准备什么，又会拿到什么</h2>
+        </div>
+        <div id="researchIoGrid" class="dialog-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Signals</p>
+          <h2>机会判断信号</h2>
+        </div>
+        <div id="researchSignalGrid" class="dialog-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Branches</p>
+          <h2>调研后该导向哪里</h2>
+        </div>
+        <div id="researchBranchGrid" class="featured-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Routes</p>
+          <h2>证据足够后，应该接到哪里</h2>
+        </div>
+        <div id="researchRouteGrid" class="featured-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Downloads</p>
+          <h2>推荐下载包</h2>
+        </div>
+        <div id="researchDownloadGrid" class="featured-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>当前最强的调研 Skill</h2>
+        </div>
+        <div id="researchSkillGrid" class="skill-grid"></div>
+      </section>
+    </main>
+    <script src="./research-workbench.js"></script>
+  </body>
+</html>
