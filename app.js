@@ -33136,7 +33136,7 @@ function openSkill(slug, options = {}) {
       <p class="small-muted">${skill.categoryNote}</p>
       <div class="card-actions">
         ${skill.hasPackage ? `<a class="card-action" href="${skill.download}" download>${skill.downloadLabel || "下载 Skill zip"}</a>` : `<span class="github-link disabled">暂无 zip，待制作</span>`}
-        <a class="github-link ${gh ? (DATA.repoExists ? "" : "pending") : "disabled"}" href="${gh || "#"}">打开 GitHub 链接</a>
+        <a class="github-link ${gh ? (DATA.repoExists ? "" : "pending") : "disabled"}" href="${gh || "#"}">私信获取源码</a>
         ${skill.source ? `<a class="github-link" href="${skill.source}">查看源码 SKILL.md</a>` : `<span class="github-link disabled">源码待生成</span>`}
       </div>
       ${DATA.repoBase && !DATA.repoExists ? `<p class="small-muted">已按你的 GitHub 账号 ${DATA.githubOwner} 预留链接；但仓库还没创建/推送，点击后可能暂时 404。</p>` : ""}
