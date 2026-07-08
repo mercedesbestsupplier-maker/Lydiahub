@@ -32387,7 +32387,7 @@ function renderPacks() {
     const packaged = matched.filter((skill) => skill.hasPackage).length;
     return `
       <button class="pack-card" type="button" data-pack="${pack.id}">
-        <span class="card-kicker">场景套装</span>
+        <span class="card-kicker">开箱即用包</span>
         <h3>${pack.title}</h3>
         <p class="signal">${pack.summary}</p>
         <p class="small-muted">${pack.promise}</p>
