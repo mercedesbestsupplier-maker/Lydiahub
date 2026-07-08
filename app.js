@@ -33471,7 +33471,7 @@ function init() {
   if (DATA.repoBase && DATA.repoExists) {
     els.repoNote.textContent = `GitHub 已连接：${DATA.repoBase}`;
   } else if (DATA.repoBase) {
-    els.repoNote.textContent = `GitHub 账号：${DATA.githubOwner}，已预留 xiaohongshuredskill 仓库链接，发布前可能 404。`;
+    els.repoNote.textContent = `GitHub 账号：${DATA.githubOwner}，如果需要源码，请截图发到小红书私信获取。`;
   }
   renderOptions();
   renderCompanyWorkflow();
