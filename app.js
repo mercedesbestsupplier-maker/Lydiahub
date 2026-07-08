@@ -32820,7 +32820,7 @@ function renderSkills() {
     const teammate = teammateFor(skill);
     const gh = githubUrl(skill);
     const githubClass = gh ? (DATA.repoExists ? "" : "pending") : "disabled";
-    const githubLabel = DATA.repoExists ? "GitHub" : "GitHub待发布";
+    const githubLabel = DATA.repoExists ? "GitHub" : "私信获取";
     const downloadButton = skill.hasPackage
       ? `<a class="card-action" href="${skill.download}" download>${skill.downloadLabel || "下载 zip"}</a>`
       : `<span class="github-link disabled">待制作</span>`;
