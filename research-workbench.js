@@ -4046,7 +4046,7 @@ function renderWorkbenchDetail() {
     routeGrid.innerHTML = [
       {
         kicker: "继续搜证据",
-        title: "回到大厅看其他员工",
+        title: "回到下载中心看同类 Skill",
         body: "如果你还没确定方向，先看同市场、同分类的高星资源，不急着做单点判断。",
         href: current.filterHref,
         cta: "看同类资源"

@@ -1874,7 +1874,7 @@ function renderRoutes(item) {
       title: "看这位同事的可下载 Skill",
       body: "如果这条方向要放大，先把同岗位其他高需求 Skill 一起装上，形成岗位能力包。",
       href: `./index.html?teammate=${item.teammate_id || item.teammateId}&status=packaged&minStars=4#downloads`,
-      cta: "回公司大厅"
+      cta: "回下载中心"
     },
     {
       kicker: "回源头验证",
