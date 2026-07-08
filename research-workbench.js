@@ -4069,7 +4069,7 @@ function renderWorkbenchDetail() {
       },
       {
         kicker: "回到总库",
-        title: "去强 Skill 雷达",
+        title: "去外脑能力库",
         body: "如果你想继续从市场信号反推机会，就去雷达里看外部高星证据。",
         href: currentSkill ? contextHref('./skill-radar.html', { skill: currentSkill.slug }) : "./skill-radar.html",
         cta: "去雷达中心"

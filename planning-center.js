@@ -30675,7 +30675,7 @@ function renderRoutes(current) {
   els.routes.innerHTML = [
     {
       kicker: "机会验证",
-      title: "强 Skill 雷达",
+      title: "外脑能力库",
       body: "回到这项 Skill 的高星外部信号集合，先判断它是不是还在持续被市场验证。",
       href: contextHref('./skill-radar.html', { skill: current.slug }),
       cta: "去雷达中心"
