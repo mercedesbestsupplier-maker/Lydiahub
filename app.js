@@ -32596,7 +32596,45 @@ function renderDownloadCollections() {
   const container = els.downloadCollectionGrid;
   container.className = "accordion-container";
   
-  container.innerHTML = DATA.downloadCollections.map((collection, index) => {
+  
+  // Merge planning data into the accordion
+  const planningSkills = DATA.skills.filter((skill) => skill.packageKind === "planning");
+  const planningCount = planningSkills.length;
+  
+  const planningHTML = planningSkills.map(skill => `
+    <div class="skill-mini-card" style="border-style: dashed; background: #fafafa;">
+      <strong>${skill.name}</strong>
+      <p>${skill.description}</p>
+      <span class="small-muted">期待值: ${skill.score} | ${skill.reason}</span>
+    </div>
+  `).join("");
+
+  const planningAccordion = `
+    <div class="accordion-item" data-accordion-index="999">
+      <div class="accordion-header">
+        <div class="accordion-header-left">
+          <h3>🚀 岗位热度（待招聘的热门员工）</h3>
+          <p>全网高频痛点 · 尚未正式入职 | ${planningCount} 个热门需求</p>
+        </div>
+        <div class="accordion-icon">▼</div>
+      </div>
+      <div class="accordion-body">
+        <div class="accordion-content">
+          <p class="signal">这些是近期呼声最高的业务痛点，正在紧急培训中，即将上岗。</p>
+          <div class="skill-mini-list">
+            ${planningHTML}
+          </div>
+          <div style="margin-top: 8px;">
+            <a class="ghost-link" href="./planning-center.html">查看详细数据分析</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = planningAccordion + container.innerHTML;
+
+  container.innerHTML += DATA.downloadCollections.map((collection, index) => {
     const teammate = DATA.teammates.find((item) => item.id === collection.teammateId) || DATA.teammates[0];
     const matched = sortedSkills(DATA.skills.filter((skill) => {
       if (collection.preset?.teammate && skill.teammateId !== collection.preset.teammate) return false;
