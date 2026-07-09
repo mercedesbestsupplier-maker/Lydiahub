@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>一人公司的 AI 团队工作台</title>
     <link rel="stylesheet" href="./styles.css" />
-  </head>
+  
+<style>
+.staff-accordion { border: 1px solid var(--line); border-radius: 20px; background: rgba(255,250,240,0.78); overflow: hidden; margin-top: 24px; }
+.staff-accordion details summary { list-style: none; padding: 20px; cursor: pointer; display: flex; justify-content: space-between; font-size: 1.1rem; font-weight: bold; align-items: center; }
+.staff-accordion details summary::-webkit-details-marker { display: none; }
+.staff-accordion details[open] summary { border-bottom: 1px dashed var(--line); }
+.staff-accordion-content { padding: 24px; }
+</style>
+
+</head>
   <body>
     <div class="grain"></div>
     <header class="hero">
@@ -73,7 +82,8 @@
         <div id="companyWorkflowGrid" class="company-workflow-grid"></div>
       </section>
 
-      <section id="audiences" class="section audience-section">
+      <div class="staff-accordion"><details><summary>一线员工及适用场景库（点击展开查看 120+ 名一线员工）<span style="color:var(--brand)">▼</span></summary><div class="staff-accordion-content">
+<section id="audiences" class="section audience-section">
         <div class="section-heading">
           <p class="eyebrow">第一步</p>
           <h2>选个角色，你的员工们马上就位</h2>
@@ -110,7 +120,7 @@
       <section id="radar-office" class="section demand-office-section">
         <div class="section-heading">
           <p class="eyebrow">不断进化的能力库</p>
-          <h2>全网新能力雷达</h2>
+          <h2>全球总监猎头</h2>
           <a class="ghost-link" href="./skill-radar.html">打开雷达中心</a>
         </div>
         <div class="demand-lab-overview">
@@ -126,6 +136,7 @@
           </article>
         </div>
       </section>
+</div></details></div>
 
       <section id="company-collab" class="section workflow-section">
         <div class="section-heading">
@@ -171,7 +182,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">先做高需求方向</p>
-            <h2>规划作战包中心</h2>
+            <h2>岗位热度</h2>
           </div>
           <a class="ghost-link" href="./planning-center.html">打开规划包中心</a>
         </div>
@@ -199,7 +210,7 @@
         <div class="filters-card">
           <div>
             <p class="eyebrow">快速筛选</p>
-            <h2>Skill 库</h2>
+            <h2>一线员工</h2>
           </div>
           <div class="filter-row">
             <select id="teammateFilter" aria-label="按团队成员筛选"></select>

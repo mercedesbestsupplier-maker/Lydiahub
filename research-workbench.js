@@ -4062,7 +4062,7 @@ function renderWorkbenchDetail() {
       },
       {
         kicker: "升级成正式 Skill",
-        title: "去规划作战包中心",
+        title: "去岗位热度",
         body: "如果你已经判断这条需求值得长期做，就去规划中心看怎么升级成正式技能。",
         href: currentSkill ? contextHref('./planning-center.html', { teammate: currentSkill.teammateId, slug: currentSkill.slug }) : "./planning-center.html",
         cta: "去规划中心"
