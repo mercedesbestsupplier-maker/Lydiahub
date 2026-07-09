@@ -33094,12 +33094,12 @@ function openSkill(slug, options = {}) {
     {
       title: "进入对应合集",
       body: skill.packageKind === "planning"
-        ? "这条方向更适合先在规划包中心里看清楚适合谁、怎么开始、何时升级。"
+        ? "这条方向更适合先在档案中心里看清楚适合谁、怎么开始、何时升级。"
         : relatedPack ? `它更适合放进「${relatedPack.title}」这种完整业务场景里一起用。` : "更推荐和同业务场景的其他 Skill 一起用，而不是孤立使用。",
       href: skill.packageKind === "planning"
         ? `./planning-center.html?teammate=${skill.teammateId}&slug=${skill.slug}`
         : relatedPack ? `./index.html?pack=${relatedPack.id}&minStars=4#downloads` : `./index.html?category=${encodeURIComponent(skill.category)}&minStars=4#downloads`,
-      cta: skill.packageKind === "planning" ? "进入规划包中心" : "查看这一批"
+      cta: skill.packageKind === "planning" ? "进入档案中心" : "查看这一批"
     },
   ];
   const workbenchSteps = [
