@@ -4,38 +4,39 @@ const SPEC_DATA = {
       "title": "Skill 市场雷达策展官",
       "existingSkillSlug": "skill-market-curator",
       "teammateId": "chief-of-staff",
-      "count": 17,
+      "count": 21,
       "marketScopes": [
-        "全球通用"
+        "全球通用",
+        "中国市场"
       ],
       "filename": "skill-market-curator-enhancement-brief.md",
       "siteSlug": "skill-market-curator",
-      "content": "# Skill 市场雷达策展官 增强简报\n\n- 员工归属：`chief-of-staff`\n- 现有 Skill：`skill-market-curator`\n- 当前动作：`已制作：skill-market-curator，值得重点增强`\n- 候选数量：`17`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `skill-market-curator` 做增强与再包装。\n\n当前最该服务的人群：市场调研、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：9080\n- 共同市场信号：提高整套员工能力库的调用效率，适合做总入口。\n\n## 3. 这批候选共同证明了什么\n\n### alirezarezvani/claude-skills\n\n- 链接：https://github.com/alirezarezvani/claude-skills\n- 分数 / Stars：100 / 21607\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### ComposioHQ/awesome-codex-skills\n\n- 链接：https://github.com/ComposioHQ/awesome-codex-skills\n- 分数 / Stars：100 / 14714\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：许可不清，只能作为需求信号\n\n### trailofbits/skills\n\n- 链接：https://github.com/trailofbits/skills\n- 分数 / Stars：100 / 6025\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### Dimillian/Skills\n\n- 链接：https://github.com/Dimillian/Skills\n- 分数 / Stars：100 / 3803\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### tradermonty/claude-trading-skills\n\n- 链接：https://github.com/tradermonty/claude-trading-skills\n- 分数 / Stars：100 / 2303\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### skills-directory/skill-codex\n\n- 链接：https://github.com/skills-directory/skill-codex\n- 分数 / Stars：100 / 1351\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=skill-market-curator`\n- 去发布素材包：`./launch-kits.html?slug=skill-market-curator`\n- 去运营作战板：`./growth-board.html?slug=skill-market-curator`\n- 去承接漏斗：`./conversion-funnel.html?slug=skill-market-curator&teammate=chief-of-staff#leadTable`\n- 去员工页：`./teammates/chief-of-staff.html`\n\n",
+      "content": "# Skill 市场雷达策展官 增强简报\n\n- 员工归属：`chief-of-staff`\n- 现有 Skill：`skill-market-curator`\n- 当前动作：`已制作：skill-market-curator，值得重点增强`\n- 候选数量：`21`\n- 市场线：`全球通用 / 中国市场`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `skill-market-curator` 做增强与再包装。\n\n当前最该服务的人群：市场调研、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：9155\n- 共同市场信号：提高整套员工能力库的调用效率，适合做总入口。\n\n## 3. 这批候选共同证明了什么\n\n### alirezarezvani/claude-skills\n\n- 链接：https://github.com/alirezarezvani/claude-skills\n- 分数 / Stars：100 / 23262\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### composio-community/awesome-codex-skills\n\n- 链接：https://github.com/composio-community/awesome-codex-skills\n- 分数 / Stars：100 / 15331\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：许可不清，只能作为需求信号\n\n### ComposioHQ/awesome-codex-skills\n\n- 链接：https://github.com/ComposioHQ/awesome-codex-skills\n- 分数 / Stars：100 / 14961\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：许可不清，只能作为需求信号\n\n### nexu-io/html-anything\n\n- 链接：https://github.com/nexu-io/html-anything\n- 分数 / Stars：100 / 7972\n- 市场线：中国市场\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### trailofbits/skills\n\n- 链接：https://github.com/trailofbits/skills\n- 分数 / Stars：100 / 6282\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### Dimillian/Skills\n\n- 链接：https://github.com/Dimillian/Skills\n- 分数 / Stars：100 / 3860\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=skill-market-curator`\n- 去发布素材包：`./launch-kits.html?slug=skill-market-curator`\n- 去运营作战板：`./growth-board.html?slug=skill-market-curator`\n- 去承接漏斗：`./conversion-funnel.html?slug=skill-market-curator&teammate=chief-of-staff#leadTable`\n- 去员工页：`./teammates/chief-of-staff.html`\n\n",
       "employeeName": "阿序 · 任务调度总监",
       "employeeRole": "任务调度",
       "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
       "sourceNames": [
         "alirezarezvani/claude-skills",
+        "composio-community/awesome-codex-skills",
         "ComposioHQ/awesome-codex-skills",
-        "trailofbits/skills",
-        "Dimillian/Skills"
+        "nexu-io/html-anything"
       ],
       "queryNames": [
         "claude code skills",
         "codex skills",
-        "claude code skills",
         "codex skills",
+        "xiaohongshu",
         "claude code skills",
-        "claude code skills"
+        "codex skills"
       ],
       "roles": [
         "市场调研",
         "任务调度"
       ],
-      "avgScore": 97,
-      "topStars": 86604,
-      "enhanceNowCount": 12,
-      "enhanceCount": 5,
+      "avgScore": 98,
+      "topStars": 93342,
+      "enhanceNowCount": 15,
+      "enhanceCount": 6,
       "buildNowCount": 0,
       "buildQueueCount": 0,
       "radarHref": "./skill-radar.html?skill=skill-market-curator",
@@ -54,7 +55,7 @@ const SPEC_DATA = {
       ],
       "filename": "multi-employee-quality-gate-enhancement-brief.md",
       "siteSlug": "multi-employee-quality-gate",
-      "content": "# 多员工质量门禁编排器 增强简报\n\n- 员工归属：`chief-of-staff`\n- 现有 Skill：`multi-employee-quality-gate`\n- 当前动作：`已制作：multi-employee-quality-gate，值得重点增强`\n- 候选数量：`5`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `multi-employee-quality-gate` 做增强与再包装。\n\n当前最该服务的人群：任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：2706\n- 共同市场信号：提高整套员工能力库的调用效率，适合做总入口。\n\n## 3. 这批候选共同证明了什么\n\n### dsifry/metaswarm\n\n- 链接：https://github.com/dsifry/metaswarm\n- 分数 / Stars：100 / 343\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：完整运行时可能过重\n\n### bijutharakan/multi-agent-squad\n\n- 链接：https://github.com/bijutharakan/multi-agent-squad\n- 分数 / Stars：100 / 87\n- 市场线：全球通用\n- 取其精华：主管分诊、任务图、角色协同、状态恢复和复盘机制。\n- 去其糟粕：完整运行时可能过重\n\n### open-multi-agent/open-multi-agent\n\n- 链接：https://github.com/open-multi-agent/open-multi-agent\n- 分数 / Stars：96 / 6537\n- 市场线：全球通用\n- 取其精华：主管分诊、任务图、角色协同、状态恢复和复盘机制。\n- 去其糟粕：完整运行时可能过重\n\n### VRSEN/agency-swarm\n\n- 链接：https://github.com/VRSEN/agency-swarm\n- 分数 / Stars：88 / 4477\n- 市场线：全球通用\n- 取其精华：主管分诊、任务图、角色协同、状态恢复和复盘机制。\n- 去其糟粕：完整运行时可能过重\n\n### Kocoro-lab/Shannon\n\n- 链接：https://github.com/Kocoro-lab/Shannon\n- 分数 / Stars：88 / 2085\n- 市场线：全球通用\n- 取其精华：主管分诊、任务图、角色协同、状态恢复和复盘机制。\n- 去其糟粕：完整运行时可能过重\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=multi-employee-quality-gate`\n- 去发布素材包：`./launch-kits.html?slug=multi-employee-quality-gate`\n- 去运营作战板：`./growth-board.html?slug=multi-employee-quality-gate`\n- 去承接漏斗：`./conversion-funnel.html?slug=multi-employee-quality-gate&teammate=chief-of-staff#leadTable`\n- 去员工页：`./teammates/chief-of-staff.html`\n\n",
+      "content": "# 多员工质量门禁编排器 增强简报\n\n- 员工归属：`chief-of-staff`\n- 现有 Skill：`multi-employee-quality-gate`\n- 当前动作：`已制作：multi-employee-quality-gate，值得重点增强`\n- 候选数量：`5`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `multi-employee-quality-gate` 做增强与再包装。\n\n当前最该服务的人群：任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：2717\n- 共同市场信号：提高整套员工能力库的调用效率，适合做总入口。\n\n## 3. 这批候选共同证明了什么\n\n### dsifry/metaswarm\n\n- 链接：https://github.com/dsifry/metaswarm\n- 分数 / Stars：100 / 366\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：完整运行时可能过重\n\n### bijutharakan/multi-agent-squad\n\n- 链接：https://github.com/bijutharakan/multi-agent-squad\n- 分数 / Stars：100 / 87\n- 市场线：全球通用\n- 取其精华：主管分诊、任务图、角色协同、状态恢复和复盘机制。\n- 去其糟粕：完整运行时可能过重\n\n### open-multi-agent/open-multi-agent\n\n- 链接：https://github.com/open-multi-agent/open-multi-agent\n- 分数 / Stars：96 / 6569\n- 市场线：全球通用\n- 取其精华：主管分诊、任务图、角色协同、状态恢复和复盘机制。\n- 去其糟粕：完整运行时可能过重\n\n### VRSEN/agency-swarm\n\n- 链接：https://github.com/VRSEN/agency-swarm\n- 分数 / Stars：88 / 4478\n- 市场线：全球通用\n- 取其精华：主管分诊、任务图、角色协同、状态恢复和复盘机制。\n- 去其糟粕：完整运行时可能过重\n\n### Kocoro-lab/Shannon\n\n- 链接：https://github.com/Kocoro-lab/Shannon\n- 分数 / Stars：88 / 2085\n- 市场线：全球通用\n- 取其精华：主管分诊、任务图、角色协同、状态恢复和复盘机制。\n- 去其糟粕：完整运行时可能过重\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=multi-employee-quality-gate`\n- 去发布素材包：`./launch-kits.html?slug=multi-employee-quality-gate`\n- 去运营作战板：`./growth-board.html?slug=multi-employee-quality-gate`\n- 去承接漏斗：`./conversion-funnel.html?slug=multi-employee-quality-gate&teammate=chief-of-staff#leadTable`\n- 去员工页：`./teammates/chief-of-staff.html`\n\n",
       "employeeName": "阿序 · 任务调度总监",
       "employeeRole": "任务调度",
       "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
@@ -75,7 +76,7 @@ const SPEC_DATA = {
         "任务调度"
       ],
       "avgScore": 94,
-      "topStars": 6537,
+      "topStars": 6569,
       "enhanceNowCount": 3,
       "enhanceCount": 2,
       "buildNowCount": 0,
@@ -96,7 +97,7 @@ const SPEC_DATA = {
       ],
       "filename": "ai-content-humanizer-director-enhancement-brief.md",
       "siteSlug": "ai-content-humanizer-director",
-      "content": "# AI 内容人味化总监 增强简报\n\n- 员工归属：`content-cmo`\n- 现有 Skill：`ai-content-humanizer-director`\n- 当前动作：`已制作：ai-content-humanizer-director，值得重点增强`\n- 候选数量：`2`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `ai-content-humanizer-director` 做增强与再包装。\n\n当前最该服务的人群：任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：20353\n- 共同市场信号：最适合免费引流和小红书/短视频传播。\n\n## 3. 这批候选共同证明了什么\n\n### op7418/Humanizer-zh\n\n- 链接：https://github.com/op7418/Humanizer-zh\n- 分数 / Stars：100 / 12687\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### blader/humanizer\n\n- 链接：https://github.com/blader/humanizer\n- 分数 / Stars：89 / 28019\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=ai-content-humanizer-director`\n- 去发布素材包：`./launch-kits.html?slug=ai-content-humanizer-director`\n- 去运营作战板：`./growth-board.html?slug=ai-content-humanizer-director`\n- 去承接漏斗：`./conversion-funnel.html?slug=ai-content-humanizer-director&teammate=content-cmo#leadTable`\n- 去员工页：`./teammates/content-cmo.html`\n\n",
+      "content": "# AI 内容人味化总监 增强简报\n\n- 员工归属：`content-cmo`\n- 现有 Skill：`ai-content-humanizer-director`\n- 当前动作：`已制作：ai-content-humanizer-director，值得重点增强`\n- 候选数量：`2`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `ai-content-humanizer-director` 做增强与再包装。\n\n当前最该服务的人群：任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：21252\n- 共同市场信号：最适合免费引流和小红书/短视频传播。\n\n## 3. 这批候选共同证明了什么\n\n### op7418/Humanizer-zh\n\n- 链接：https://github.com/op7418/Humanizer-zh\n- 分数 / Stars：100 / 13981\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### blader/humanizer\n\n- 链接：https://github.com/blader/humanizer\n- 分数 / Stars：89 / 28524\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=ai-content-humanizer-director`\n- 去发布素材包：`./launch-kits.html?slug=ai-content-humanizer-director`\n- 去运营作战板：`./growth-board.html?slug=ai-content-humanizer-director`\n- 去承接漏斗：`./conversion-funnel.html?slug=ai-content-humanizer-director&teammate=content-cmo#leadTable`\n- 去员工页：`./teammates/content-cmo.html`\n\n",
       "employeeName": "小燃 · 内容增长主编",
       "employeeRole": "内容增长",
       "businessValue": "最适合免费引流和小红书/短视频传播。",
@@ -112,7 +113,7 @@ const SPEC_DATA = {
         "任务调度"
       ],
       "avgScore": 94,
-      "topStars": 28019,
+      "topStars": 28524,
       "enhanceNowCount": 1,
       "enhanceCount": 1,
       "buildNowCount": 0,
@@ -122,6 +123,47 @@ const SPEC_DATA = {
       "growthHref": "./growth-board.html?slug=ai-content-humanizer-director",
       "funnelHref": "./conversion-funnel.html?slug=ai-content-humanizer-director&teammate=content-cmo#leadTable",
       "teammateHref": "./teammates/content-cmo.html"
+    },
+    {
+      "title": "LinkedIn 增长套件",
+      "existingSkillSlug": "linkedin-growth-skill-pack",
+      "teammateId": "lead-gen",
+      "count": 2,
+      "marketScopes": [
+        "海外市场"
+      ],
+      "filename": "linkedin-growth-skill-pack-enhancement-brief.md",
+      "siteSlug": "linkedin-growth-skill-pack",
+      "content": "# LinkedIn 增长套件 增强简报\n\n- 员工归属：`lead-gen`\n- 现有 Skill：`linkedin-growth-skill-pack`\n- 当前动作：`已制作：linkedin-growth-skill-pack，值得重点增强`\n- 候选数量：`2`\n- 市场线：`海外市场`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `linkedin-growth-skill-pack` 做增强与再包装。\n\n当前最该服务的人群：市场调研、内容增长、海外社媒、任务调度、B2B 拓客。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：229\n- 共同市场信号：离成交最近，适合高客单定制服务。\n\n## 3. 这批候选共同证明了什么\n\n### sergebulaev/linkedin-skills\n\n- 链接：https://github.com/sergebulaev/linkedin-skills\n- 分数 / Stars：100 / 420\n- 市场线：海外市场\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### Linked-API/linkedin-skills\n\n- 链接：https://github.com/Linked-API/linkedin-skills\n- 分数 / Stars：100 / 38\n- 市场线：海外市场\n- 取其精华：内容增长、海外社媒、获客和矩阵分发场景。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=linkedin-growth-skill-pack`\n- 去发布素材包：`./launch-kits.html?slug=linkedin-growth-skill-pack`\n- 去运营作战板：`./growth-board.html?slug=linkedin-growth-skill-pack`\n- 去承接漏斗：`./conversion-funnel.html?slug=linkedin-growth-skill-pack&teammate=lead-gen#leadTable`\n- 去员工页：`./teammates/lead-gen.html`\n\n",
+      "employeeName": "Leo · 海外拓客负责人",
+      "employeeRole": "B2B 拓客",
+      "businessValue": "离成交最近，适合高客单定制服务。",
+      "sourceNames": [
+        "sergebulaev/linkedin-skills",
+        "Linked-API/linkedin-skills"
+      ],
+      "queryNames": [
+        "codex skills",
+        "linkedin automation"
+      ],
+      "roles": [
+        "市场调研",
+        "内容增长",
+        "海外社媒",
+        "任务调度",
+        "B2B 拓客"
+      ],
+      "avgScore": 100,
+      "topStars": 420,
+      "enhanceNowCount": 2,
+      "enhanceCount": 0,
+      "buildNowCount": 0,
+      "buildQueueCount": 0,
+      "radarHref": "./skill-radar.html?skill=linkedin-growth-skill-pack",
+      "launchHref": "./launch-kits.html?slug=linkedin-growth-skill-pack",
+      "growthHref": "./growth-board.html?slug=linkedin-growth-skill-pack",
+      "funnelHref": "./conversion-funnel.html?slug=linkedin-growth-skill-pack&teammate=lead-gen#leadTable",
+      "teammateHref": "./teammates/lead-gen.html"
     },
     {
       "title": "内容视觉卡片系统",
@@ -134,7 +176,7 @@ const SPEC_DATA = {
       ],
       "filename": "visual-card-content-system-enhancement-brief.md",
       "siteSlug": "visual-card-content-system",
-      "content": "# 内容视觉卡片系统 增强简报\n\n- 员工归属：`content-cmo`\n- 现有 Skill：`visual-card-content-system`\n- 当前动作：`已制作：visual-card-content-system，后续复盘/增强`\n- 候选数量：`2`\n- 市场线：`中国市场 / 全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `visual-card-content-system` 做增强与再包装。\n\n当前最该服务的人群：内容增长、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：95\n- 平均 stars：6034\n- 共同市场信号：最适合免费引流和小红书/短视频传播。\n\n## 3. 这批候选共同证明了什么\n\n### op7418/guizang-social-card-skill\n\n- 链接：https://github.com/op7418/guizang-social-card-skill\n- 分数 / Stars：95 / 4761\n- 市场线：中国市场\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### helloianneo/ian-xiaohei-illustrations\n\n- 链接：https://github.com/helloianneo/ian-xiaohei-illustrations\n- 分数 / Stars：89 / 7306\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=visual-card-content-system`\n- 去发布素材包：`./launch-kits.html?slug=visual-card-content-system`\n- 去运营作战板：`./growth-board.html?slug=visual-card-content-system`\n- 去承接漏斗：`./conversion-funnel.html?slug=visual-card-content-system&teammate=content-cmo#leadTable`\n- 去员工页：`./teammates/content-cmo.html`\n\n",
+      "content": "# 内容视觉卡片系统 增强简报\n\n- 员工归属：`content-cmo`\n- 现有 Skill：`visual-card-content-system`\n- 当前动作：`已制作：visual-card-content-system，后续复盘/增强`\n- 候选数量：`2`\n- 市场线：`中国市场 / 全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `visual-card-content-system` 做增强与再包装。\n\n当前最该服务的人群：内容增长、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：6512\n- 共同市场信号：最适合免费引流和小红书/短视频传播。\n\n## 3. 这批候选共同证明了什么\n\n### op7418/guizang-social-card-skill\n\n- 链接：https://github.com/op7418/guizang-social-card-skill\n- 分数 / Stars：100 / 5591\n- 市场线：中国市场\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### helloianneo/ian-xiaohei-illustrations\n\n- 链接：https://github.com/helloianneo/ian-xiaohei-illustrations\n- 分数 / Stars：89 / 7434\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=visual-card-content-system`\n- 去发布素材包：`./launch-kits.html?slug=visual-card-content-system`\n- 去运营作战板：`./growth-board.html?slug=visual-card-content-system`\n- 去承接漏斗：`./conversion-funnel.html?slug=visual-card-content-system&teammate=content-cmo#leadTable`\n- 去员工页：`./teammates/content-cmo.html`\n\n",
       "employeeName": "小燃 · 内容增长主编",
       "employeeRole": "内容增长",
       "businessValue": "最适合免费引流和小红书/短视频传播。",
@@ -144,14 +186,15 @@ const SPEC_DATA = {
       ],
       "queryNames": [
         "codex skills",
+        "xiaohongshu",
         "codex skills"
       ],
       "roles": [
         "内容增长",
         "任务调度"
       ],
-      "avgScore": 92,
-      "topStars": 7306,
+      "avgScore": 94,
+      "topStars": 7434,
       "enhanceNowCount": 0,
       "enhanceCount": 2,
       "buildNowCount": 0,
@@ -163,6 +206,46 @@ const SPEC_DATA = {
       "teammateHref": "./teammates/content-cmo.html"
     },
     {
+      "title": "GTM 获客工程师",
+      "existingSkillSlug": "gtm-engineer-skill-pack",
+      "teammateId": "lead-gen",
+      "count": 2,
+      "marketScopes": [
+        "全球通用",
+        "海外市场"
+      ],
+      "filename": "gtm-engineer-skill-pack-enhancement-brief.md",
+      "siteSlug": "gtm-engineer-skill-pack",
+      "content": "# GTM 获客工程师 增强简报\n\n- 员工归属：`lead-gen`\n- 现有 Skill：`gtm-engineer-skill-pack`\n- 当前动作：`已制作：gtm-engineer-skill-pack，值得重点增强`\n- 候选数量：`2`\n- 市场线：`全球通用 / 海外市场`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `gtm-engineer-skill-pack` 做增强与再包装。\n\n当前最该服务的人群：任务调度、市场调研、B2B 拓客。\n\n## 2. 为什么值得做\n\n- 最高分：97\n- 平均 stars：808\n- 共同市场信号：离成交最近，适合高客单定制服务。\n\n## 3. 这批候选共同证明了什么\n\n### onvoyage-ai/gtm-engineer-skills\n\n- 链接：https://github.com/onvoyage-ai/gtm-engineer-skills\n- 分数 / Stars：97 / 1264\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：完整运行时可能过重\n\n### kaymen99/sales-outreach-automation-langgraph\n\n- 链接：https://github.com/kaymen99/sales-outreach-automation-langgraph\n- 分数 / Stars：94 / 353\n- 市场线：海外市场\n- 取其精华：真实需求挖掘、用户原话、市场信号和机会评分。\n- 去其糟粕：许可不清，只能作为需求信号\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=gtm-engineer-skill-pack`\n- 去发布素材包：`./launch-kits.html?slug=gtm-engineer-skill-pack`\n- 去运营作战板：`./growth-board.html?slug=gtm-engineer-skill-pack`\n- 去承接漏斗：`./conversion-funnel.html?slug=gtm-engineer-skill-pack&teammate=lead-gen#leadTable`\n- 去员工页：`./teammates/lead-gen.html`\n\n",
+      "employeeName": "Leo · 海外拓客负责人",
+      "employeeRole": "B2B 拓客",
+      "businessValue": "离成交最近，适合高客单定制服务。",
+      "sourceNames": [
+        "onvoyage-ai/gtm-engineer-skills",
+        "kaymen99/sales-outreach-automation-langgraph"
+      ],
+      "queryNames": [
+        "claude code skills",
+        "outreach automation"
+      ],
+      "roles": [
+        "任务调度",
+        "市场调研",
+        "B2B 拓客"
+      ],
+      "avgScore": 96,
+      "topStars": 1264,
+      "enhanceNowCount": 1,
+      "enhanceCount": 1,
+      "buildNowCount": 0,
+      "buildQueueCount": 0,
+      "radarHref": "./skill-radar.html?skill=gtm-engineer-skill-pack",
+      "launchHref": "./launch-kits.html?slug=gtm-engineer-skill-pack",
+      "growthHref": "./growth-board.html?slug=gtm-engineer-skill-pack",
+      "funnelHref": "./conversion-funnel.html?slug=gtm-engineer-skill-pack&teammate=lead-gen#leadTable",
+      "teammateHref": "./teammates/lead-gen.html"
+    },
+    {
       "title": "图片/PDF 转可编辑 PPT 助手",
       "existingSkillSlug": "image-to-editable-ppt-assistant",
       "teammateId": "office-analyst",
@@ -172,7 +255,7 @@ const SPEC_DATA = {
       ],
       "filename": "image-to-editable-ppt-assistant-enhancement-brief.md",
       "siteSlug": "image-to-editable-ppt-assistant",
-      "content": "# 图片/PDF 转可编辑 PPT 助手 增强简报\n\n- 员工归属：`office-analyst`\n- 现有 Skill：`image-to-editable-ppt-assistant`\n- 当前动作：`已制作：image-to-editable-ppt-assistant，后续复盘/增强`\n- 候选数量：`2`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `image-to-editable-ppt-assistant` 做增强与再包装。\n\n当前最该服务的人群：办公效率、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：89\n- 平均 stars：1106\n- 共同市场信号：人群大、使用高频，适合低门槛传播。\n\n## 3. 这批候选共同证明了什么\n\n### ningzimu/image-to-editable-ppt-skill\n\n- 链接：https://github.com/ningzimu/image-to-editable-ppt-skill\n- 分数 / Stars：89 / 1210\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### crazyykhllc-bit/CyberPPT\n\n- 链接：https://github.com/crazyykhllc-bit/CyberPPT\n- 分数 / Stars：89 / 1001\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=image-to-editable-ppt-assistant`\n- 去发布素材包：`./launch-kits.html?slug=image-to-editable-ppt-assistant`\n- 去运营作战板：`./growth-board.html?slug=image-to-editable-ppt-assistant`\n- 去承接漏斗：`./conversion-funnel.html?slug=image-to-editable-ppt-assistant&teammate=office-analyst#leadTable`\n- 去员工页：`./index.html?teammate=office-analyst#teammates`\n\n",
+      "content": "# 图片/PDF 转可编辑 PPT 助手 增强简报\n\n- 员工归属：`office-analyst`\n- 现有 Skill：`image-to-editable-ppt-assistant`\n- 当前动作：`已制作：image-to-editable-ppt-assistant，后续复盘/增强`\n- 候选数量：`2`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `image-to-editable-ppt-assistant` 做增强与再包装。\n\n当前最该服务的人群：办公效率、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：89\n- 平均 stars：1166\n- 共同市场信号：人群大、使用高频，适合低门槛传播。\n\n## 3. 这批候选共同证明了什么\n\n### ningzimu/image-to-editable-ppt-skill\n\n- 链接：https://github.com/ningzimu/image-to-editable-ppt-skill\n- 分数 / Stars：89 / 1247\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n### crazyykhllc-bit/CyberPPT\n\n- 链接：https://github.com/crazyykhllc-bit/CyberPPT\n- 分数 / Stars：89 / 1084\n- 市场线：全球通用\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=image-to-editable-ppt-assistant`\n- 去发布素材包：`./launch-kits.html?slug=image-to-editable-ppt-assistant`\n- 去运营作战板：`./growth-board.html?slug=image-to-editable-ppt-assistant`\n- 去承接漏斗：`./conversion-funnel.html?slug=image-to-editable-ppt-assistant&teammate=office-analyst#leadTable`\n- 去员工页：`./index.html?teammate=office-analyst#teammates`\n\n",
       "employeeName": "简白 · 办公参谋",
       "employeeRole": "办公效率",
       "businessValue": "人群大、使用高频，适合低门槛传播。",
@@ -189,7 +272,7 @@ const SPEC_DATA = {
         "任务调度"
       ],
       "avgScore": 89,
-      "topStars": 1210,
+      "topStars": 1247,
       "enhanceNowCount": 0,
       "enhanceCount": 2,
       "buildNowCount": 0,
@@ -201,42 +284,41 @@ const SPEC_DATA = {
       "teammateHref": "./index.html?teammate=office-analyst#teammates"
     },
     {
-      "title": "LinkedIn 增长套件",
-      "existingSkillSlug": "linkedin-growth-skill-pack",
-      "teammateId": "lead-gen",
+      "title": "KrillinAI 改造 Skill",
+      "existingSkillSlug": "",
+      "teammateId": "content-cmo",
       "count": 1,
       "marketScopes": [
-        "海外市场"
+        "全球通用"
       ],
-      "filename": "linkedin-growth-skill-pack-enhancement-brief.md",
-      "siteSlug": "linkedin-growth-skill-pack",
-      "content": "# LinkedIn 增长套件 增强简报\n\n- 员工归属：`lead-gen`\n- 现有 Skill：`linkedin-growth-skill-pack`\n- 当前动作：`已制作：linkedin-growth-skill-pack，值得重点增强`\n- 候选数量：`1`\n- 市场线：`海外市场`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `linkedin-growth-skill-pack` 做增强与再包装。\n\n当前最该服务的人群：市场调研、内容增长、海外社媒、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：326\n- 共同市场信号：离成交最近，适合高客单定制服务。\n\n## 3. 这批候选共同证明了什么\n\n### sergebulaev/linkedin-skills\n\n- 链接：https://github.com/sergebulaev/linkedin-skills\n- 分数 / Stars：100 / 326\n- 市场线：海外市场\n- 取其精华：Codex Skill 的分发、触发描述、模板结构和可安装包形态。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=linkedin-growth-skill-pack`\n- 去发布素材包：`./launch-kits.html?slug=linkedin-growth-skill-pack`\n- 去运营作战板：`./growth-board.html?slug=linkedin-growth-skill-pack`\n- 去承接漏斗：`./conversion-funnel.html?slug=linkedin-growth-skill-pack&teammate=lead-gen#leadTable`\n- 去员工页：`./teammates/lead-gen.html`\n\n",
-      "employeeName": "Leo · 海外拓客负责人",
-      "employeeRole": "B2B 拓客",
-      "businessValue": "离成交最近，适合高客单定制服务。",
+      "filename": "krillinai-改造-skill-enhancement-brief.md",
+      "siteSlug": "krillinai-改造-skill",
+      "content": "# KrillinAI 改造 Skill 增强简报\n\n- 员工归属：`content-cmo`\n- 现有 Skill：`待新建`\n- 当前动作：`已立项：原创改造 Skill`\n- 候选数量：`1`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这是一条值得进入原创制作队列的新 Skill 方向。\n\n当前最该服务的人群：内容增长、海外社媒、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：10559\n- 共同市场信号：最适合免费引流和小红书/短视频传播。\n\n## 3. 这批候选共同证明了什么\n\n### krillinai/KrillinAI\n\n- 链接：https://github.com/krillinai/KrillinAI\n- 分数 / Stars：100 / 10559\n- 市场线：全球通用\n- 取其精华：内容增长、海外社媒、获客和矩阵分发场景。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=krillinai-改造-skill`\n- 去发布素材包：`./launch-kits.html?slug=`\n- 去运营作战板：`./growth-board.html?slug=`\n- 去承接漏斗：`./conversion-funnel.html?slug=&teammate=content-cmo#leadTable`\n- 去员工页：`./teammates/content-cmo.html`\n\n",
+      "employeeName": "小燃 · 内容增长主编",
+      "employeeRole": "内容增长",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
       "sourceNames": [
-        "sergebulaev/linkedin-skills"
+        "krillinai/KrillinAI"
       ],
       "queryNames": [
-        "codex skills"
+        "douyin"
       ],
       "roles": [
-        "市场调研",
         "内容增长",
         "海外社媒",
         "任务调度"
       ],
       "avgScore": 100,
-      "topStars": 326,
-      "enhanceNowCount": 1,
+      "topStars": 10559,
+      "enhanceNowCount": 0,
       "enhanceCount": 0,
       "buildNowCount": 0,
       "buildQueueCount": 0,
-      "radarHref": "./skill-radar.html?skill=linkedin-growth-skill-pack",
-      "launchHref": "./launch-kits.html?slug=linkedin-growth-skill-pack",
-      "growthHref": "./growth-board.html?slug=linkedin-growth-skill-pack",
-      "funnelHref": "./conversion-funnel.html?slug=linkedin-growth-skill-pack&teammate=lead-gen#leadTable",
-      "teammateHref": "./teammates/lead-gen.html"
+      "radarHref": "./skill-radar.html?skill=krillinai-改造-skill",
+      "launchHref": "",
+      "growthHref": "./growth-board.html",
+      "funnelHref": "",
+      "teammateHref": "./teammates/content-cmo.html"
     },
     {
       "title": "视频切片与剪辑流程总监",
@@ -248,7 +330,7 @@ const SPEC_DATA = {
       ],
       "filename": "video-cut-workflow-director-enhancement-brief.md",
       "siteSlug": "video-cut-workflow-director",
-      "content": "# 视频切片与剪辑流程总监 增强简报\n\n- 员工归属：`content-cmo`\n- 现有 Skill：`video-cut-workflow-director`\n- 当前动作：`已制作：video-cut-workflow-director，值得重点增强`\n- 候选数量：`1`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `video-cut-workflow-director` 做增强与再包装。\n\n当前最该服务的人群：任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：2577\n- 共同市场信号：最适合免费引流和小红书/短视频传播。\n\n## 3. 这批候选共同证明了什么\n\n### Agentchengfeng/chengfeng-videocut-skills\n\n- 链接：https://github.com/Agentchengfeng/chengfeng-videocut-skills\n- 分数 / Stars：100 / 2577\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=video-cut-workflow-director`\n- 去发布素材包：`./launch-kits.html?slug=video-cut-workflow-director`\n- 去运营作战板：`./growth-board.html?slug=video-cut-workflow-director`\n- 去承接漏斗：`./conversion-funnel.html?slug=video-cut-workflow-director&teammate=content-cmo#leadTable`\n- 去员工页：`./teammates/content-cmo.html`\n\n",
+      "content": "# 视频切片与剪辑流程总监 增强简报\n\n- 员工归属：`content-cmo`\n- 现有 Skill：`video-cut-workflow-director`\n- 当前动作：`已制作：video-cut-workflow-director，值得重点增强`\n- 候选数量：`1`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `video-cut-workflow-director` 做增强与再包装。\n\n当前最该服务的人群：任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：100\n- 平均 stars：2746\n- 共同市场信号：最适合免费引流和小红书/短视频传播。\n\n## 3. 这批候选共同证明了什么\n\n### Agentchengfeng/chengfeng-videocut-skills\n\n- 链接：https://github.com/Agentchengfeng/chengfeng-videocut-skills\n- 分数 / Stars：100 / 2746\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=video-cut-workflow-director`\n- 去发布素材包：`./launch-kits.html?slug=video-cut-workflow-director`\n- 去运营作战板：`./growth-board.html?slug=video-cut-workflow-director`\n- 去承接漏斗：`./conversion-funnel.html?slug=video-cut-workflow-director&teammate=content-cmo#leadTable`\n- 去员工页：`./teammates/content-cmo.html`\n\n",
       "employeeName": "小燃 · 内容增长主编",
       "employeeRole": "内容增长",
       "businessValue": "最适合免费引流和小红书/短视频传播。",
@@ -262,7 +344,7 @@ const SPEC_DATA = {
         "任务调度"
       ],
       "avgScore": 100,
-      "topStars": 2577,
+      "topStars": 2746,
       "enhanceNowCount": 1,
       "enhanceCount": 0,
       "buildNowCount": 0,
@@ -274,74 +356,41 @@ const SPEC_DATA = {
       "teammateHref": "./teammates/content-cmo.html"
     },
     {
-      "title": "GTM 获客工程师",
-      "existingSkillSlug": "gtm-engineer-skill-pack",
-      "teammateId": "lead-gen",
+      "title": "xhs_ai_publisher 改造 Skill",
+      "existingSkillSlug": "",
+      "teammateId": "china-research",
       "count": 1,
       "marketScopes": [
-        "全球通用"
+        "中国市场"
       ],
-      "filename": "gtm-engineer-skill-pack-enhancement-brief.md",
-      "siteSlug": "gtm-engineer-skill-pack",
-      "content": "# GTM 获客工程师 增强简报\n\n- 员工归属：`lead-gen`\n- 现有 Skill：`gtm-engineer-skill-pack`\n- 当前动作：`已制作：gtm-engineer-skill-pack，值得重点增强`\n- 候选数量：`1`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `gtm-engineer-skill-pack` 做增强与再包装。\n\n当前最该服务的人群：任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：97\n- 平均 stars：1253\n- 共同市场信号：离成交最近，适合高客单定制服务。\n\n## 3. 这批候选共同证明了什么\n\n### onvoyage-ai/gtm-engineer-skills\n\n- 链接：https://github.com/onvoyage-ai/gtm-engineer-skills\n- 分数 / Stars：97 / 1253\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：完整运行时可能过重\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=gtm-engineer-skill-pack`\n- 去发布素材包：`./launch-kits.html?slug=gtm-engineer-skill-pack`\n- 去运营作战板：`./growth-board.html?slug=gtm-engineer-skill-pack`\n- 去承接漏斗：`./conversion-funnel.html?slug=gtm-engineer-skill-pack&teammate=lead-gen#leadTable`\n- 去员工页：`./teammates/lead-gen.html`\n\n",
-      "employeeName": "Leo · 海外拓客负责人",
-      "employeeRole": "B2B 拓客",
-      "businessValue": "离成交最近，适合高客单定制服务。",
+      "filename": "xhs-ai-publisher-改造-skill-enhancement-brief.md",
+      "siteSlug": "xhs-ai-publisher-改造-skill",
+      "content": "# xhs_ai_publisher 改造 Skill 增强简报\n\n- 员工归属：`china-research`\n- 现有 Skill：`待新建`\n- 当前动作：`已立项：原创改造 Skill`\n- 候选数量：`1`\n- 市场线：`中国市场`\n\n## 1. 定位\n\n这是一条值得进入原创制作队列的新 Skill 方向。\n\n当前最该服务的人群：市场调研、内容增长、任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：97\n- 平均 stars：2039\n- 共同市场信号：更适合中文平台、内容引流、私域承接和本地场景验证。\n\n## 3. 这批候选共同证明了什么\n\n### BetaStreetOmnis/xhs_ai_publisher\n\n- 链接：https://github.com/BetaStreetOmnis/xhs_ai_publisher\n- 分数 / Stars：97 / 2039\n- 市场线：中国市场\n- 取其精华：可复用工作流、模板或业务 SOP。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=xhs-ai-publisher-改造-skill`\n- 去发布素材包：`./launch-kits.html?slug=`\n- 去运营作战板：`./growth-board.html?slug=`\n- 去承接漏斗：`./conversion-funnel.html?slug=&teammate=china-research#leadTable`\n- 去员工页：`./teammates/china-research.html`\n\n",
+      "employeeName": "林夏 · 中国市场调研总监",
+      "employeeRole": "中国市场调研",
+      "businessValue": "更适合中文平台、内容引流、私域承接和本地场景验证。",
       "sourceNames": [
-        "onvoyage-ai/gtm-engineer-skills"
+        "BetaStreetOmnis/xhs_ai_publisher"
       ],
       "queryNames": [
-        "claude code skills"
+        "xiaohongshu"
       ],
       "roles": [
+        "市场调研",
+        "内容增长",
         "任务调度"
       ],
       "avgScore": 97,
-      "topStars": 1253,
-      "enhanceNowCount": 1,
+      "topStars": 2039,
+      "enhanceNowCount": 0,
       "enhanceCount": 0,
       "buildNowCount": 0,
       "buildQueueCount": 0,
-      "radarHref": "./skill-radar.html?skill=gtm-engineer-skill-pack",
-      "launchHref": "./launch-kits.html?slug=gtm-engineer-skill-pack",
-      "growthHref": "./growth-board.html?slug=gtm-engineer-skill-pack",
-      "funnelHref": "./conversion-funnel.html?slug=gtm-engineer-skill-pack&teammate=lead-gen#leadTable",
-      "teammateHref": "./teammates/lead-gen.html"
-    },
-    {
-      "title": "浏览器自动化测试适配器",
-      "existingSkillSlug": "browser-automation-skill-adapter",
-      "teammateId": "chief-of-staff",
-      "count": 1,
-      "marketScopes": [
-        "全球通用"
-      ],
-      "filename": "browser-automation-skill-adapter-enhancement-brief.md",
-      "siteSlug": "browser-automation-skill-adapter",
-      "content": "# 浏览器自动化测试适配器 增强简报\n\n- 员工归属：`chief-of-staff`\n- 现有 Skill：`browser-automation-skill-adapter`\n- 当前动作：`已制作：browser-automation-skill-adapter，值得重点增强`\n- 候选数量：`1`\n- 市场线：`全球通用`\n\n## 1. 定位\n\n这不是新建一个同质 Skill，而是针对现有 `browser-automation-skill-adapter` 做增强与再包装。\n\n当前最该服务的人群：任务调度。\n\n## 2. 为什么值得做\n\n- 最高分：93\n- 平均 stars：2880\n- 共同市场信号：提高整套员工能力库的调用效率，适合做总入口。\n\n## 3. 这批候选共同证明了什么\n\n### lackeyjb/playwright-skill\n\n- 链接：https://github.com/lackeyjb/playwright-skill\n- 分数 / Stars：93 / 2880\n- 市场线：全球通用\n- 取其精华：命令、角色、模式和方法论配置，可转成 Codex Skill。\n- 去其糟粕：暂无明显糟粕，仍需人工复核。\n\n## 4. 建议增强方向\n\n1. 强化前台定位：把当前 Skill 的传播名、适用岗位和结果承诺讲得更清楚。\n2. 强化输入模板：补一个更容易让普通用户上手的输入清单或案例。\n3. 强化输出对比：给出前后对比、适用场景和推荐下一步。\n4. 强化员工协作：明确应该和哪位同事联动，形成组合包。\n5. 强化承接路径：补上 launch kit、growth board、funnel 的对应落点。\n\n## 5. 立刻可执行的动作\n\n- 回到雷达机会组：`./skill-radar.html?skill=browser-automation-skill-adapter`\n- 去发布素材包：`./launch-kits.html?slug=browser-automation-skill-adapter`\n- 去运营作战板：`./growth-board.html?slug=browser-automation-skill-adapter`\n- 去承接漏斗：`./conversion-funnel.html?slug=browser-automation-skill-adapter&teammate=chief-of-staff#leadTable`\n- 去员工页：`./teammates/chief-of-staff.html`\n\n",
-      "employeeName": "阿序 · 任务调度总监",
-      "employeeRole": "任务调度",
-      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "sourceNames": [
-        "lackeyjb/playwright-skill"
-      ],
-      "queryNames": [
-        "claude code skills"
-      ],
-      "roles": [
-        "任务调度"
-      ],
-      "avgScore": 93,
-      "topStars": 2880,
-      "enhanceNowCount": 1,
-      "enhanceCount": 0,
-      "buildNowCount": 0,
-      "buildQueueCount": 0,
-      "radarHref": "./skill-radar.html?skill=browser-automation-skill-adapter",
-      "launchHref": "./launch-kits.html?slug=browser-automation-skill-adapter",
-      "growthHref": "./growth-board.html?slug=browser-automation-skill-adapter",
-      "funnelHref": "./conversion-funnel.html?slug=browser-automation-skill-adapter&teammate=chief-of-staff#leadTable",
-      "teammateHref": "./teammates/chief-of-staff.html"
+      "radarHref": "./skill-radar.html?skill=xhs-ai-publisher-改造-skill",
+      "launchHref": "",
+      "growthHref": "./growth-board.html",
+      "funnelHref": "",
+      "teammateHref": "./teammates/china-research.html"
     }
   ],
   "specIndexMd": "../docs/daily-skill-radar/spec-index.md"

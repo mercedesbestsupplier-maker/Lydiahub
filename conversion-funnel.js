@@ -108,7 +108,7 @@ const FUNNEL_DATA = {
       "hook": "别一上来投广告，先用 30 天 GTM 实验验证谁真的会买。",
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。",
       "download": "../dist/skills/gtm-engineer-skill-pack.zip",
-      "evidence": "已打包 zip；雷达命中 1 次；业务价值：销售成交",
+      "evidence": "已打包 zip；雷达命中 2 次；业务价值：销售成交",
       "market_tags": [
         "overseas"
       ],
@@ -141,7 +141,7 @@ const FUNNEL_DATA = {
       "hook": "B2B 获客不是群发私信，而是主页、内容、评论和暖私信一起跑。",
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。",
       "download": "../dist/skills/linkedin-growth-skill-pack.zip",
-      "evidence": "已打包 zip；雷达命中 1 次；业务价值：销售成交",
+      "evidence": "已打包 zip；雷达命中 2 次；业务价值：销售成交",
       "market_tags": [
         "overseas"
       ],
@@ -241,7 +241,7 @@ const FUNNEL_DATA = {
       "hook": "每天自动找高星 Skill，不靠灵感，靠市场已经投票过的需求。",
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。",
       "download": "../dist/skills/skill-market-curator.zip",
-      "evidence": "已打包 zip；雷达命中 17 次；业务价值：产品增长",
+      "evidence": "已打包 zip；雷达命中 21 次；业务价值：产品增长",
       "market_tags": [
         "overseas",
         "universal"

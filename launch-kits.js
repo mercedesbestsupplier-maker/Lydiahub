@@ -13,8 +13,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "content"
     ],
-    "day": "2026-07-09",
-    "weekday": "周四",
+    "day": "2026-07-28",
+    "weekday": "周二",
     "format": "痛点清单",
     "keyword": "模板",
     "titles": [
@@ -62,8 +62,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-10",
-    "weekday": "周五",
+    "day": "2026-07-29",
+    "weekday": "周三",
     "format": "前后对比",
     "keyword": "GTM",
     "titles": [
@@ -111,8 +111,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-11",
-    "weekday": "周六",
+    "day": "2026-07-30",
+    "weekday": "周四",
     "format": "现场演示",
     "keyword": "LinkedIn",
     "titles": [
@@ -161,8 +161,8 @@ const LAUNCH_KITS = [
       "content",
       "close"
     ],
-    "day": "2026-07-12",
-    "weekday": "周日",
+    "day": "2026-07-31",
+    "weekday": "周五",
     "format": "模板领取",
     "keyword": "模板",
     "titles": [
@@ -210,8 +210,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-07-13",
-    "weekday": "周一",
+    "day": "2026-08-01",
+    "weekday": "周六",
     "format": "案例拆解",
     "keyword": "办公",
     "titles": [
@@ -260,8 +260,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-07-14",
-    "weekday": "周二",
+    "day": "2026-08-02",
+    "weekday": "周日",
     "format": "避坑提醒",
     "keyword": "Skill",
     "titles": [
@@ -309,8 +309,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "content"
     ],
-    "day": "2026-07-15",
-    "weekday": "周三",
+    "day": "2026-08-03",
+    "weekday": "周一",
     "format": "合集打包",
     "keyword": "模板",
     "titles": [
@@ -359,8 +359,8 @@ const LAUNCH_KITS = [
       "content",
       "close"
     ],
-    "day": "2026-07-16",
-    "weekday": "周四",
+    "day": "2026-08-04",
+    "weekday": "周二",
     "format": "痛点清单",
     "keyword": "LinkedIn",
     "titles": [
@@ -409,8 +409,8 @@ const LAUNCH_KITS = [
       "content",
       "close"
     ],
-    "day": "2026-07-17",
-    "weekday": "周五",
+    "day": "2026-08-05",
+    "weekday": "周三",
     "format": "前后对比",
     "keyword": "跨境",
     "titles": [
@@ -459,8 +459,8 @@ const LAUNCH_KITS = [
       "content",
       "close"
     ],
-    "day": "2026-07-18",
-    "weekday": "周六",
+    "day": "2026-08-06",
+    "weekday": "周四",
     "format": "现场演示",
     "keyword": "跨境",
     "titles": [
@@ -508,8 +508,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-07-19",
-    "weekday": "周日",
+    "day": "2026-08-07",
+    "weekday": "周五",
     "format": "模板领取",
     "keyword": "办公",
     "titles": [
@@ -557,8 +557,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-07-20",
-    "weekday": "周一",
+    "day": "2026-08-08",
+    "weekday": "周六",
     "format": "案例拆解",
     "keyword": "办公",
     "titles": [
@@ -606,8 +606,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-21",
-    "weekday": "周二",
+    "day": "2026-08-09",
+    "weekday": "周日",
     "format": "避坑提醒",
     "keyword": "话术",
     "titles": [
@@ -655,8 +655,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-22",
-    "weekday": "周三",
+    "day": "2026-08-10",
+    "weekday": "周一",
     "format": "合集打包",
     "keyword": "话术",
     "titles": [
@@ -704,8 +704,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-23",
-    "weekday": "周四",
+    "day": "2026-08-11",
+    "weekday": "周二",
     "format": "痛点清单",
     "keyword": "话术",
     "titles": [
@@ -755,8 +755,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-24",
-    "weekday": "周五",
+    "day": "2026-08-12",
+    "weekday": "周三",
     "format": "前后对比",
     "keyword": "话术",
     "titles": [
@@ -804,8 +804,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-25",
-    "weekday": "周六",
+    "day": "2026-08-13",
+    "weekday": "周四",
     "format": "现场演示",
     "keyword": "Skill",
     "titles": [
@@ -853,8 +853,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-26",
-    "weekday": "周日",
+    "day": "2026-08-14",
+    "weekday": "周五",
     "format": "模板领取",
     "keyword": "Skill",
     "titles": [
@@ -902,8 +902,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-27",
-    "weekday": "周一",
+    "day": "2026-08-15",
+    "weekday": "周六",
     "format": "案例拆解",
     "keyword": "Skill",
     "titles": [
@@ -952,8 +952,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "close"
     ],
-    "day": "2026-07-28",
-    "weekday": "周二",
+    "day": "2026-08-16",
+    "weekday": "周日",
     "format": "避坑提醒",
     "keyword": "Skill",
     "titles": [
@@ -1002,8 +1002,8 @@ const LAUNCH_KITS = [
       "content",
       "close"
     ],
-    "day": "2026-07-29",
-    "weekday": "周三",
+    "day": "2026-08-17",
+    "weekday": "周一",
     "format": "合集打包",
     "keyword": "模板",
     "titles": [
@@ -1051,8 +1051,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "content"
     ],
-    "day": "2026-07-30",
-    "weekday": "周四",
+    "day": "2026-08-18",
+    "weekday": "周二",
     "format": "痛点清单",
     "keyword": "模板",
     "titles": [
@@ -1100,8 +1100,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "content"
     ],
-    "day": "2026-07-31",
-    "weekday": "周五",
+    "day": "2026-08-19",
+    "weekday": "周三",
     "format": "前后对比",
     "keyword": "Skill",
     "titles": [
@@ -1149,8 +1149,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "content"
     ],
-    "day": "2026-08-01",
-    "weekday": "周六",
+    "day": "2026-08-20",
+    "weekday": "周四",
     "format": "现场演示",
     "keyword": "模板",
     "titles": [
@@ -1198,8 +1198,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "content"
     ],
-    "day": "2026-08-02",
-    "weekday": "周日",
+    "day": "2026-08-21",
+    "weekday": "周五",
     "format": "模板领取",
     "keyword": "模板",
     "titles": [
@@ -1247,8 +1247,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-03",
-    "weekday": "周一",
+    "day": "2026-08-22",
+    "weekday": "周六",
     "format": "案例拆解",
     "keyword": "Skill",
     "titles": [
@@ -1296,8 +1296,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-04",
-    "weekday": "周二",
+    "day": "2026-08-23",
+    "weekday": "周日",
     "format": "避坑提醒",
     "keyword": "Skill",
     "titles": [
@@ -1348,8 +1348,8 @@ const LAUNCH_KITS = [
       "content",
       "close"
     ],
-    "day": "2026-08-05",
-    "weekday": "周三",
+    "day": "2026-08-24",
+    "weekday": "周一",
     "format": "合集打包",
     "keyword": "Skill",
     "titles": [
@@ -1398,8 +1398,8 @@ const LAUNCH_KITS = [
       "content",
       "close"
     ],
-    "day": "2026-08-06",
-    "weekday": "周四",
+    "day": "2026-08-25",
+    "weekday": "周二",
     "format": "痛点清单",
     "keyword": "Skill",
     "titles": [
@@ -1448,8 +1448,8 @@ const LAUNCH_KITS = [
       "content",
       "close"
     ],
-    "day": "2026-08-07",
-    "weekday": "周五",
+    "day": "2026-08-26",
+    "weekday": "周三",
     "format": "前后对比",
     "keyword": "Skill",
     "titles": [
@@ -1498,8 +1498,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-08",
-    "weekday": "周六",
+    "day": "2026-08-27",
+    "weekday": "周四",
     "format": "现场演示",
     "keyword": "Skill",
     "titles": [
@@ -1547,8 +1547,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-09",
-    "weekday": "周日",
+    "day": "2026-08-28",
+    "weekday": "周五",
     "format": "模板领取",
     "keyword": "办公",
     "titles": [
@@ -1597,8 +1597,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-10",
-    "weekday": "周一",
+    "day": "2026-08-29",
+    "weekday": "周六",
     "format": "案例拆解",
     "keyword": "Skill",
     "titles": [
@@ -1647,8 +1647,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-11",
-    "weekday": "周二",
+    "day": "2026-08-30",
+    "weekday": "周日",
     "format": "避坑提醒",
     "keyword": "Skill",
     "titles": [
@@ -1696,8 +1696,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-12",
-    "weekday": "周三",
+    "day": "2026-08-31",
+    "weekday": "周一",
     "format": "合集打包",
     "keyword": "Skill",
     "titles": [
@@ -1746,8 +1746,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-13",
-    "weekday": "周四",
+    "day": "2026-09-01",
+    "weekday": "周二",
     "format": "痛点清单",
     "keyword": "Skill",
     "titles": [
@@ -1795,8 +1795,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-14",
-    "weekday": "周五",
+    "day": "2026-09-02",
+    "weekday": "周三",
     "format": "前后对比",
     "keyword": "Skill",
     "titles": [
@@ -1844,8 +1844,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-15",
-    "weekday": "周六",
+    "day": "2026-09-03",
+    "weekday": "周四",
     "format": "现场演示",
     "keyword": "Skill",
     "titles": [
@@ -1893,8 +1893,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-16",
-    "weekday": "周日",
+    "day": "2026-09-04",
+    "weekday": "周五",
     "format": "模板领取",
     "keyword": "Skill",
     "titles": [
@@ -1942,8 +1942,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-17",
-    "weekday": "周一",
+    "day": "2026-09-05",
+    "weekday": "周六",
     "format": "案例拆解",
     "keyword": "Skill",
     "titles": [
@@ -1992,8 +1992,8 @@ const LAUNCH_KITS = [
       "content",
       "mvp"
     ],
-    "day": "2026-08-18",
-    "weekday": "周二",
+    "day": "2026-09-06",
+    "weekday": "周日",
     "format": "避坑提醒",
     "keyword": "Skill",
     "titles": [
@@ -2041,8 +2041,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-19",
-    "weekday": "周三",
+    "day": "2026-09-07",
+    "weekday": "周一",
     "format": "合集打包",
     "keyword": "Skill",
     "titles": [
@@ -2090,8 +2090,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-20",
-    "weekday": "周四",
+    "day": "2026-09-08",
+    "weekday": "周二",
     "format": "痛点清单",
     "keyword": "Skill",
     "titles": [
@@ -2140,8 +2140,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-21",
-    "weekday": "周五",
+    "day": "2026-09-09",
+    "weekday": "周三",
     "format": "前后对比",
     "keyword": "Skill",
     "titles": [
@@ -2189,8 +2189,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-22",
-    "weekday": "周六",
+    "day": "2026-09-10",
+    "weekday": "周四",
     "format": "现场演示",
     "keyword": "Skill",
     "titles": [
@@ -2238,8 +2238,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-23",
-    "weekday": "周日",
+    "day": "2026-09-11",
+    "weekday": "周五",
     "format": "模板领取",
     "keyword": "Skill",
     "titles": [
@@ -2287,8 +2287,8 @@ const LAUNCH_KITS = [
     "flowTags": [
       "mvp"
     ],
-    "day": "2026-08-24",
-    "weekday": "周一",
+    "day": "2026-09-12",
+    "weekday": "周六",
     "format": "案例拆解",
     "keyword": "Skill",
     "titles": [

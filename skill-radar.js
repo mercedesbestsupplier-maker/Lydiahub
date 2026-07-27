@@ -1,24 +1,24 @@
 const RADAR_DATA = {
   "summary": {
-    "date": "2026-07-08",
-    "generatedAt": "2026-07-08 21:43:34 CST",
-    "queryCount": 15,
-    "candidateCount": 97,
-    "keptCount": 59,
-    "priorityCount": 33,
+    "date": "2026-07-27",
+    "generatedAt": "2026-07-27 17:31:06 CST",
+    "queryCount": 36,
+    "candidateCount": 220,
+    "keptCount": 107,
+    "priorityCount": 43,
     "marketCounts": {
-      "中国市场": 1,
-      "海外市场": 1,
-      "全球通用": 57
+      "中国市场": 28,
+      "海外市场": 12,
+      "全球通用": 67
     },
     "topCandidates": [
       {
         "name": "alirezarezvani/claude-skills",
         "url": "https://github.com/alirezarezvani/claude-skills",
         "description": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
-        "stars": 21607,
+        "stars": 23262,
         "license": "mit",
-        "updatedAt": "2026-07-08T13:42:44Z",
+        "updatedAt": "2026-07-27T08:51:50Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -34,12 +34,12 @@ const RADAR_DATA = {
         ]
       },
       {
-        "name": "ComposioHQ/awesome-codex-skills",
-        "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+        "name": "composio-community/awesome-codex-skills",
+        "url": "https://github.com/composio-community/awesome-codex-skills",
         "description": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API.",
-        "stars": 14714,
+        "stars": 15331,
         "license": "unknown",
-        "updatedAt": "2026-07-08T13:35:10Z",
+        "updatedAt": "2026-07-27T09:14:34Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -57,9 +57,9 @@ const RADAR_DATA = {
         "name": "op7418/Humanizer-zh",
         "url": "https://github.com/op7418/Humanizer-zh",
         "description": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
-        "stars": 12687,
+        "stars": 13981,
         "license": "mit",
-        "updatedAt": "2026-07-08T13:41:06Z",
+        "updatedAt": "2026-07-27T09:06:41Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -74,12 +74,55 @@ const RADAR_DATA = {
         ]
       },
       {
+        "name": "krillinai/KrillinAI",
+        "url": "https://github.com/krillinai/KrillinAI",
+        "description": "AI video translation & dubbing tool for humans and AI Agents, powered by LLMs. Full pipeline: download, transcribe, translate, TTS dub, reformat, cover generation. 100+ languages, optimized for YouTube, TikTok, Bilibili, Douyin, and more.AI视频翻译配音工具，面向人类与AI Agent，100+语言全链路，CLI分阶段调用，适配抖音、小红书、哔哩哔哩、视频号、TikTok、YouTube",
+        "stars": 10559,
+        "license": "gpl-3.0",
+        "updatedAt": "2026-07-27T08:17:22Z",
+        "score": 100,
+        "starsLabel": "★★★★★",
+        "roles": [
+          "内容增长",
+          "海外社媒",
+          "任务调度"
+        ],
+        "marketScope": "全球通用",
+        "essence": "内容增长、海外社媒、获客和矩阵分发场景。",
+        "dross": "暂无明显糟粕，仍需人工复核。",
+        "canAdapt": "适合进入待制作队列",
+        "queries": [
+          "douyin"
+        ]
+      },
+      {
+        "name": "nexu-io/html-anything",
+        "url": "https://github.com/nexu-io/html-anything",
+        "description": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider.",
+        "stars": 7972,
+        "license": "apache-2.0",
+        "updatedAt": "2026-07-27T08:51:52Z",
+        "score": 100,
+        "starsLabel": "★★★★★",
+        "roles": [
+          "市场调研",
+          "任务调度"
+        ],
+        "marketScope": "中国市场",
+        "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+        "dross": "暂无明显糟粕，仍需人工复核。",
+        "canAdapt": "可优先改造成 Codex Skill",
+        "queries": [
+          "xiaohongshu"
+        ]
+      },
+      {
         "name": "trailofbits/skills",
         "url": "https://github.com/trailofbits/skills",
         "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows",
-        "stars": 6025,
+        "stars": 6282,
         "license": "cc-by-sa-4.0",
-        "updatedAt": "2026-07-08T10:54:10Z",
+        "updatedAt": "2026-07-27T07:39:46Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -95,12 +138,34 @@ const RADAR_DATA = {
         ]
       },
       {
+        "name": "op7418/guizang-social-card-skill",
+        "url": "https://github.com/op7418/guizang-social-card-skill",
+        "description": "🪧 Claude Code / Codex skill — generate Xiaohongshu carousels & WeChat 21:9+1:1 cover pairs. Editorial × Swiss visual systems, 28 layouts, 10 themes, single-file HTML → PNG. 小红书图文 + 公众号封面对",
+        "stars": 5591,
+        "license": "agpl-3.0",
+        "updatedAt": "2026-07-27T08:39:35Z",
+        "score": 100,
+        "starsLabel": "★★★★★",
+        "roles": [
+          "内容增长",
+          "任务调度"
+        ],
+        "marketScope": "中国市场",
+        "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+        "dross": "暂无明显糟粕，仍需人工复核。",
+        "canAdapt": "适合进入待制作队列",
+        "queries": [
+          "codex skills",
+          "xiaohongshu"
+        ]
+      },
+      {
         "name": "Dimillian/Skills",
         "url": "https://github.com/Dimillian/Skills",
         "description": "My Codex Skills",
-        "stars": 3803,
+        "stars": 3860,
         "license": "mit",
-        "updatedAt": "2026-07-07T22:50:16Z",
+        "updatedAt": "2026-07-27T03:34:28Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -115,12 +180,33 @@ const RADAR_DATA = {
         ]
       },
       {
+        "name": "white0dew/XiaohongshuSkills",
+        "url": "https://github.com/white0dew/XiaohongshuSkills",
+        "description": "支持小红书自动发布、自动评论、自动检索的 Skill。支持 OpenClaw、Codex、CC 等",
+        "stars": 3235,
+        "license": "mit",
+        "updatedAt": "2026-07-27T09:16:33Z",
+        "score": 100,
+        "starsLabel": "★★★★★",
+        "roles": [
+          "内容增长",
+          "任务调度"
+        ],
+        "marketScope": "中国市场",
+        "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+        "dross": "暂无明显糟粕，仍需人工复核。",
+        "canAdapt": "可优先改造成 Codex Skill",
+        "queries": [
+          "xiaohongshu"
+        ]
+      },
+      {
         "name": "Agentchengfeng/chengfeng-videocut-skills",
         "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
         "description": "用 Claude Code Skills 做的视频剪辑 Agent",
-        "stars": 2577,
+        "stars": 2746,
         "license": "apache-2.0",
-        "updatedAt": "2026-07-08T10:46:32Z",
+        "updatedAt": "2026-07-26T18:22:16Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -138,9 +224,9 @@ const RADAR_DATA = {
         "name": "tradermonty/claude-trading-skills",
         "url": "https://github.com/tradermonty/claude-trading-skills",
         "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-        "stars": 2303,
+        "stars": 2509,
         "license": "mit",
-        "updatedAt": "2026-07-08T13:31:15Z",
+        "updatedAt": "2026-07-27T08:27:37Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -159,9 +245,9 @@ const RADAR_DATA = {
         "name": "skills-directory/skill-codex",
         "url": "https://github.com/skills-directory/skill-codex",
         "description": "A claude code skill to delegate prompts to codex",
-        "stars": 1351,
+        "stars": 1392,
         "license": "mit",
-        "updatedAt": "2026-07-08T10:01:06Z",
+        "updatedAt": "2026-07-27T06:38:19Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -179,9 +265,9 @@ const RADAR_DATA = {
         "name": "Dimillian/CodexSkillManager",
         "url": "https://github.com/Dimillian/CodexSkillManager",
         "description": "macOS app to manage your Codex skills",
-        "stars": 1345,
+        "stars": 1357,
         "license": "mit",
-        "updatedAt": "2026-07-08T13:03:05Z",
+        "updatedAt": "2026-07-26T15:11:05Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -199,9 +285,9 @@ const RADAR_DATA = {
         "name": "daymade/claude-code-skills",
         "url": "https://github.com/daymade/claude-code-skills",
         "description": "Professional Claude Code skills marketplace featuring production-ready skills for enhanced development workflows.",
-        "stars": 1254,
+        "stars": 1299,
         "license": "mit",
-        "updatedAt": "2026-07-08T13:11:08Z",
+        "updatedAt": "2026-07-27T08:35:03Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -220,9 +306,9 @@ const RADAR_DATA = {
         "name": "brycewang-stanford/Awesome-Journal-Skills",
         "url": "https://github.com/brycewang-stanford/Awesome-Journal-Skills",
         "description": "Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Claude Code/Codex 期刊技能包，从选题、识别策略到表格规范与审稿回复全流程，助你快速发论文。",
-        "stars": 720,
+        "stars": 872,
         "license": "mit",
-        "updatedAt": "2026-07-08T11:39:17Z",
+        "updatedAt": "2026-07-27T06:18:13Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -240,9 +326,9 @@ const RADAR_DATA = {
         "name": "dsifry/metaswarm",
         "url": "https://github.com/dsifry/metaswarm",
         "description": "A self-improving multi-agent orchestration framework for Claude Code, Gemini CLI, and Codex CLI — 18 agents, 13 skills, 15 commands, TDD enforcement, quality gates, spec-driven development",
-        "stars": 343,
+        "stars": 366,
         "license": "mit",
-        "updatedAt": "2026-07-08T03:14:16Z",
+        "updatedAt": "2026-07-27T08:50:24Z",
         "score": 100,
         "starsLabel": "★★★★★",
         "roles": [
@@ -254,29 +340,6 @@ const RADAR_DATA = {
         "canAdapt": "可优先改造成 Codex Skill",
         "queries": [
           "multi agent orchestration framework"
-        ]
-      },
-      {
-        "name": "sergebulaev/linkedin-skills",
-        "url": "https://github.com/sergebulaev/linkedin-skills",
-        "description": "Claude Code and Codex skills for LinkedIn growth: write human-sounding posts, craft comments that get noticed, analyze your feed, and build a publishing cadence, all from your terminal. Plug-and-play skills for content creators, founders, and marketers.",
-        "stars": 326,
-        "license": "mit",
-        "updatedAt": "2026-07-08T13:36:12Z",
-        "score": 100,
-        "starsLabel": "★★★★★",
-        "roles": [
-          "市场调研",
-          "内容增长",
-          "海外社媒",
-          "任务调度"
-        ],
-        "marketScope": "海外市场",
-        "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-        "dross": "暂无明显糟粕，仍需人工复核。",
-        "canAdapt": "可优先改造成 Codex Skill",
-        "queries": [
-          "codex skills"
         ]
       },
       {
@@ -300,12 +363,35 @@ const RADAR_DATA = {
         ]
       },
       {
+        "name": "Linked-API/linkedin-skills",
+        "url": "https://github.com/Linked-API/linkedin-skills",
+        "description": "LinkedIn automation skills for AI agents – sales, social selling, data extraction, and more.",
+        "stars": 38,
+        "license": "mit",
+        "updatedAt": "2026-07-27T06:51:28Z",
+        "score": 100,
+        "starsLabel": "★★★★★",
+        "roles": [
+          "内容增长",
+          "海外社媒",
+          "B2B 拓客",
+          "任务调度"
+        ],
+        "marketScope": "海外市场",
+        "essence": "内容增长、海外社媒、获客和矩阵分发场景。",
+        "dross": "暂无明显糟粕，仍需人工复核。",
+        "canAdapt": "可优先改造成 Codex Skill",
+        "queries": [
+          "linkedin automation"
+        ]
+      },
+      {
         "name": "yctimlin/mcp_excalidraw",
         "url": "https://github.com/yctimlin/mcp_excalidraw",
         "description": "MCP server and Claude Code skill for Excalidraw — programmatic canvas toolkit to create, edit, and export diagrams via AI agents with real-time canvas sync.",
-        "stars": 2141,
+        "stars": 2214,
         "license": "mit",
-        "updatedAt": "2026-07-08T08:03:36Z",
+        "updatedAt": "2026-07-26T23:25:34Z",
         "score": 99,
         "starsLabel": "★★★★★",
         "roles": [
@@ -323,9 +409,9 @@ const RADAR_DATA = {
         "name": "glitternetwork/pinme",
         "url": "https://github.com/glitternetwork/pinme",
         "description": "Deploy Your Frontend in a Single Command. Claude Code Skills supported.",
-        "stars": 3701,
+        "stars": 3724,
         "license": "mit",
-        "updatedAt": "2026-07-08T12:35:37Z",
+        "updatedAt": "2026-07-27T07:12:56Z",
         "score": 97,
         "starsLabel": "★★★★★",
         "roles": [
@@ -335,87 +421,6 @@ const RADAR_DATA = {
         "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
         "dross": "暂无明显糟粕，仍需人工复核。",
         "canAdapt": "可优先改造成 Codex Skill",
-        "queries": [
-          "claude code skills"
-        ]
-      },
-      {
-        "name": "nowork-studio/NotFair",
-        "url": "https://github.com/nowork-studio/NotFair",
-        "description": "Open-source Claude Code skills for SEO, GEO, Google Ads, Meta Ads",
-        "stars": 3091,
-        "license": "mit",
-        "updatedAt": "2026-07-08T10:55:29Z",
-        "score": 97,
-        "starsLabel": "★★★★★",
-        "roles": [
-          "任务调度"
-        ],
-        "marketScope": "全球通用",
-        "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
-        "dross": "暂无明显糟粕，仍需人工复核。",
-        "canAdapt": "可优先改造成 Codex Skill",
-        "queries": [
-          "claude code skills"
-        ]
-      },
-      {
-        "name": "open-multi-agent/open-multi-agent",
-        "url": "https://github.com/open-multi-agent/open-multi-agent",
-        "description": "TypeScript multi-agent orchestration framework. Describe a goal, a coordinator decomposes it into a task DAG that runs on any LLM: Claude, ChatGPT, Gemini, DeepSeek, or local models. ",
-        "stars": 6537,
-        "license": "mit",
-        "updatedAt": "2026-07-08T12:24:39Z",
-        "score": 96,
-        "starsLabel": "★★★★★",
-        "roles": [
-          "任务调度"
-        ],
-        "marketScope": "全球通用",
-        "essence": "主管分诊、任务图、角色协同、状态恢复和复盘机制。",
-        "dross": "完整运行时可能过重",
-        "canAdapt": "可优先改造成 Codex Skill",
-        "queries": [
-          "multi agent orchestration framework"
-        ]
-      },
-      {
-        "name": "op7418/guizang-social-card-skill",
-        "url": "https://github.com/op7418/guizang-social-card-skill",
-        "description": "🪧 Claude Code / Codex skill — generate Xiaohongshu carousels & WeChat 21:9+1:1 cover pairs. Editorial × Swiss visual systems, 28 layouts, 10 themes, single-file HTML → PNG. 小红书图文 + 公众号封面对",
-        "stars": 4761,
-        "license": "agpl-3.0",
-        "updatedAt": "2026-07-08T13:05:23Z",
-        "score": 95,
-        "starsLabel": "★★★★★",
-        "roles": [
-          "内容增长",
-          "任务调度"
-        ],
-        "marketScope": "中国市场",
-        "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-        "dross": "暂无明显糟粕，仍需人工复核。",
-        "canAdapt": "适合进入待制作队列",
-        "queries": [
-          "codex skills"
-        ]
-      },
-      {
-        "name": "taishi-i/awesome-ChatGPT-repositories",
-        "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
-        "description": "A curated list of open source GitHub repositories related to ChatGPT, the OpenAI API, and Codex. Searchable via Claude Code skills.",
-        "stars": 3124,
-        "license": "cc0-1.0",
-        "updatedAt": "2026-07-08T12:31:24Z",
-        "score": 95,
-        "starsLabel": "★★★★★",
-        "roles": [
-          "任务调度"
-        ],
-        "marketScope": "全球通用",
-        "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-        "dross": "暂无明显糟粕，仍需人工复核。",
-        "canAdapt": "适合进入待制作队列",
         "queries": [
           "claude code skills"
         ]
@@ -424,10 +429,10 @@ const RADAR_DATA = {
   },
   "backlog": [
     {
-      "date": "2026-07-08",
+      "date": "2026-07-27",
       "name": "alirezarezvani/claude-skills",
       "url": "https://github.com/alirezarezvani/claude-skills",
-      "stars": 21607,
+      "stars": 23262,
       "license": "mit",
       "score": 100,
       "starsLabel": "★★★★★",
@@ -457,10 +462,10 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "ComposioHQ/awesome-codex-skills",
-      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
-      "stars": 14714,
+      "date": "2026-07-27",
+      "name": "composio-community/awesome-codex-skills",
+      "url": "https://github.com/composio-community/awesome-codex-skills",
+      "stars": 15331,
       "license": "unknown",
       "score": 100,
       "starsLabel": "★★★★★",
@@ -489,57 +494,24 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "op7418/Humanizer-zh",
-      "url": "https://github.com/op7418/Humanizer-zh",
-      "stars": 12687,
-      "license": "mit",
+      "date": "2026-07-15",
+      "name": "ComposioHQ/awesome-codex-skills",
+      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "stars": 14961,
+      "license": "unknown",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
       ],
       "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "claude code skills"
-      ],
-      "priorityRank": 3,
-      "proposedSkill": "AI 内容人味化总监",
-      "employeeRole": "内容增长",
-      "employeeName": "小燃 · 内容增长主编",
-      "teammateId": "content-cmo",
-      "teammateHref": "./teammates/content-cmo.html",
-      "businessValue": "最适合免费引流和小红书/短视频传播。",
-      "backlogAction": "已制作：ai-content-humanizer-director，值得重点增强",
-      "actionGroup": "enhance_now",
-      "existingSkillSlug": "ai-content-humanizer-director",
-      "existingSkillTitle": "AI 内容人味化总监",
-      "existingSkillHref": "./index.html?query=ai-content-humanizer-director&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/ai-content-humanizer-director.zip"
-    },
-    {
-      "date": "2026-07-08",
-      "name": "trailofbits/skills",
-      "url": "https://github.com/trailofbits/skills",
-      "stars": 6025,
-      "license": "cc-by-sa-4.0",
-      "score": 100,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "市场调研",
-        "任务调度"
-      ],
-      "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "许可不清，只能作为需求信号",
       "canAdapt": "适合进入待制作队列",
       "queries": [
-        "claude code skills"
+        "codex skills"
       ],
-      "priorityRank": 4,
+      "priorityRank": 3,
       "proposedSkill": "Skill 市场雷达策展官",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
@@ -554,10 +526,10 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "Dimillian/Skills",
-      "url": "https://github.com/Dimillian/Skills",
-      "stars": 3803,
+      "date": "2026-07-27",
+      "name": "op7418/Humanizer-zh",
+      "url": "https://github.com/op7418/Humanizer-zh",
+      "stars": 13981,
       "license": "mit",
       "score": 100,
       "starsLabel": "★★★★★",
@@ -565,13 +537,89 @@ const RADAR_DATA = {
         "任务调度"
       ],
       "marketScope": "全球通用",
+      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "claude code skills"
+      ],
+      "priorityRank": 4,
+      "proposedSkill": "AI 内容人味化总监",
+      "employeeRole": "内容增长",
+      "employeeName": "小燃 · 内容增长主编",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "backlogAction": "已制作：ai-content-humanizer-director，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "ai-content-humanizer-director",
+      "existingSkillTitle": "AI 内容人味化总监",
+      "existingSkillHref": "./index.html?query=ai-content-humanizer-director&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/ai-content-humanizer-director.zip"
+    },
+    {
+      "date": "2026-07-27",
+      "name": "krillinai/KrillinAI",
+      "url": "https://github.com/krillinai/KrillinAI",
+      "stars": 10559,
+      "license": "gpl-3.0",
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "内容增长",
+        "海外社媒",
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "内容增长、海外社媒、获客和矩阵分发场景。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "适合进入待制作队列",
+      "queries": [
+        "douyin"
+      ],
+      "priorityRank": 5,
+      "proposedSkill": "KrillinAI 改造 Skill",
+      "employeeRole": "内容增长",
+      "employeeName": "小燃 · 内容增长主编",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "backlogAction": "已立项：原创改造 Skill",
+      "actionGroup": "approved_build",
+      "projectDecision": {
+        "url": "https://github.com/krillinai/KrillinAI",
+        "status": "approved",
+        "action": "已立项：原创改造 Skill",
+        "approvedAt": "2026-07-24",
+        "owner": "content-cmo",
+        "project": "KrillinAI 改造 Skill",
+        "boundary": "GPL-3.0 项目只作为公开需求信号和流程灵感，不复制源码、文档或专有实现；原创 Skill 聚焦视频翻译、配音、字幕、分发前检查的任务编排。"
+      },
+      "existingSkillSlug": "",
+      "existingSkillTitle": "",
+      "existingSkillHref": "",
+      "existingSkillDownload": ""
+    },
+    {
+      "date": "2026-07-27",
+      "name": "nexu-io/html-anything",
+      "url": "https://github.com/nexu-io/html-anything",
+      "stars": 7972,
+      "license": "apache-2.0",
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "市场调研",
+        "任务调度"
+      ],
+      "marketScope": "中国市场",
       "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "codex skills"
+        "xiaohongshu"
       ],
-      "priorityRank": 5,
+      "priorityRank": 6,
       "proposedSkill": "Skill 市场雷达策展官",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
@@ -586,43 +634,11 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "Agentchengfeng/chengfeng-videocut-skills",
-      "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
-      "stars": 2577,
-      "license": "apache-2.0",
-      "score": 100,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "任务调度"
-      ],
-      "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "claude code skills"
-      ],
-      "priorityRank": 6,
-      "proposedSkill": "视频切片与剪辑流程总监",
-      "employeeRole": "内容增长",
-      "employeeName": "小燃 · 内容增长主编",
-      "teammateId": "content-cmo",
-      "teammateHref": "./teammates/content-cmo.html",
-      "businessValue": "最适合免费引流和小红书/短视频传播。",
-      "backlogAction": "已制作：video-cut-workflow-director，值得重点增强",
-      "actionGroup": "enhance_now",
-      "existingSkillSlug": "video-cut-workflow-director",
-      "existingSkillTitle": "视频切片与剪辑流程总监",
-      "existingSkillHref": "./index.html?query=video-cut-workflow-director&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/video-cut-workflow-director.zip"
-    },
-    {
-      "date": "2026-07-08",
-      "name": "tradermonty/claude-trading-skills",
-      "url": "https://github.com/tradermonty/claude-trading-skills",
-      "stars": 2303,
-      "license": "mit",
+      "date": "2026-07-27",
+      "name": "trailofbits/skills",
+      "url": "https://github.com/trailofbits/skills",
+      "stars": 6282,
+      "license": "cc-by-sa-4.0",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -632,7 +648,7 @@ const RADAR_DATA = {
       "marketScope": "全球通用",
       "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
       "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
+      "canAdapt": "适合进入待制作队列",
       "queries": [
         "claude code skills"
       ],
@@ -643,50 +659,52 @@ const RADAR_DATA = {
       "teammateId": "chief-of-staff",
       "teammateHref": "./teammates/chief-of-staff.html",
       "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "backlogAction": "已制作：skill-market-curator，值得重点增强",
-      "actionGroup": "enhance_now",
+      "backlogAction": "已制作：skill-market-curator，后续复盘/增强",
+      "actionGroup": "enhance",
       "existingSkillSlug": "skill-market-curator",
       "existingSkillTitle": "强 Skill 市场雷达策展官",
       "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "skills-directory/skill-codex",
-      "url": "https://github.com/skills-directory/skill-codex",
-      "stars": 1351,
-      "license": "mit",
+      "date": "2026-07-27",
+      "name": "op7418/guizang-social-card-skill",
+      "url": "https://github.com/op7418/guizang-social-card-skill",
+      "stars": 5591,
+      "license": "agpl-3.0",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
+        "内容增长",
         "任务调度"
       ],
-      "marketScope": "全球通用",
+      "marketScope": "中国市场",
       "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
       "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
+      "canAdapt": "适合进入待制作队列",
       "queries": [
-        "claude code skills"
+        "codex skills",
+        "xiaohongshu"
       ],
       "priorityRank": 8,
-      "proposedSkill": "Skill 市场雷达策展官",
-      "employeeRole": "任务调度",
-      "employeeName": "阿序 · 任务调度总监",
-      "teammateId": "chief-of-staff",
-      "teammateHref": "./teammates/chief-of-staff.html",
-      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "backlogAction": "已制作：skill-market-curator，值得重点增强",
-      "actionGroup": "enhance_now",
-      "existingSkillSlug": "skill-market-curator",
-      "existingSkillTitle": "强 Skill 市场雷达策展官",
-      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
+      "proposedSkill": "内容视觉卡片系统",
+      "employeeRole": "内容增长",
+      "employeeName": "小燃 · 内容增长主编",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "backlogAction": "已制作：visual-card-content-system，后续复盘/增强",
+      "actionGroup": "enhance",
+      "existingSkillSlug": "visual-card-content-system",
+      "existingSkillTitle": "内容视觉卡片系统",
+      "existingSkillHref": "./index.html?query=visual-card-content-system&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/visual-card-content-system.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "Dimillian/CodexSkillManager",
-      "url": "https://github.com/Dimillian/CodexSkillManager",
-      "stars": 1345,
+      "date": "2026-07-27",
+      "name": "Dimillian/Skills",
+      "url": "https://github.com/Dimillian/Skills",
+      "stars": 3860,
       "license": "mit",
       "score": 100,
       "starsLabel": "★★★★★",
@@ -715,23 +733,23 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "daymade/claude-code-skills",
-      "url": "https://github.com/daymade/claude-code-skills",
-      "stars": 1254,
+      "date": "2026-07-27",
+      "name": "white0dew/XiaohongshuSkills",
+      "url": "https://github.com/white0dew/XiaohongshuSkills",
+      "stars": 3235,
       "license": "mit",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
-        "市场调研",
+        "内容增长",
         "任务调度"
       ],
-      "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
+      "marketScope": "中国市场",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "claude code skills"
+        "xiaohongshu"
       ],
       "priorityRank": 10,
       "proposedSkill": "Skill 市场雷达策展官",
@@ -748,24 +766,57 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "brycewang-stanford/Awesome-Journal-Skills",
-      "url": "https://github.com/brycewang-stanford/Awesome-Journal-Skills",
-      "stars": 720,
-      "license": "mit",
+      "date": "2026-07-27",
+      "name": "Agentchengfeng/chengfeng-videocut-skills",
+      "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
+      "stars": 2746,
+      "license": "apache-2.0",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
       ],
       "marketScope": "全球通用",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "codex skills"
+        "claude code skills"
       ],
       "priorityRank": 11,
+      "proposedSkill": "视频切片与剪辑流程总监",
+      "employeeRole": "内容增长",
+      "employeeName": "小燃 · 内容增长主编",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "backlogAction": "已制作：video-cut-workflow-director，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "video-cut-workflow-director",
+      "existingSkillTitle": "视频切片与剪辑流程总监",
+      "existingSkillHref": "./index.html?query=video-cut-workflow-director&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/video-cut-workflow-director.zip"
+    },
+    {
+      "date": "2026-07-27",
+      "name": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "stars": 2509,
+      "license": "mit",
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "市场调研",
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "claude code skills"
+      ],
+      "priorityRank": 12,
       "proposedSkill": "Skill 市场雷达策展官",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
@@ -780,10 +831,10 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "dsifry/metaswarm",
-      "url": "https://github.com/dsifry/metaswarm",
-      "stars": 343,
+      "date": "2026-07-27",
+      "name": "skills-directory/skill-codex",
+      "url": "https://github.com/skills-directory/skill-codex",
+      "stars": 1392,
       "license": "mit",
       "score": 100,
       "starsLabel": "★★★★★",
@@ -792,101 +843,67 @@ const RADAR_DATA = {
       ],
       "marketScope": "全球通用",
       "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-      "dross": "完整运行时可能过重",
+      "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "multi agent orchestration framework"
+        "claude code skills"
       ],
-      "priorityRank": 12,
-      "proposedSkill": "多员工质量门禁编排器",
+      "priorityRank": 13,
+      "proposedSkill": "Skill 市场雷达策展官",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
       "teammateId": "chief-of-staff",
       "teammateHref": "./teammates/chief-of-staff.html",
       "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "backlogAction": "已制作：multi-employee-quality-gate，值得重点增强",
+      "backlogAction": "已制作：skill-market-curator，值得重点增强",
       "actionGroup": "enhance_now",
-      "existingSkillSlug": "multi-employee-quality-gate",
-      "existingSkillTitle": "多员工质量门禁编排器",
-      "existingSkillHref": "./index.html?query=multi-employee-quality-gate&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/multi-employee-quality-gate.zip"
+      "existingSkillSlug": "skill-market-curator",
+      "existingSkillTitle": "强 Skill 市场雷达策展官",
+      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "sergebulaev/linkedin-skills",
-      "url": "https://github.com/sergebulaev/linkedin-skills",
-      "stars": 326,
+      "date": "2026-07-27",
+      "name": "Dimillian/CodexSkillManager",
+      "url": "https://github.com/Dimillian/CodexSkillManager",
+      "stars": 1357,
       "license": "mit",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
-        "市场调研",
-        "内容增长",
-        "海外社媒",
         "任务调度"
       ],
-      "marketScope": "海外市场",
+      "marketScope": "全球通用",
       "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
         "codex skills"
       ],
-      "priorityRank": 13,
-      "proposedSkill": "LinkedIn 增长套件",
-      "employeeRole": "B2B 拓客",
-      "employeeName": "Leo · 海外拓客负责人",
-      "teammateId": "lead-gen",
-      "teammateHref": "./teammates/lead-gen.html",
-      "businessValue": "离成交最近，适合高客单定制服务。",
-      "backlogAction": "已制作：linkedin-growth-skill-pack，值得重点增强",
-      "actionGroup": "enhance_now",
-      "existingSkillSlug": "linkedin-growth-skill-pack",
-      "existingSkillTitle": "LinkedIn 增长 Skill 包",
-      "existingSkillHref": "./index.html?query=linkedin-growth-skill-pack&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/linkedin-growth-skill-pack.zip"
-    },
-    {
-      "date": "2026-07-08",
-      "name": "bijutharakan/multi-agent-squad",
-      "url": "https://github.com/bijutharakan/multi-agent-squad",
-      "stars": 87,
-      "license": "mit",
-      "score": 100,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "任务调度"
-      ],
-      "marketScope": "全球通用",
-      "essence": "主管分诊、任务图、角色协同、状态恢复和复盘机制。",
-      "dross": "完整运行时可能过重",
-      "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "multi agent orchestration framework"
-      ],
       "priorityRank": 14,
-      "proposedSkill": "多员工质量门禁编排器",
+      "proposedSkill": "Skill 市场雷达策展官",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
       "teammateId": "chief-of-staff",
       "teammateHref": "./teammates/chief-of-staff.html",
       "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "backlogAction": "已制作：multi-employee-quality-gate，值得重点增强",
+      "backlogAction": "已制作：skill-market-curator，值得重点增强",
       "actionGroup": "enhance_now",
-      "existingSkillSlug": "multi-employee-quality-gate",
-      "existingSkillTitle": "多员工质量门禁编排器",
-      "existingSkillHref": "./index.html?query=multi-employee-quality-gate&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/multi-employee-quality-gate.zip"
+      "existingSkillSlug": "skill-market-curator",
+      "existingSkillTitle": "强 Skill 市场雷达策展官",
+      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "yctimlin/mcp_excalidraw",
-      "url": "https://github.com/yctimlin/mcp_excalidraw",
-      "stars": 2141,
+      "date": "2026-07-27",
+      "name": "daymade/claude-code-skills",
+      "url": "https://github.com/daymade/claude-code-skills",
+      "stars": 1299,
       "license": "mit",
-      "score": 99,
+      "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
+        "市场调研",
         "任务调度"
       ],
       "marketScope": "全球通用",
@@ -911,22 +928,22 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "glitternetwork/pinme",
-      "url": "https://github.com/glitternetwork/pinme",
-      "stars": 3703,
+      "date": "2026-07-27",
+      "name": "brycewang-stanford/Awesome-Journal-Skills",
+      "url": "https://github.com/brycewang-stanford/Awesome-Journal-Skills",
+      "stars": 872,
       "license": "mit",
-      "score": 97,
+      "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
       ],
       "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "claude code skills"
+        "codex skills"
       ],
       "priorityRank": 16,
       "proposedSkill": "Skill 市场雷达策展官",
@@ -943,76 +960,79 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "nowork-studio/NotFair",
-      "url": "https://github.com/nowork-studio/NotFair",
-      "stars": 3091,
+      "date": "2026-07-23",
+      "name": "sergebulaev/linkedin-skills",
+      "url": "https://github.com/sergebulaev/linkedin-skills",
+      "stars": 420,
       "license": "mit",
-      "score": 97,
+      "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
+        "市场调研",
+        "内容增长",
+        "海外社媒",
         "任务调度"
       ],
-      "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
+      "marketScope": "海外市场",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "claude code skills"
+        "codex skills"
       ],
       "priorityRank": 17,
-      "proposedSkill": "Skill 市场雷达策展官",
-      "employeeRole": "任务调度",
-      "employeeName": "阿序 · 任务调度总监",
-      "teammateId": "chief-of-staff",
-      "teammateHref": "./teammates/chief-of-staff.html",
-      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "backlogAction": "已制作：skill-market-curator，值得重点增强",
-      "actionGroup": "enhance_now",
-      "existingSkillSlug": "skill-market-curator",
-      "existingSkillTitle": "强 Skill 市场雷达策展官",
-      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
-    },
-    {
-      "date": "2026-07-08",
-      "name": "onvoyage-ai/gtm-engineer-skills",
-      "url": "https://github.com/onvoyage-ai/gtm-engineer-skills",
-      "stars": 1253,
-      "license": "mit",
-      "score": 97,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "任务调度"
-      ],
-      "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
-      "dross": "完整运行时可能过重",
-      "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "claude code skills"
-      ],
-      "priorityRank": 18,
-      "proposedSkill": "GTM 获客工程师",
+      "proposedSkill": "LinkedIn 增长套件",
       "employeeRole": "B2B 拓客",
       "employeeName": "Leo · 海外拓客负责人",
       "teammateId": "lead-gen",
       "teammateHref": "./teammates/lead-gen.html",
       "businessValue": "离成交最近，适合高客单定制服务。",
-      "backlogAction": "已制作：gtm-engineer-skill-pack，值得重点增强",
+      "backlogAction": "已制作：linkedin-growth-skill-pack，值得重点增强",
       "actionGroup": "enhance_now",
-      "existingSkillSlug": "gtm-engineer-skill-pack",
-      "existingSkillTitle": "GTM 获客工程师 Skill 包",
-      "existingSkillHref": "./index.html?query=gtm-engineer-skill-pack&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/gtm-engineer-skill-pack.zip"
+      "existingSkillSlug": "linkedin-growth-skill-pack",
+      "existingSkillTitle": "LinkedIn 增长 Skill 包",
+      "existingSkillHref": "./index.html?query=linkedin-growth-skill-pack&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/linkedin-growth-skill-pack.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "open-multi-agent/open-multi-agent",
-      "url": "https://github.com/open-multi-agent/open-multi-agent",
-      "stars": 6537,
+      "date": "2026-07-27",
+      "name": "dsifry/metaswarm",
+      "url": "https://github.com/dsifry/metaswarm",
+      "stars": 366,
       "license": "mit",
-      "score": 96,
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "完整运行时可能过重",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "multi agent orchestration framework"
+      ],
+      "priorityRank": 18,
+      "proposedSkill": "多员工质量门禁编排器",
+      "employeeRole": "任务调度",
+      "employeeName": "阿序 · 任务调度总监",
+      "teammateId": "chief-of-staff",
+      "teammateHref": "./teammates/chief-of-staff.html",
+      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
+      "backlogAction": "已制作：multi-employee-quality-gate，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "multi-employee-quality-gate",
+      "existingSkillTitle": "多员工质量门禁编排器",
+      "existingSkillHref": "./index.html?query=multi-employee-quality-gate&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/multi-employee-quality-gate.zip"
+    },
+    {
+      "date": "2026-07-27",
+      "name": "bijutharakan/multi-agent-squad",
+      "url": "https://github.com/bijutharakan/multi-agent-squad",
+      "stars": 87,
+      "license": "mit",
+      "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
@@ -1039,53 +1059,55 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/multi-employee-quality-gate.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "op7418/guizang-social-card-skill",
-      "url": "https://github.com/op7418/guizang-social-card-skill",
-      "stars": 4761,
-      "license": "agpl-3.0",
-      "score": 95,
+      "date": "2026-07-27",
+      "name": "Linked-API/linkedin-skills",
+      "url": "https://github.com/Linked-API/linkedin-skills",
+      "stars": 38,
+      "license": "mit",
+      "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
         "内容增长",
+        "海外社媒",
+        "B2B 拓客",
         "任务调度"
       ],
-      "marketScope": "中国市场",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "marketScope": "海外市场",
+      "essence": "内容增长、海外社媒、获客和矩阵分发场景。",
       "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "适合进入待制作队列",
+      "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "codex skills"
+        "linkedin automation"
       ],
       "priorityRank": 20,
-      "proposedSkill": "内容视觉卡片系统",
-      "employeeRole": "内容增长",
-      "employeeName": "小燃 · 内容增长主编",
-      "teammateId": "content-cmo",
-      "teammateHref": "./teammates/content-cmo.html",
-      "businessValue": "最适合免费引流和小红书/短视频传播。",
-      "backlogAction": "已制作：visual-card-content-system，后续复盘/增强",
-      "actionGroup": "enhance",
-      "existingSkillSlug": "visual-card-content-system",
-      "existingSkillTitle": "内容视觉卡片系统",
-      "existingSkillHref": "./index.html?query=visual-card-content-system&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/visual-card-content-system.zip"
+      "proposedSkill": "LinkedIn 增长套件",
+      "employeeRole": "B2B 拓客",
+      "employeeName": "Leo · 海外拓客负责人",
+      "teammateId": "lead-gen",
+      "teammateHref": "./teammates/lead-gen.html",
+      "businessValue": "离成交最近，适合高客单定制服务。",
+      "backlogAction": "已制作：linkedin-growth-skill-pack，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "linkedin-growth-skill-pack",
+      "existingSkillTitle": "LinkedIn 增长 Skill 包",
+      "existingSkillHref": "./index.html?query=linkedin-growth-skill-pack&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/linkedin-growth-skill-pack.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "taishi-i/awesome-ChatGPT-repositories",
-      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
-      "stars": 3125,
-      "license": "cc0-1.0",
-      "score": 95,
+      "date": "2026-07-27",
+      "name": "yctimlin/mcp_excalidraw",
+      "url": "https://github.com/yctimlin/mcp_excalidraw",
+      "stars": 2214,
+      "license": "mit",
+      "score": 99,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
       ],
       "marketScope": "全球通用",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
       "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "适合进入待制作队列",
+      "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
         "claude code skills"
       ],
@@ -1096,20 +1118,20 @@ const RADAR_DATA = {
       "teammateId": "chief-of-staff",
       "teammateHref": "./teammates/chief-of-staff.html",
       "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "backlogAction": "已制作：skill-market-curator，后续复盘/增强",
-      "actionGroup": "enhance",
+      "backlogAction": "已制作：skill-market-curator，值得重点增强",
+      "actionGroup": "enhance_now",
       "existingSkillSlug": "skill-market-curator",
       "existingSkillTitle": "强 Skill 市场雷达策展官",
       "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "lackeyjb/playwright-skill",
-      "url": "https://github.com/lackeyjb/playwright-skill",
-      "stars": 2880,
+      "date": "2026-07-27",
+      "name": "glitternetwork/pinme",
+      "url": "https://github.com/glitternetwork/pinme",
+      "stars": 3724,
       "license": "mit",
-      "score": 93,
+      "score": 97,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
@@ -1122,36 +1144,36 @@ const RADAR_DATA = {
         "claude code skills"
       ],
       "priorityRank": 22,
-      "proposedSkill": "浏览器自动化测试适配器",
+      "proposedSkill": "Skill 市场雷达策展官",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
       "teammateId": "chief-of-staff",
       "teammateHref": "./teammates/chief-of-staff.html",
       "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "backlogAction": "已制作：browser-automation-skill-adapter，值得重点增强",
+      "backlogAction": "已制作：skill-market-curator，值得重点增强",
       "actionGroup": "enhance_now",
-      "existingSkillSlug": "browser-automation-skill-adapter",
-      "existingSkillTitle": "浏览器自动化 Skill 适配器",
-      "existingSkillHref": "./index.html?query=browser-automation-skill-adapter&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/browser-automation-skill-adapter.zip"
+      "existingSkillSlug": "skill-market-curator",
+      "existingSkillTitle": "强 Skill 市场雷达策展官",
+      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "wlzh/skills",
-      "url": "https://github.com/wlzh/skills",
-      "stars": 579,
+      "date": "2026-07-20",
+      "name": "nowork-studio/NotFair",
+      "url": "https://github.com/nowork-studio/NotFair",
+      "stars": 3161,
       "license": "mit",
-      "score": 93,
+      "score": 97,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
       ],
       "marketScope": "全球通用",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "codex skills"
+        "claude code skills"
       ],
       "priorityRank": 23,
       "proposedSkill": "Skill 市场雷达策展官",
@@ -1168,24 +1190,68 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "binggandata/bggg-skills",
-      "url": "https://github.com/binggandata/bggg-skills",
-      "stars": 524,
-      "license": "mit",
-      "score": 92,
+      "date": "2026-07-27",
+      "name": "BetaStreetOmnis/xhs_ai_publisher",
+      "url": "https://github.com/BetaStreetOmnis/xhs_ai_publisher",
+      "stars": 2039,
+      "license": "apache-2.0",
+      "score": 97,
       "starsLabel": "★★★★★",
       "roles": [
+        "市场调研",
+        "内容增长",
         "任务调度"
       ],
-      "marketScope": "全球通用",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "marketScope": "中国市场",
+      "essence": "可复用工作流、模板或业务 SOP。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "codex skills"
+        "xiaohongshu"
       ],
       "priorityRank": 24,
+      "proposedSkill": "xhs_ai_publisher 改造 Skill",
+      "employeeRole": "中国市场调研",
+      "employeeName": "林夏 · 中国市场调研总监",
+      "teammateId": "china-research",
+      "teammateHref": "./teammates/china-research.html",
+      "businessValue": "更适合中文平台、内容引流、私域承接和本地场景验证。",
+      "backlogAction": "已立项：原创改造 Skill",
+      "actionGroup": "approved_build",
+      "projectDecision": {
+        "url": "https://github.com/BetaStreetOmnis/xhs_ai_publisher",
+        "status": "approved",
+        "action": "已立项：原创改造 Skill",
+        "approvedAt": "2026-07-24",
+        "owner": "china-research",
+        "project": "xhs_ai_publisher 改造 Skill",
+        "boundary": "Apache-2.0 项目可作为公开工作流参考；原创 Skill 只保留本地草稿、选题、素材检查和人工发布前核对，不自动发布、不自动评论、不操作第三方账号设置。"
+      },
+      "existingSkillSlug": "",
+      "existingSkillTitle": "",
+      "existingSkillHref": "",
+      "existingSkillDownload": ""
+    },
+    {
+      "date": "2026-07-27",
+      "name": "autoclaw-cc/xiaohongshu-skills",
+      "url": "https://github.com/autoclaw-cc/xiaohongshu-skills",
+      "stars": 1699,
+      "license": "mit",
+      "score": 97,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "内容增长",
+        "任务调度"
+      ],
+      "marketScope": "中国市场",
+      "essence": "可复用工作流、模板或业务 SOP。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "xiaohongshu"
+      ],
+      "priorityRank": 25,
       "proposedSkill": "Skill 市场雷达策展官",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
@@ -1200,108 +1266,76 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "JuliusBrussee/caveman",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 86604,
+      "date": "2026-07-27",
+      "name": "onvoyage-ai/gtm-engineer-skills",
+      "url": "https://github.com/onvoyage-ai/gtm-engineer-skills",
+      "stars": 1264,
       "license": "mit",
-      "score": 89,
+      "score": 97,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
       ],
       "marketScope": "全球通用",
       "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "claude code skills"
-      ],
-      "priorityRank": 25,
-      "proposedSkill": "Skill 市场雷达策展官",
-      "employeeRole": "任务调度",
-      "employeeName": "阿序 · 任务调度总监",
-      "teammateId": "chief-of-staff",
-      "teammateHref": "./teammates/chief-of-staff.html",
-      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
-      "backlogAction": "已制作：skill-market-curator，后续复盘/增强",
-      "actionGroup": "enhance",
-      "existingSkillSlug": "skill-market-curator",
-      "existingSkillTitle": "强 Skill 市场雷达策展官",
-      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
-    },
-    {
-      "date": "2026-07-08",
-      "name": "blader/humanizer",
-      "url": "https://github.com/blader/humanizer",
-      "stars": 28019,
-      "license": "mit",
-      "score": 89,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "任务调度"
-      ],
-      "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
+      "dross": "完整运行时可能过重",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
         "claude code skills"
       ],
       "priorityRank": 26,
-      "proposedSkill": "AI 内容人味化总监",
-      "employeeRole": "内容增长",
-      "employeeName": "小燃 · 内容增长主编",
-      "teammateId": "content-cmo",
-      "teammateHref": "./teammates/content-cmo.html",
-      "businessValue": "最适合免费引流和小红书/短视频传播。",
-      "backlogAction": "已制作：ai-content-humanizer-director，后续复盘/增强",
-      "actionGroup": "enhance",
-      "existingSkillSlug": "ai-content-humanizer-director",
-      "existingSkillTitle": "AI 内容人味化总监",
-      "existingSkillHref": "./index.html?query=ai-content-humanizer-director&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/ai-content-humanizer-director.zip"
+      "proposedSkill": "GTM 获客工程师",
+      "employeeRole": "B2B 拓客",
+      "employeeName": "Leo · 海外拓客负责人",
+      "teammateId": "lead-gen",
+      "teammateHref": "./teammates/lead-gen.html",
+      "businessValue": "离成交最近，适合高客单定制服务。",
+      "backlogAction": "已制作：gtm-engineer-skill-pack，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "gtm-engineer-skill-pack",
+      "existingSkillTitle": "GTM 获客工程师 Skill 包",
+      "existingSkillHref": "./index.html?query=gtm-engineer-skill-pack&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/gtm-engineer-skill-pack.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "helloianneo/ian-xiaohei-illustrations",
-      "url": "https://github.com/helloianneo/ian-xiaohei-illustrations",
-      "stars": 7306,
+      "date": "2026-07-13",
+      "name": "open-multi-agent/open-multi-agent",
+      "url": "https://github.com/open-multi-agent/open-multi-agent",
+      "stars": 6569,
       "license": "mit",
-      "score": 89,
+      "score": 96,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
       ],
       "marketScope": "全球通用",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
+      "essence": "主管分诊、任务图、角色协同、状态恢复和复盘机制。",
+      "dross": "完整运行时可能过重",
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
-        "codex skills"
+        "multi agent orchestration framework"
       ],
       "priorityRank": 27,
-      "proposedSkill": "内容视觉卡片系统",
-      "employeeRole": "内容增长",
-      "employeeName": "小燃 · 内容增长主编",
-      "teammateId": "content-cmo",
-      "teammateHref": "./teammates/content-cmo.html",
-      "businessValue": "最适合免费引流和小红书/短视频传播。",
-      "backlogAction": "已制作：visual-card-content-system，后续复盘/增强",
-      "actionGroup": "enhance",
-      "existingSkillSlug": "visual-card-content-system",
-      "existingSkillTitle": "内容视觉卡片系统",
-      "existingSkillHref": "./index.html?query=visual-card-content-system&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/visual-card-content-system.zip"
+      "proposedSkill": "多员工质量门禁编排器",
+      "employeeRole": "任务调度",
+      "employeeName": "阿序 · 任务调度总监",
+      "teammateId": "chief-of-staff",
+      "teammateHref": "./teammates/chief-of-staff.html",
+      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
+      "backlogAction": "已制作：multi-employee-quality-gate，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "multi-employee-quality-gate",
+      "existingSkillTitle": "多员工质量门禁编排器",
+      "existingSkillHref": "./index.html?query=multi-employee-quality-gate&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/multi-employee-quality-gate.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "vibeforge1111/keep-codex-fast",
-      "url": "https://github.com/vibeforge1111/keep-codex-fast",
-      "stars": 1468,
-      "license": "mit",
-      "score": 89,
+      "date": "2026-07-27",
+      "name": "taishi-i/awesome-ChatGPT-repositories",
+      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+      "stars": 3165,
+      "license": "cc0-1.0",
+      "score": 95,
       "starsLabel": "★★★★★",
       "roles": [
         "任务调度"
@@ -1309,9 +1343,9 @@ const RADAR_DATA = {
       "marketScope": "全球通用",
       "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
       "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
+      "canAdapt": "适合进入待制作队列",
       "queries": [
-        "codex skills"
+        "claude code skills"
       ],
       "priorityRank": 28,
       "proposedSkill": "Skill 市场雷达策展官",
@@ -1328,43 +1362,301 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "ningzimu/image-to-editable-ppt-skill",
-      "url": "https://github.com/ningzimu/image-to-editable-ppt-skill",
-      "stars": 1210,
-      "license": "mit",
-      "score": 89,
+      "date": "2026-07-27",
+      "name": "kaymen99/sales-outreach-automation-langgraph",
+      "url": "https://github.com/kaymen99/sales-outreach-automation-langgraph",
+      "stars": 353,
+      "license": "unknown",
+      "score": 94,
       "starsLabel": "★★★★★",
       "roles": [
-        "办公效率",
+        "市场调研",
+        "B2B 拓客",
         "任务调度"
       ],
-      "marketScope": "全球通用",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
+      "marketScope": "海外市场",
+      "essence": "真实需求挖掘、用户原话、市场信号和机会评分。",
+      "dross": "许可不清，只能作为需求信号",
+      "canAdapt": "适合进入待制作队列",
       "queries": [
-        "codex skills"
+        "outreach automation"
       ],
       "priorityRank": 29,
-      "proposedSkill": "图片/PDF 转可编辑 PPT 助手",
-      "employeeRole": "办公效率",
-      "employeeName": "简白 · 办公参谋",
-      "teammateId": "office-analyst",
-      "teammateHref": "./index.html?teammate=office-analyst#teammates",
-      "businessValue": "人群大、使用高频，适合低门槛传播。",
-      "backlogAction": "已制作：image-to-editable-ppt-assistant，后续复盘/增强",
+      "proposedSkill": "GTM 获客工程师",
+      "employeeRole": "B2B 拓客",
+      "employeeName": "Leo · 海外拓客负责人",
+      "teammateId": "lead-gen",
+      "teammateHref": "./teammates/lead-gen.html",
+      "businessValue": "离成交最近，适合高客单定制服务。",
+      "backlogAction": "已制作：gtm-engineer-skill-pack，后续复盘/增强",
       "actionGroup": "enhance",
-      "existingSkillSlug": "image-to-editable-ppt-assistant",
-      "existingSkillTitle": "图片/PDF 转可编辑 PPT 助手",
-      "existingSkillHref": "./index.html?query=image-to-editable-ppt-assistant&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/image-to-editable-ppt-assistant.zip"
+      "existingSkillSlug": "gtm-engineer-skill-pack",
+      "existingSkillTitle": "GTM 获客工程师 Skill 包",
+      "existingSkillHref": "./index.html?query=gtm-engineer-skill-pack&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/gtm-engineer-skill-pack.zip"
     },
     {
-      "date": "2026-07-08",
-      "name": "crazyykhllc-bit/CyberPPT",
-      "url": "https://github.com/crazyykhllc-bit/CyberPPT",
-      "stars": 1001,
+      "date": "2026-07-27",
+      "name": "lackeyjb/playwright-skill",
+      "url": "https://github.com/lackeyjb/playwright-skill",
+      "stars": 2952,
+      "license": "mit",
+      "score": 93,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "claude code skills"
+      ],
+      "priorityRank": 30,
+      "proposedSkill": "浏览器自动化测试适配器",
+      "employeeRole": "任务调度",
+      "employeeName": "阿序 · 任务调度总监",
+      "teammateId": "chief-of-staff",
+      "teammateHref": "./teammates/chief-of-staff.html",
+      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
+      "backlogAction": "已制作：browser-automation-skill-adapter，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "browser-automation-skill-adapter",
+      "existingSkillTitle": "浏览器自动化 Skill 适配器",
+      "existingSkillHref": "./index.html?query=browser-automation-skill-adapter&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/browser-automation-skill-adapter.zip"
+    },
+    {
+      "date": "2026-07-27",
+      "name": "wlzh/skills",
+      "url": "https://github.com/wlzh/skills",
+      "stars": 594,
+      "license": "mit",
+      "score": 93,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "codex skills"
+      ],
+      "priorityRank": 31,
+      "proposedSkill": "Skill 市场雷达策展官",
+      "employeeRole": "任务调度",
+      "employeeName": "阿序 · 任务调度总监",
+      "teammateId": "chief-of-staff",
+      "teammateHref": "./teammates/chief-of-staff.html",
+      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
+      "backlogAction": "已制作：skill-market-curator，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "skill-market-curator",
+      "existingSkillTitle": "强 Skill 市场雷达策展官",
+      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
+    },
+    {
+      "date": "2026-07-27",
+      "name": "binggandata/bggg-skills",
+      "url": "https://github.com/binggandata/bggg-skills",
+      "stars": 548,
+      "license": "mit",
+      "score": 93,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "codex skills"
+      ],
+      "priorityRank": 32,
+      "proposedSkill": "Skill 市场雷达策展官",
+      "employeeRole": "任务调度",
+      "employeeName": "阿序 · 任务调度总监",
+      "teammateId": "chief-of-staff",
+      "teammateHref": "./teammates/chief-of-staff.html",
+      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
+      "backlogAction": "已制作：skill-market-curator，值得重点增强",
+      "actionGroup": "enhance_now",
+      "existingSkillSlug": "skill-market-curator",
+      "existingSkillTitle": "强 Skill 市场雷达策展官",
+      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
+    },
+    {
+      "date": "2026-07-27",
+      "name": "ihmily/DouyinLiveRecorder",
+      "url": "https://github.com/ihmily/DouyinLiveRecorder",
+      "stars": 10584,
+      "license": "mit",
+      "score": 91,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "内容增长",
+        "海外社媒"
+      ],
+      "marketScope": "全球通用",
+      "essence": "内容增长、海外社媒、获客和矩阵分发场景。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "douyin"
+      ],
+      "priorityRank": 33,
+      "proposedSkill": "DouyinLiveRecorder 改造 Skill",
+      "employeeRole": "内容增长",
+      "employeeName": "小燃 · 内容增长主编",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "backlogAction": "优先拆成原创员工级 Skill",
+      "actionGroup": "build_now",
+      "existingSkillSlug": "",
+      "existingSkillTitle": "",
+      "existingSkillHref": "",
+      "existingSkillDownload": ""
+    },
+    {
+      "date": "2026-07-27",
+      "name": "JuliusBrussee/caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "stars": 93342,
+      "license": "mit",
+      "score": 89,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "claude code skills"
+      ],
+      "priorityRank": 34,
+      "proposedSkill": "Skill 市场雷达策展官",
+      "employeeRole": "任务调度",
+      "employeeName": "阿序 · 任务调度总监",
+      "teammateId": "chief-of-staff",
+      "teammateHref": "./teammates/chief-of-staff.html",
+      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
+      "backlogAction": "已制作：skill-market-curator，后续复盘/增强",
+      "actionGroup": "enhance",
+      "existingSkillSlug": "skill-market-curator",
+      "existingSkillTitle": "强 Skill 市场雷达策展官",
+      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
+    },
+    {
+      "date": "2026-07-10",
+      "name": "blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "stars": 28524,
+      "license": "mit",
+      "score": 89,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "claude code skills"
+      ],
+      "priorityRank": 35,
+      "proposedSkill": "AI 内容人味化总监",
+      "employeeRole": "内容增长",
+      "employeeName": "小燃 · 内容增长主编",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "backlogAction": "已制作：ai-content-humanizer-director，后续复盘/增强",
+      "actionGroup": "enhance",
+      "existingSkillSlug": "ai-content-humanizer-director",
+      "existingSkillTitle": "AI 内容人味化总监",
+      "existingSkillHref": "./index.html?query=ai-content-humanizer-director&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/ai-content-humanizer-director.zip"
+    },
+    {
+      "date": "2026-07-10",
+      "name": "helloianneo/ian-xiaohei-illustrations",
+      "url": "https://github.com/helloianneo/ian-xiaohei-illustrations",
+      "stars": 7434,
+      "license": "mit",
+      "score": 89,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "codex skills"
+      ],
+      "priorityRank": 36,
+      "proposedSkill": "内容视觉卡片系统",
+      "employeeRole": "内容增长",
+      "employeeName": "小燃 · 内容增长主编",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "backlogAction": "已制作：visual-card-content-system，后续复盘/增强",
+      "actionGroup": "enhance",
+      "existingSkillSlug": "visual-card-content-system",
+      "existingSkillTitle": "内容视觉卡片系统",
+      "existingSkillHref": "./index.html?query=visual-card-content-system&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/visual-card-content-system.zip"
+    },
+    {
+      "date": "2026-07-10",
+      "name": "vibeforge1111/keep-codex-fast",
+      "url": "https://github.com/vibeforge1111/keep-codex-fast",
+      "stars": 1470,
+      "license": "mit",
+      "score": 89,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "codex skills"
+      ],
+      "priorityRank": 37,
+      "proposedSkill": "Skill 市场雷达策展官",
+      "employeeRole": "任务调度",
+      "employeeName": "阿序 · 任务调度总监",
+      "teammateId": "chief-of-staff",
+      "teammateHref": "./teammates/chief-of-staff.html",
+      "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
+      "backlogAction": "已制作：skill-market-curator，后续复盘/增强",
+      "actionGroup": "enhance",
+      "existingSkillSlug": "skill-market-curator",
+      "existingSkillTitle": "强 Skill 市场雷达策展官",
+      "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/skill-market-curator.zip"
+    },
+    {
+      "date": "2026-07-10",
+      "name": "ningzimu/image-to-editable-ppt-skill",
+      "url": "https://github.com/ningzimu/image-to-editable-ppt-skill",
+      "stars": 1247,
       "license": "mit",
       "score": 89,
       "starsLabel": "★★★★★",
@@ -1379,7 +1671,7 @@ const RADAR_DATA = {
       "queries": [
         "codex skills"
       ],
-      "priorityRank": 30,
+      "priorityRank": 38,
       "proposedSkill": "图片/PDF 转可编辑 PPT 助手",
       "employeeRole": "办公效率",
       "employeeName": "简白 · 办公参谋",
@@ -1394,10 +1686,43 @@ const RADAR_DATA = {
       "existingSkillDownload": "../dist/skills/image-to-editable-ppt-assistant.zip"
     },
     {
-      "date": "2026-07-08",
+      "date": "2026-07-10",
+      "name": "crazyykhllc-bit/CyberPPT",
+      "url": "https://github.com/crazyykhllc-bit/CyberPPT",
+      "stars": 1084,
+      "license": "mit",
+      "score": 89,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "办公效率",
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "codex skills"
+      ],
+      "priorityRank": 39,
+      "proposedSkill": "图片/PDF 转可编辑 PPT 助手",
+      "employeeRole": "办公效率",
+      "employeeName": "简白 · 办公参谋",
+      "teammateId": "office-analyst",
+      "teammateHref": "./index.html?teammate=office-analyst#teammates",
+      "businessValue": "人群大、使用高频，适合低门槛传播。",
+      "backlogAction": "已制作：image-to-editable-ppt-assistant，后续复盘/增强",
+      "actionGroup": "enhance",
+      "existingSkillSlug": "image-to-editable-ppt-assistant",
+      "existingSkillTitle": "图片/PDF 转可编辑 PPT 助手",
+      "existingSkillHref": "./index.html?query=image-to-editable-ppt-assistant&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/image-to-editable-ppt-assistant.zip"
+    },
+    {
+      "date": "2026-07-10",
       "name": "VRSEN/agency-swarm",
       "url": "https://github.com/VRSEN/agency-swarm",
-      "stars": 4477,
+      "stars": 4478,
       "license": "mit",
       "score": 88,
       "starsLabel": "★★★★★",
@@ -1411,7 +1736,7 @@ const RADAR_DATA = {
       "queries": [
         "multi agent orchestration framework"
       ],
-      "priorityRank": 31,
+      "priorityRank": 40,
       "proposedSkill": "多员工质量门禁编排器",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
@@ -1443,7 +1768,7 @@ const RADAR_DATA = {
       "queries": [
         "multi agent orchestration framework"
       ],
-      "priorityRank": 32,
+      "priorityRank": 41,
       "proposedSkill": "多员工质量门禁编排器",
       "employeeRole": "任务调度",
       "employeeName": "阿序 · 任务调度总监",
@@ -1470,33 +1795,36 @@ const RADAR_DATA = {
       "businessValue": "提高整套员工能力库的调用效率，适合做总入口。",
       "existingSkillHref": "./index.html?query=skill-market-curator&status=packaged#downloads",
       "existingSkillDownload": "../dist/skills/skill-market-curator.zip",
-      "count": 17,
-      "enhanceNowCount": 12,
-      "enhanceCount": 5,
+      "count": 21,
+      "enhanceNowCount": 15,
+      "enhanceCount": 6,
       "buildNowCount": 0,
       "buildQueueCount": 0,
       "watchCount": 0,
-      "topStars": 86604,
+      "topStars": 93342,
       "topScore": 100,
-      "scoreTotal": 1651,
+      "scoreTotal": 2049,
       "sourceNames": [
         "alirezarezvani/claude-skills",
+        "composio-community/awesome-codex-skills",
         "ComposioHQ/awesome-codex-skills",
-        "trailofbits/skills",
-        "Dimillian/Skills"
+        "nexu-io/html-anything"
       ],
       "queryNames": [
         "claude code skills",
-        "codex skills"
+        "codex skills",
+        "xiaohongshu"
       ],
       "roles": [
         "市场调研",
-        "任务调度"
+        "任务调度",
+        "内容增长"
       ],
       "marketScopes": [
-        "全球通用"
+        "全球通用",
+        "中国市场"
       ],
-      "avgScore": 97,
+      "avgScore": 98,
       "primaryAction": "enhance_now",
       "primaryActionLabel": "重点增强",
       "specHref": "./radar-specs.html?slug=skill-market-curator",
@@ -1521,7 +1849,7 @@ const RADAR_DATA = {
       "buildNowCount": 0,
       "buildQueueCount": 0,
       "watchCount": 0,
-      "topStars": 6537,
+      "topStars": 6569,
       "topScore": 100,
       "scoreTotal": 472,
       "sourceNames": [
@@ -1548,6 +1876,52 @@ const RADAR_DATA = {
       "funnelHref": "./conversion-funnel.html?slug=multi-employee-quality-gate&teammate=chief-of-staff#leadTable"
     },
     {
+      "slug": "linkedin-growth-skill-pack",
+      "title": "LinkedIn 增长 Skill 包",
+      "existingSkillSlug": "linkedin-growth-skill-pack",
+      "employeeName": "Leo · 海外拓客负责人",
+      "employeeRole": "B2B 拓客",
+      "teammateId": "lead-gen",
+      "teammateHref": "./teammates/lead-gen.html",
+      "businessValue": "离成交最近，适合高客单定制服务。",
+      "existingSkillHref": "./index.html?query=linkedin-growth-skill-pack&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/linkedin-growth-skill-pack.zip",
+      "count": 2,
+      "enhanceNowCount": 2,
+      "enhanceCount": 0,
+      "buildNowCount": 0,
+      "buildQueueCount": 0,
+      "watchCount": 0,
+      "topStars": 420,
+      "topScore": 100,
+      "scoreTotal": 200,
+      "sourceNames": [
+        "sergebulaev/linkedin-skills",
+        "Linked-API/linkedin-skills"
+      ],
+      "queryNames": [
+        "codex skills",
+        "linkedin automation"
+      ],
+      "roles": [
+        "市场调研",
+        "内容增长",
+        "海外社媒",
+        "任务调度",
+        "B2B 拓客"
+      ],
+      "marketScopes": [
+        "海外市场"
+      ],
+      "avgScore": 100,
+      "primaryAction": "enhance_now",
+      "primaryActionLabel": "重点增强",
+      "specHref": "./radar-specs.html?slug=linkedin-growth-skill-pack",
+      "launchHref": "./launch-kits.html?slug=linkedin-growth-skill-pack",
+      "growthHref": "./growth-board.html?slug=linkedin-growth-skill-pack",
+      "funnelHref": "./conversion-funnel.html?slug=linkedin-growth-skill-pack&teammate=lead-gen#leadTable"
+    },
+    {
       "slug": "ai-content-humanizer-director",
       "title": "AI 内容人味化总监",
       "existingSkillSlug": "ai-content-humanizer-director",
@@ -1564,7 +1938,7 @@ const RADAR_DATA = {
       "buildNowCount": 0,
       "buildQueueCount": 0,
       "watchCount": 0,
-      "topStars": 28019,
+      "topStars": 28524,
       "topScore": 100,
       "scoreTotal": 189,
       "sourceNames": [
@@ -1589,6 +1963,51 @@ const RADAR_DATA = {
       "funnelHref": "./conversion-funnel.html?slug=ai-content-humanizer-director&teammate=content-cmo#leadTable"
     },
     {
+      "slug": "gtm-engineer-skill-pack",
+      "title": "GTM 获客工程师 Skill 包",
+      "existingSkillSlug": "gtm-engineer-skill-pack",
+      "employeeName": "Leo · 海外拓客负责人",
+      "employeeRole": "B2B 拓客",
+      "teammateId": "lead-gen",
+      "teammateHref": "./teammates/lead-gen.html",
+      "businessValue": "离成交最近，适合高客单定制服务。",
+      "existingSkillHref": "./index.html?query=gtm-engineer-skill-pack&status=packaged#downloads",
+      "existingSkillDownload": "../dist/skills/gtm-engineer-skill-pack.zip",
+      "count": 2,
+      "enhanceNowCount": 1,
+      "enhanceCount": 1,
+      "buildNowCount": 0,
+      "buildQueueCount": 0,
+      "watchCount": 0,
+      "topStars": 1264,
+      "topScore": 97,
+      "scoreTotal": 191,
+      "sourceNames": [
+        "onvoyage-ai/gtm-engineer-skills",
+        "kaymen99/sales-outreach-automation-langgraph"
+      ],
+      "queryNames": [
+        "claude code skills",
+        "outreach automation"
+      ],
+      "roles": [
+        "任务调度",
+        "市场调研",
+        "B2B 拓客"
+      ],
+      "marketScopes": [
+        "全球通用",
+        "海外市场"
+      ],
+      "avgScore": 96,
+      "primaryAction": "enhance_now",
+      "primaryActionLabel": "重点增强",
+      "specHref": "./radar-specs.html?slug=gtm-engineer-skill-pack",
+      "launchHref": "./launch-kits.html?slug=gtm-engineer-skill-pack",
+      "growthHref": "./growth-board.html?slug=gtm-engineer-skill-pack",
+      "funnelHref": "./conversion-funnel.html?slug=gtm-engineer-skill-pack&teammate=lead-gen#leadTable"
+    },
+    {
       "slug": "video-cut-workflow-director",
       "title": "视频切片与剪辑流程总监",
       "existingSkillSlug": "video-cut-workflow-director",
@@ -1605,7 +2024,7 @@ const RADAR_DATA = {
       "buildNowCount": 0,
       "buildQueueCount": 0,
       "watchCount": 0,
-      "topStars": 2577,
+      "topStars": 2746,
       "topScore": 100,
       "scoreTotal": 100,
       "sourceNames": [
@@ -1629,89 +2048,6 @@ const RADAR_DATA = {
       "funnelHref": "./conversion-funnel.html?slug=video-cut-workflow-director&teammate=content-cmo#leadTable"
     },
     {
-      "slug": "linkedin-growth-skill-pack",
-      "title": "LinkedIn 增长 Skill 包",
-      "existingSkillSlug": "linkedin-growth-skill-pack",
-      "employeeName": "Leo · 海外拓客负责人",
-      "employeeRole": "B2B 拓客",
-      "teammateId": "lead-gen",
-      "teammateHref": "./teammates/lead-gen.html",
-      "businessValue": "离成交最近，适合高客单定制服务。",
-      "existingSkillHref": "./index.html?query=linkedin-growth-skill-pack&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/linkedin-growth-skill-pack.zip",
-      "count": 1,
-      "enhanceNowCount": 1,
-      "enhanceCount": 0,
-      "buildNowCount": 0,
-      "buildQueueCount": 0,
-      "watchCount": 0,
-      "topStars": 326,
-      "topScore": 100,
-      "scoreTotal": 100,
-      "sourceNames": [
-        "sergebulaev/linkedin-skills"
-      ],
-      "queryNames": [
-        "codex skills"
-      ],
-      "roles": [
-        "市场调研",
-        "内容增长",
-        "海外社媒",
-        "任务调度"
-      ],
-      "marketScopes": [
-        "海外市场"
-      ],
-      "avgScore": 100,
-      "primaryAction": "enhance_now",
-      "primaryActionLabel": "重点增强",
-      "specHref": "./radar-specs.html?slug=linkedin-growth-skill-pack",
-      "launchHref": "./launch-kits.html?slug=linkedin-growth-skill-pack",
-      "growthHref": "./growth-board.html?slug=linkedin-growth-skill-pack",
-      "funnelHref": "./conversion-funnel.html?slug=linkedin-growth-skill-pack&teammate=lead-gen#leadTable"
-    },
-    {
-      "slug": "gtm-engineer-skill-pack",
-      "title": "GTM 获客工程师 Skill 包",
-      "existingSkillSlug": "gtm-engineer-skill-pack",
-      "employeeName": "Leo · 海外拓客负责人",
-      "employeeRole": "B2B 拓客",
-      "teammateId": "lead-gen",
-      "teammateHref": "./teammates/lead-gen.html",
-      "businessValue": "离成交最近，适合高客单定制服务。",
-      "existingSkillHref": "./index.html?query=gtm-engineer-skill-pack&status=packaged#downloads",
-      "existingSkillDownload": "../dist/skills/gtm-engineer-skill-pack.zip",
-      "count": 1,
-      "enhanceNowCount": 1,
-      "enhanceCount": 0,
-      "buildNowCount": 0,
-      "buildQueueCount": 0,
-      "watchCount": 0,
-      "topStars": 1253,
-      "topScore": 97,
-      "scoreTotal": 97,
-      "sourceNames": [
-        "onvoyage-ai/gtm-engineer-skills"
-      ],
-      "queryNames": [
-        "claude code skills"
-      ],
-      "roles": [
-        "任务调度"
-      ],
-      "marketScopes": [
-        "全球通用"
-      ],
-      "avgScore": 97,
-      "primaryAction": "enhance_now",
-      "primaryActionLabel": "重点增强",
-      "specHref": "./radar-specs.html?slug=gtm-engineer-skill-pack",
-      "launchHref": "./launch-kits.html?slug=gtm-engineer-skill-pack",
-      "growthHref": "./growth-board.html?slug=gtm-engineer-skill-pack",
-      "funnelHref": "./conversion-funnel.html?slug=gtm-engineer-skill-pack&teammate=lead-gen#leadTable"
-    },
-    {
       "slug": "browser-automation-skill-adapter",
       "title": "浏览器自动化 Skill 适配器",
       "existingSkillSlug": "browser-automation-skill-adapter",
@@ -1728,7 +2064,7 @@ const RADAR_DATA = {
       "buildNowCount": 0,
       "buildQueueCount": 0,
       "watchCount": 0,
-      "topStars": 2880,
+      "topStars": 2952,
       "topScore": 93,
       "scoreTotal": 93,
       "sourceNames": [
@@ -1746,10 +2082,51 @@ const RADAR_DATA = {
       "avgScore": 93,
       "primaryAction": "enhance_now",
       "primaryActionLabel": "重点增强",
-      "specHref": "./radar-specs.html?slug=browser-automation-skill-adapter",
+      "specHref": "",
       "launchHref": "./launch-kits.html?slug=browser-automation-skill-adapter",
       "growthHref": "./growth-board.html?slug=browser-automation-skill-adapter",
       "funnelHref": "./conversion-funnel.html?slug=browser-automation-skill-adapter&teammate=chief-of-staff#leadTable"
+    },
+    {
+      "slug": "douyinliverecorder-改造-skill",
+      "title": "DouyinLiveRecorder 改造 Skill",
+      "existingSkillSlug": "",
+      "employeeName": "小燃 · 内容增长主编",
+      "employeeRole": "内容增长",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "existingSkillHref": "",
+      "existingSkillDownload": "",
+      "count": 1,
+      "enhanceNowCount": 0,
+      "enhanceCount": 0,
+      "buildNowCount": 1,
+      "buildQueueCount": 0,
+      "watchCount": 0,
+      "topStars": 10584,
+      "topScore": 91,
+      "scoreTotal": 91,
+      "sourceNames": [
+        "ihmily/DouyinLiveRecorder"
+      ],
+      "queryNames": [
+        "douyin"
+      ],
+      "roles": [
+        "内容增长",
+        "海外社媒"
+      ],
+      "marketScopes": [
+        "全球通用"
+      ],
+      "avgScore": 91,
+      "primaryAction": "build_now",
+      "primaryActionLabel": "优先制作",
+      "specHref": "",
+      "launchHref": "",
+      "growthHref": "./growth-board.html",
+      "funnelHref": ""
     },
     {
       "slug": "visual-card-content-system",
@@ -1768,15 +2145,16 @@ const RADAR_DATA = {
       "buildNowCount": 0,
       "buildQueueCount": 0,
       "watchCount": 0,
-      "topStars": 7306,
-      "topScore": 95,
-      "scoreTotal": 184,
+      "topStars": 7434,
+      "topScore": 100,
+      "scoreTotal": 189,
       "sourceNames": [
         "op7418/guizang-social-card-skill",
         "helloianneo/ian-xiaohei-illustrations"
       ],
       "queryNames": [
-        "codex skills"
+        "codex skills",
+        "xiaohongshu"
       ],
       "roles": [
         "内容增长",
@@ -1786,7 +2164,7 @@ const RADAR_DATA = {
         "中国市场",
         "全球通用"
       ],
-      "avgScore": 92,
+      "avgScore": 94,
       "primaryAction": "enhance",
       "primaryActionLabel": "复盘增强",
       "specHref": "./radar-specs.html?slug=visual-card-content-system",
@@ -1811,7 +2189,7 @@ const RADAR_DATA = {
       "buildNowCount": 0,
       "buildQueueCount": 0,
       "watchCount": 0,
-      "topStars": 1210,
+      "topStars": 1247,
       "topScore": 89,
       "scoreTotal": 178,
       "sourceNames": [
@@ -1835,6 +2213,90 @@ const RADAR_DATA = {
       "launchHref": "./launch-kits.html?slug=image-to-editable-ppt-assistant",
       "growthHref": "./growth-board.html?slug=image-to-editable-ppt-assistant",
       "funnelHref": "./conversion-funnel.html?slug=image-to-editable-ppt-assistant&teammate=office-analyst#leadTable"
+    },
+    {
+      "slug": "krillinai-改造-skill",
+      "title": "KrillinAI 改造 Skill",
+      "existingSkillSlug": "",
+      "employeeName": "小燃 · 内容增长主编",
+      "employeeRole": "内容增长",
+      "teammateId": "content-cmo",
+      "teammateHref": "./teammates/content-cmo.html",
+      "businessValue": "最适合免费引流和小红书/短视频传播。",
+      "existingSkillHref": "",
+      "existingSkillDownload": "",
+      "count": 1,
+      "enhanceNowCount": 0,
+      "enhanceCount": 0,
+      "buildNowCount": 0,
+      "buildQueueCount": 0,
+      "watchCount": 0,
+      "topStars": 10559,
+      "topScore": 100,
+      "scoreTotal": 100,
+      "sourceNames": [
+        "krillinai/KrillinAI"
+      ],
+      "queryNames": [
+        "douyin"
+      ],
+      "roles": [
+        "内容增长",
+        "海外社媒",
+        "任务调度"
+      ],
+      "marketScopes": [
+        "全球通用"
+      ],
+      "avgScore": 100,
+      "primaryAction": "ignore",
+      "primaryActionLabel": "暂不采用",
+      "specHref": "./radar-specs.html?slug=krillinai-改造-skill",
+      "launchHref": "",
+      "growthHref": "./growth-board.html",
+      "funnelHref": ""
+    },
+    {
+      "slug": "xhs-ai-publisher-改造-skill",
+      "title": "xhs_ai_publisher 改造 Skill",
+      "existingSkillSlug": "",
+      "employeeName": "林夏 · 中国市场调研总监",
+      "employeeRole": "中国市场调研",
+      "teammateId": "china-research",
+      "teammateHref": "./teammates/china-research.html",
+      "businessValue": "更适合中文平台、内容引流、私域承接和本地场景验证。",
+      "existingSkillHref": "",
+      "existingSkillDownload": "",
+      "count": 1,
+      "enhanceNowCount": 0,
+      "enhanceCount": 0,
+      "buildNowCount": 0,
+      "buildQueueCount": 0,
+      "watchCount": 0,
+      "topStars": 2039,
+      "topScore": 97,
+      "scoreTotal": 97,
+      "sourceNames": [
+        "BetaStreetOmnis/xhs_ai_publisher"
+      ],
+      "queryNames": [
+        "xiaohongshu"
+      ],
+      "roles": [
+        "市场调研",
+        "内容增长",
+        "任务调度"
+      ],
+      "marketScopes": [
+        "中国市场"
+      ],
+      "avgScore": 97,
+      "primaryAction": "ignore",
+      "primaryActionLabel": "暂不采用",
+      "specHref": "./radar-specs.html?slug=xhs-ai-publisher-改造-skill",
+      "launchHref": "",
+      "growthHref": "./growth-board.html",
+      "funnelHref": ""
     }
   ],
   "topCandidates": [
@@ -1842,9 +2304,9 @@ const RADAR_DATA = {
       "name": "alirezarezvani/claude-skills",
       "url": "https://github.com/alirezarezvani/claude-skills",
       "description": "345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
-      "stars": 21607,
+      "stars": 23262,
       "license": "mit",
-      "updatedAt": "2026-07-08T13:42:44Z",
+      "updatedAt": "2026-07-27T08:51:50Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -1860,12 +2322,12 @@ const RADAR_DATA = {
       ]
     },
     {
-      "name": "ComposioHQ/awesome-codex-skills",
-      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "name": "composio-community/awesome-codex-skills",
+      "url": "https://github.com/composio-community/awesome-codex-skills",
       "description": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API.",
-      "stars": 14714,
+      "stars": 15331,
       "license": "unknown",
-      "updatedAt": "2026-07-08T13:35:10Z",
+      "updatedAt": "2026-07-27T09:14:34Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -1883,9 +2345,9 @@ const RADAR_DATA = {
       "name": "op7418/Humanizer-zh",
       "url": "https://github.com/op7418/Humanizer-zh",
       "description": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
-      "stars": 12687,
+      "stars": 13981,
       "license": "mit",
-      "updatedAt": "2026-07-08T13:41:06Z",
+      "updatedAt": "2026-07-27T09:06:41Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -1900,12 +2362,55 @@ const RADAR_DATA = {
       ]
     },
     {
+      "name": "krillinai/KrillinAI",
+      "url": "https://github.com/krillinai/KrillinAI",
+      "description": "AI video translation & dubbing tool for humans and AI Agents, powered by LLMs. Full pipeline: download, transcribe, translate, TTS dub, reformat, cover generation. 100+ languages, optimized for YouTube, TikTok, Bilibili, Douyin, and more.AI视频翻译配音工具，面向人类与AI Agent，100+语言全链路，CLI分阶段调用，适配抖音、小红书、哔哩哔哩、视频号、TikTok、YouTube",
+      "stars": 10559,
+      "license": "gpl-3.0",
+      "updatedAt": "2026-07-27T08:17:22Z",
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "内容增长",
+        "海外社媒",
+        "任务调度"
+      ],
+      "marketScope": "全球通用",
+      "essence": "内容增长、海外社媒、获客和矩阵分发场景。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "适合进入待制作队列",
+      "queries": [
+        "douyin"
+      ]
+    },
+    {
+      "name": "nexu-io/html-anything",
+      "url": "https://github.com/nexu-io/html-anything",
+      "description": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider.",
+      "stars": 7972,
+      "license": "apache-2.0",
+      "updatedAt": "2026-07-27T08:51:52Z",
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "市场调研",
+        "任务调度"
+      ],
+      "marketScope": "中国市场",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "xiaohongshu"
+      ]
+    },
+    {
       "name": "trailofbits/skills",
       "url": "https://github.com/trailofbits/skills",
       "description": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows",
-      "stars": 6025,
+      "stars": 6282,
       "license": "cc-by-sa-4.0",
-      "updatedAt": "2026-07-08T10:54:10Z",
+      "updatedAt": "2026-07-27T07:39:46Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -1921,12 +2426,34 @@ const RADAR_DATA = {
       ]
     },
     {
+      "name": "op7418/guizang-social-card-skill",
+      "url": "https://github.com/op7418/guizang-social-card-skill",
+      "description": "🪧 Claude Code / Codex skill — generate Xiaohongshu carousels & WeChat 21:9+1:1 cover pairs. Editorial × Swiss visual systems, 28 layouts, 10 themes, single-file HTML → PNG. 小红书图文 + 公众号封面对",
+      "stars": 5591,
+      "license": "agpl-3.0",
+      "updatedAt": "2026-07-27T08:39:35Z",
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "内容增长",
+        "任务调度"
+      ],
+      "marketScope": "中国市场",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "适合进入待制作队列",
+      "queries": [
+        "codex skills",
+        "xiaohongshu"
+      ]
+    },
+    {
       "name": "Dimillian/Skills",
       "url": "https://github.com/Dimillian/Skills",
       "description": "My Codex Skills",
-      "stars": 3803,
+      "stars": 3860,
       "license": "mit",
-      "updatedAt": "2026-07-07T22:50:16Z",
+      "updatedAt": "2026-07-27T03:34:28Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -1941,12 +2468,33 @@ const RADAR_DATA = {
       ]
     },
     {
+      "name": "white0dew/XiaohongshuSkills",
+      "url": "https://github.com/white0dew/XiaohongshuSkills",
+      "description": "支持小红书自动发布、自动评论、自动检索的 Skill。支持 OpenClaw、Codex、CC 等",
+      "stars": 3235,
+      "license": "mit",
+      "updatedAt": "2026-07-27T09:16:33Z",
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "内容增长",
+        "任务调度"
+      ],
+      "marketScope": "中国市场",
+      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "xiaohongshu"
+      ]
+    },
+    {
       "name": "Agentchengfeng/chengfeng-videocut-skills",
       "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
       "description": "用 Claude Code Skills 做的视频剪辑 Agent",
-      "stars": 2577,
+      "stars": 2746,
       "license": "apache-2.0",
-      "updatedAt": "2026-07-08T10:46:32Z",
+      "updatedAt": "2026-07-26T18:22:16Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -1964,9 +2512,9 @@ const RADAR_DATA = {
       "name": "tradermonty/claude-trading-skills",
       "url": "https://github.com/tradermonty/claude-trading-skills",
       "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "stars": 2303,
+      "stars": 2509,
       "license": "mit",
-      "updatedAt": "2026-07-08T13:31:15Z",
+      "updatedAt": "2026-07-27T08:27:37Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -1985,9 +2533,9 @@ const RADAR_DATA = {
       "name": "skills-directory/skill-codex",
       "url": "https://github.com/skills-directory/skill-codex",
       "description": "A claude code skill to delegate prompts to codex",
-      "stars": 1351,
+      "stars": 1392,
       "license": "mit",
-      "updatedAt": "2026-07-08T10:01:06Z",
+      "updatedAt": "2026-07-27T06:38:19Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -2005,9 +2553,9 @@ const RADAR_DATA = {
       "name": "Dimillian/CodexSkillManager",
       "url": "https://github.com/Dimillian/CodexSkillManager",
       "description": "macOS app to manage your Codex skills",
-      "stars": 1345,
+      "stars": 1357,
       "license": "mit",
-      "updatedAt": "2026-07-08T13:03:05Z",
+      "updatedAt": "2026-07-26T15:11:05Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -2025,9 +2573,9 @@ const RADAR_DATA = {
       "name": "daymade/claude-code-skills",
       "url": "https://github.com/daymade/claude-code-skills",
       "description": "Professional Claude Code skills marketplace featuring production-ready skills for enhanced development workflows.",
-      "stars": 1254,
+      "stars": 1299,
       "license": "mit",
-      "updatedAt": "2026-07-08T13:11:08Z",
+      "updatedAt": "2026-07-27T08:35:03Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -2046,9 +2594,9 @@ const RADAR_DATA = {
       "name": "brycewang-stanford/Awesome-Journal-Skills",
       "url": "https://github.com/brycewang-stanford/Awesome-Journal-Skills",
       "description": "Journal-specific Claude Code/Codex skill packs covering mainstream journals — AER, QJE, Nature, Cell, 管理世界, 经济研究 & 200+ more — your fast track to getting published. ｜ 覆盖主流期刊的 Claude Code/Codex 期刊技能包，从选题、识别策略到表格规范与审稿回复全流程，助你快速发论文。",
-      "stars": 720,
+      "stars": 872,
       "license": "mit",
-      "updatedAt": "2026-07-08T11:39:17Z",
+      "updatedAt": "2026-07-27T06:18:13Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -2066,9 +2614,9 @@ const RADAR_DATA = {
       "name": "dsifry/metaswarm",
       "url": "https://github.com/dsifry/metaswarm",
       "description": "A self-improving multi-agent orchestration framework for Claude Code, Gemini CLI, and Codex CLI — 18 agents, 13 skills, 15 commands, TDD enforcement, quality gates, spec-driven development",
-      "stars": 343,
+      "stars": 366,
       "license": "mit",
-      "updatedAt": "2026-07-08T03:14:16Z",
+      "updatedAt": "2026-07-27T08:50:24Z",
       "score": 100,
       "starsLabel": "★★★★★",
       "roles": [
@@ -2080,29 +2628,6 @@ const RADAR_DATA = {
       "canAdapt": "可优先改造成 Codex Skill",
       "queries": [
         "multi agent orchestration framework"
-      ]
-    },
-    {
-      "name": "sergebulaev/linkedin-skills",
-      "url": "https://github.com/sergebulaev/linkedin-skills",
-      "description": "Claude Code and Codex skills for LinkedIn growth: write human-sounding posts, craft comments that get noticed, analyze your feed, and build a publishing cadence, all from your terminal. Plug-and-play skills for content creators, founders, and marketers.",
-      "stars": 326,
-      "license": "mit",
-      "updatedAt": "2026-07-08T13:36:12Z",
-      "score": 100,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "市场调研",
-        "内容增长",
-        "海外社媒",
-        "任务调度"
-      ],
-      "marketScope": "海外市场",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "codex skills"
       ]
     },
     {
@@ -2126,12 +2651,35 @@ const RADAR_DATA = {
       ]
     },
     {
+      "name": "Linked-API/linkedin-skills",
+      "url": "https://github.com/Linked-API/linkedin-skills",
+      "description": "LinkedIn automation skills for AI agents – sales, social selling, data extraction, and more.",
+      "stars": 38,
+      "license": "mit",
+      "updatedAt": "2026-07-27T06:51:28Z",
+      "score": 100,
+      "starsLabel": "★★★★★",
+      "roles": [
+        "内容增长",
+        "海外社媒",
+        "B2B 拓客",
+        "任务调度"
+      ],
+      "marketScope": "海外市场",
+      "essence": "内容增长、海外社媒、获客和矩阵分发场景。",
+      "dross": "暂无明显糟粕，仍需人工复核。",
+      "canAdapt": "可优先改造成 Codex Skill",
+      "queries": [
+        "linkedin automation"
+      ]
+    },
+    {
       "name": "yctimlin/mcp_excalidraw",
       "url": "https://github.com/yctimlin/mcp_excalidraw",
       "description": "MCP server and Claude Code skill for Excalidraw — programmatic canvas toolkit to create, edit, and export diagrams via AI agents with real-time canvas sync.",
-      "stars": 2141,
+      "stars": 2214,
       "license": "mit",
-      "updatedAt": "2026-07-08T08:03:36Z",
+      "updatedAt": "2026-07-26T23:25:34Z",
       "score": 99,
       "starsLabel": "★★★★★",
       "roles": [
@@ -2149,9 +2697,9 @@ const RADAR_DATA = {
       "name": "glitternetwork/pinme",
       "url": "https://github.com/glitternetwork/pinme",
       "description": "Deploy Your Frontend in a Single Command. Claude Code Skills supported.",
-      "stars": 3701,
+      "stars": 3724,
       "license": "mit",
-      "updatedAt": "2026-07-08T12:35:37Z",
+      "updatedAt": "2026-07-27T07:12:56Z",
       "score": 97,
       "starsLabel": "★★★★★",
       "roles": [
@@ -2161,105 +2709,26 @@ const RADAR_DATA = {
       "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
       "dross": "暂无明显糟粕，仍需人工复核。",
       "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "claude code skills"
-      ]
-    },
-    {
-      "name": "nowork-studio/NotFair",
-      "url": "https://github.com/nowork-studio/NotFair",
-      "description": "Open-source Claude Code skills for SEO, GEO, Google Ads, Meta Ads",
-      "stars": 3091,
-      "license": "mit",
-      "updatedAt": "2026-07-08T10:55:29Z",
-      "score": 97,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "任务调度"
-      ],
-      "marketScope": "全球通用",
-      "essence": "命令、角色、模式和方法论配置，可转成 Codex Skill。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "claude code skills"
-      ]
-    },
-    {
-      "name": "open-multi-agent/open-multi-agent",
-      "url": "https://github.com/open-multi-agent/open-multi-agent",
-      "description": "TypeScript multi-agent orchestration framework. Describe a goal, a coordinator decomposes it into a task DAG that runs on any LLM: Claude, ChatGPT, Gemini, DeepSeek, or local models. ",
-      "stars": 6537,
-      "license": "mit",
-      "updatedAt": "2026-07-08T12:24:39Z",
-      "score": 96,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "任务调度"
-      ],
-      "marketScope": "全球通用",
-      "essence": "主管分诊、任务图、角色协同、状态恢复和复盘机制。",
-      "dross": "完整运行时可能过重",
-      "canAdapt": "可优先改造成 Codex Skill",
-      "queries": [
-        "multi agent orchestration framework"
-      ]
-    },
-    {
-      "name": "op7418/guizang-social-card-skill",
-      "url": "https://github.com/op7418/guizang-social-card-skill",
-      "description": "🪧 Claude Code / Codex skill — generate Xiaohongshu carousels & WeChat 21:9+1:1 cover pairs. Editorial × Swiss visual systems, 28 layouts, 10 themes, single-file HTML → PNG. 小红书图文 + 公众号封面对",
-      "stars": 4761,
-      "license": "agpl-3.0",
-      "updatedAt": "2026-07-08T13:05:23Z",
-      "score": 95,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "内容增长",
-        "任务调度"
-      ],
-      "marketScope": "中国市场",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "适合进入待制作队列",
-      "queries": [
-        "codex skills"
-      ]
-    },
-    {
-      "name": "taishi-i/awesome-ChatGPT-repositories",
-      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
-      "description": "A curated list of open source GitHub repositories related to ChatGPT, the OpenAI API, and Codex. Searchable via Claude Code skills.",
-      "stars": 3124,
-      "license": "cc0-1.0",
-      "updatedAt": "2026-07-08T12:31:24Z",
-      "score": 95,
-      "starsLabel": "★★★★★",
-      "roles": [
-        "任务调度"
-      ],
-      "marketScope": "全球通用",
-      "essence": "Codex Skill 的分发、触发描述、模板结构和可安装包形态。",
-      "dross": "暂无明显糟粕，仍需人工复核。",
-      "canAdapt": "适合进入待制作队列",
       "queries": [
         "claude code skills"
       ]
     }
   ],
   "actionCounts": {
-    "enhance_now": 20,
-    "enhance": 12
+    "enhance_now": 24,
+    "enhance": 14,
+    "approved_build": 2,
+    "build_now": 1
   },
   "marketCounts": {
-    "中国市场": 1,
-    "海外市场": 1,
-    "全球通用": 57
+    "中国市场": 28,
+    "海外市场": 12,
+    "全球通用": 67
   },
   "teammates": [
     {
       "id": "chief-of-staff",
-      "count": 23,
+      "count": 27,
       "name": "阿序",
       "title": "任务调度总监",
       "avatar": "序",
@@ -2268,7 +2737,7 @@ const RADAR_DATA = {
     },
     {
       "id": "content-cmo",
-      "count": 5,
+      "count": 7,
       "name": "小燃",
       "title": "内容增长主编",
       "avatar": "燃",
@@ -2277,7 +2746,7 @@ const RADAR_DATA = {
     },
     {
       "id": "lead-gen",
-      "count": 2,
+      "count": 4,
       "name": "Leo",
       "title": "海外拓客负责人",
       "avatar": "L",
@@ -2292,6 +2761,15 @@ const RADAR_DATA = {
       "avatar": "简",
       "color": "#f2f0e6",
       "href": "./index.html?teammate=office-analyst#teammates"
+    },
+    {
+      "id": "china-research",
+      "count": 1,
+      "name": "林夏",
+      "title": "中国市场调研总监",
+      "avatar": "夏",
+      "color": "#78d8a6",
+      "href": "./teammates/china-research.html"
     }
   ],
   "latestMd": "../docs/daily-skill-radar/latest.md",
@@ -2299,13 +2777,14 @@ const RADAR_DATA = {
   "specIndexMd": "./radar-specs.html",
   "specMap": {
     "video-cut-workflow-director": "./radar-specs.html?slug=video-cut-workflow-director",
+    "xhs-ai-publisher-改造-skill": "./radar-specs.html?slug=xhs-ai-publisher-改造-skill",
     "multi-employee-quality-gate": "./radar-specs.html?slug=multi-employee-quality-gate",
     "linkedin-growth-skill-pack": "./radar-specs.html?slug=linkedin-growth-skill-pack",
     "skill-market-curator": "./radar-specs.html?slug=skill-market-curator",
     "image-to-editable-ppt-assistant": "./radar-specs.html?slug=image-to-editable-ppt-assistant",
     "gtm-engineer-skill-pack": "./radar-specs.html?slug=gtm-engineer-skill-pack",
     "ai-content-humanizer-director": "./radar-specs.html?slug=ai-content-humanizer-director",
-    "browser-automation-skill-adapter": "./radar-specs.html?slug=browser-automation-skill-adapter",
+    "krillinai-改造-skill": "./radar-specs.html?slug=krillinai-改造-skill",
     "visual-card-content-system": "./radar-specs.html?slug=visual-card-content-system"
   }
 };

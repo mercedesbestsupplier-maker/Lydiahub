@@ -3,18 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>一人公司的 AI 团队</title>
+    <title>一人公司的 AI 团队工作台</title>
     <link rel="stylesheet" href="./styles.css" />
-  
-<style>
-.staff-accordion { border: 1px solid var(--line); border-radius: 20px; background: rgba(255,250,240,0.78); overflow: hidden; margin-top: 24px; }
-.staff-accordion details summary { list-style: none; padding: 20px; cursor: pointer; display: flex; justify-content: space-between; font-size: 1.1rem; font-weight: bold; align-items: center; }
-.staff-accordion details summary::-webkit-details-marker { display: none; }
-.staff-accordion details[open] summary { border-bottom: 1px dashed var(--line); }
-.staff-accordion-content { padding: 24px; }
-</style>
-
-</head>
+  </head>
   <body>
     <div class="grain"></div>
     <header class="hero">
@@ -24,12 +15,13 @@
           <span>和它的员工们</span>
         </a>
         <div class="top-actions">
-          <a class="ghost-link" href="#packs">开箱即用包</a>
+          <a class="ghost-link" href="#audiences">我是谁</a>
+          <a class="ghost-link" href="#packs">场景套装</a>
           <a class="ghost-link" href="#featured">今日推荐</a>
-          <a class="ghost-link" href="#company-collab">搭班方式</a>
+          <a class="ghost-link" href="#company-collab">协作链</a>
           <a class="ghost-link" href="#teammates">公司团队</a>
           <a class="ghost-link" href="./planning-center.html">规划作战包</a>
-          <a class="ghost-link" href="./skill-radar.html">外脑能力库</a>
+          <a class="ghost-link" href="./skill-radar.html">强 Skill 雷达</a>
           <a class="ghost-link" href="./growth-board.html">运营作战板</a>
           <a class="ghost-link" href="./launch-kits.html">发布素材包</a>
           <a class="ghost-link" href="./conversion-funnel.html">私域转化</a>
@@ -39,12 +31,12 @@
       </nav>
       <section class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">开启你的超级一人公司</p>
-          <h1>把每个工具变成员工，让复杂工作流成为总监。</h1>
+          <p class="eyebrow">一个人，也可以拥有一家公司</p>
+          <h1>把高需求 Skill 编排成你的超级员工团队。</h1>
           <p class="hero-subtitle">
-            围绕一人公司的真实业务，将全网高需求的自动化能力和多智能体协同，重新编排为你的内容、拓客、成交、交付等部门。
-            你可以直接向基层员工派活，或者让总监为你统筹全局。
-            
+            围绕一人公司的真实业务，把内容、选品、拓客、成交、交付、客服和风控
+            组织成一套可执行的一人公司工作台。
+            每位同事都有自己的性格、岗位、能力包和可下载 Skill。
           </p>
           <div class="hero-controls">
             <label class="search-box">
@@ -81,11 +73,18 @@
         <div id="companyWorkflowGrid" class="company-workflow-grid"></div>
       </section>
 
-      <div class="staff-accordion"><details><summary>一线员工及适用场景库（点击展开查看 120+ 名一线员工）<span style="color:var(--brand)">▼</span></summary><div class="staff-accordion-content">
-<section id="packs" class="section pack-section">
+      <section id="audiences" class="section audience-section">
+        <div class="section-heading">
+          <p class="eyebrow">第一步</p>
+          <h2>先告诉工作台：你是谁？</h2>
+        </div>
+        <div id="audienceBoard" class="audience-board"></div>
+      </section>
+
+      <section id="packs" class="section pack-section">
         <div class="section-heading">
           <p class="eyebrow">第二步</p>
-          <h2>一键部署你公司的护城河</h2>
+          <h2>直接拿一套业务流程开始</h2>
         </div>
         <div id="packGrid" class="pack-grid"></div>
       </section>
@@ -93,7 +92,7 @@
       <section id="featured" class="section featured-section">
         <div class="section-heading">
           <p class="eyebrow">第三步</p>
-          <h2>今天新鲜出炉的员工</h2>
+          <h2>今天最值得先试的 Skill</h2>
         </div>
         <div id="featuredGrid" class="featured-grid"></div>
       </section>
@@ -110,8 +109,8 @@
 
       <section id="radar-office" class="section demand-office-section">
         <div class="section-heading">
-          <p class="eyebrow">每天面试优秀员工</p>
-          <h2>全网顶级员工猎头（寻访中）</h2>
+          <p class="eyebrow">再看全网雷达</p>
+          <h2>强 Skill 雷达中心</h2>
           <a class="ghost-link" href="./skill-radar.html">打开雷达中心</a>
         </div>
         <div class="demand-lab-overview">
@@ -127,26 +126,25 @@
           </article>
         </div>
       </section>
-</div></details></div>
 
       <section id="company-collab" class="section workflow-section">
         <div class="section-heading">
           <div>
             <p class="eyebrow">搭班方式</p>
-            <h2>这家公司常用的搭班方式</h2>
+            <h2>这家公司最常一起上的协作链</h2>
           </div>
           <a class="ghost-link" href="./research-workbench.html">先让总监派单</a>
         </div>
         <div class="filters-card collab-filter-card">
           <div>
-            <p class="eyebrow">快速查看搭班方案</p>
+            <p class="eyebrow">快速找线</p>
             <h3>按岗位或工作场景切换</h3>
-            <p id="companyCollabSummary" class="small-muted collab-summary">先看公司最常用的几套搭班方案。</p>
+            <p id="companyCollabSummary" class="small-muted collab-summary">先看公司最常用的几条高需求协作链。</p>
           </div>
           <div class="filter-row collab-filter-row">
             <select id="collabTeammateFilter" aria-label="按协作岗位筛选"></select>
             <select id="collabAudienceFilter" aria-label="按工作场景筛选"></select>
-            <button id="collabResetBtn" class="github-link" type="button">重置搭班方式</button>
+            <button id="collabResetBtn" class="github-link" type="button">重置协作链</button>
           </div>
         </div>
         <div id="companyCollabGrid" class="company-collab-grid"></div>
@@ -155,21 +153,31 @@
       <section id="teammates" class="section teammate-section">
         <div class="section-heading">
           <p class="eyebrow">也可以按员工找</p>
-          <h2>每个岗位的形象、性格和工作方式</h2>
+          <h2>每个岗位都有形象、性格和工作方式</h2>
         </div>
         <div id="teammateBoard" class="teammate-board"></div>
       </section>
 
       <section id="downloads" class="section download-section">
         <div class="section-heading">
-          <p class="eyebrow">按部门职能提取</p>
-          <h2>员工能力资源库</h2>
+          <p class="eyebrow">直接拿包</p>
+          <h2>下载中心</h2>
         </div>
         <div id="downloadNavGrid" class="download-nav-grid"></div>
         <div id="downloadCollectionGrid" class="download-collection-grid"></div>
       </section>
 
-      
+      <section id="planning-center" class="section download-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">先做高需求方向</p>
+            <h2>规划作战包中心</h2>
+          </div>
+          <a class="ghost-link" href="./planning-center.html">打开规划包中心</a>
+        </div>
+        <div id="planningOverview" class="demand-lab-overview"></div>
+        <div id="planningCollectionGrid" class="download-collection-grid"></div>
+      </section>
 
       <section class="section">
         <div class="section-heading">
@@ -182,7 +190,7 @@
       <section class="section category-section">
         <div class="section-heading">
           <p class="eyebrow">再看赛道</p>
-          <h2>档案馆</h2>
+          <h2>分类优先级</h2>
         </div>
         <div id="categoryBoard" class="category-board"></div>
       </section>
@@ -191,7 +199,7 @@
         <div class="filters-card">
           <div>
             <p class="eyebrow">快速筛选</p>
-            <h2>一线员工</h2>
+            <h2>Skill 库</h2>
           </div>
           <div class="filter-row">
             <select id="teammateFilter" aria-label="按团队成员筛选"></select>

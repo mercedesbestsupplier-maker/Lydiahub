@@ -34,7 +34,7 @@ const OPS_DATA = {
       "hook": "别一上来投广告，先用 30 天 GTM 实验验证谁真的会买。",
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。",
       "download": "../dist/skills/gtm-engineer-skill-pack.zip",
-      "evidence": "已打包 zip；雷达命中 1 次；业务价值：销售成交",
+      "evidence": "已打包 zip；雷达命中 2 次；业务价值：销售成交",
       "market_tags": [
         "overseas"
       ],
@@ -55,7 +55,7 @@ const OPS_DATA = {
       "hook": "B2B 获客不是群发私信，而是主页、内容、评论和暖私信一起跑。",
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。",
       "download": "../dist/skills/linkedin-growth-skill-pack.zip",
-      "evidence": "已打包 zip；雷达命中 1 次；业务价值：销售成交",
+      "evidence": "已打包 zip；雷达命中 2 次；业务价值：销售成交",
       "market_tags": [
         "overseas"
       ],
@@ -119,7 +119,7 @@ const OPS_DATA = {
       "hook": "每天自动找高星 Skill，不靠灵感，靠市场已经投票过的需求。",
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。",
       "download": "../dist/skills/skill-market-curator.zip",
-      "evidence": "已打包 zip；雷达命中 17 次；业务价值：产品增长",
+      "evidence": "已打包 zip；雷达命中 21 次；业务价值：产品增长",
       "market_tags": [
         "overseas",
         "universal"
@@ -1010,8 +1010,8 @@ const OPS_DATA = {
   ],
   "calendar": [
     {
-      "day": "2026-07-09",
-      "weekday": "周四",
+      "day": "2026-07-28",
+      "weekday": "周二",
       "skill": "AI 内容人味化总监",
       "slug": "ai-content-humanizer-director",
       "format": "痛点清单",
@@ -1021,8 +1021,8 @@ const OPS_DATA = {
       "cta": "评论「模板」领取免费 Skill；合集和一对一调试走私信。"
     },
     {
-      "day": "2026-07-10",
-      "weekday": "周五",
+      "day": "2026-07-29",
+      "weekday": "周三",
       "skill": "GTM 获客工程师 Skill 包",
       "slug": "gtm-engineer-skill-pack",
       "format": "前后对比",
@@ -1032,8 +1032,8 @@ const OPS_DATA = {
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。"
     },
     {
-      "day": "2026-07-11",
-      "weekday": "周六",
+      "day": "2026-07-30",
+      "weekday": "周四",
       "skill": "LinkedIn 增长 Skill 包",
       "slug": "linkedin-growth-skill-pack",
       "format": "现场演示",
@@ -1043,8 +1043,8 @@ const OPS_DATA = {
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。"
     },
     {
-      "day": "2026-07-12",
-      "weekday": "周日",
+      "day": "2026-07-31",
+      "weekday": "周五",
       "skill": "视频切片与剪辑流程总监",
       "slug": "video-cut-workflow-director",
       "format": "模板领取",
@@ -1054,8 +1054,8 @@ const OPS_DATA = {
       "cta": "评论「模板」领取免费 Skill；合集和一对一调试走私信。"
     },
     {
-      "day": "2026-07-13",
-      "weekday": "周一",
+      "day": "2026-08-01",
+      "weekday": "周六",
       "skill": "图片/PDF 转可编辑 PPT 助手",
       "slug": "image-to-editable-ppt-assistant",
       "format": "案例拆解",
@@ -1065,8 +1065,8 @@ const OPS_DATA = {
       "cta": "评论「办公」领取安装包；需要部署教程和答疑可进群。"
     },
     {
-      "day": "2026-07-14",
-      "weekday": "周二",
+      "day": "2026-08-02",
+      "weekday": "周日",
       "skill": "强 Skill 市场雷达策展官",
       "slug": "skill-market-curator",
       "format": "避坑提醒",
@@ -1076,8 +1076,8 @@ const OPS_DATA = {
       "cta": "评论/私信「Skill」领取免费版；需要接入业务流程可预约定制。"
     },
     {
-      "day": "2026-07-15",
-      "weekday": "周三",
+      "day": "2026-08-03",
+      "weekday": "周一",
       "skill": "内容视觉卡片系统",
       "slug": "visual-card-content-system",
       "format": "合集打包",
@@ -1087,8 +1087,8 @@ const OPS_DATA = {
       "cta": "评论「模板」领取免费 Skill；合集和一对一调试走私信。"
     },
     {
-      "day": "2026-07-16",
-      "weekday": "周四",
+      "day": "2026-08-04",
+      "weekday": "周二",
       "skill": "LinkedIn 社交销售系统",
       "slug": "linkedin-social-selling-system",
       "format": "痛点清单",
@@ -1098,8 +1098,8 @@ const OPS_DATA = {
       "cta": "评论关键词领取免费包；复杂场景私信做诊断。"
     },
     {
-      "day": "2026-07-17",
-      "weekday": "周五",
+      "day": "2026-08-05",
+      "weekday": "周三",
       "skill": "Amazon/Shopify Listing 转化包",
       "slug": "amazon-shopify-listing-conversion-pack",
       "format": "前后对比",
@@ -1109,8 +1109,8 @@ const OPS_DATA = {
       "cta": "评论关键词领取免费包；复杂场景私信做诊断。"
     },
     {
-      "day": "2026-07-18",
-      "weekday": "周六",
+      "day": "2026-08-06",
+      "weekday": "周四",
       "skill": "跨境电商运营负责人",
       "slug": "crossborder-commerce-operator",
       "format": "现场演示",
@@ -1120,8 +1120,8 @@ const OPS_DATA = {
       "cta": "评论关键词领取免费包；复杂场景私信做诊断。"
     },
     {
-      "day": "2026-07-19",
-      "weekday": "周日",
+      "day": "2026-08-07",
+      "weekday": "周五",
       "skill": "PPT 汇报大纲工作室",
       "slug": "ppt-report-outline-studio",
       "format": "模板领取",
@@ -1131,8 +1131,8 @@ const OPS_DATA = {
       "cta": "评论「办公」领取安装包；需要部署教程和答疑可进群。"
     },
     {
-      "day": "2026-07-20",
-      "weekday": "周一",
+      "day": "2026-08-08",
+      "weekday": "周六",
       "skill": "办公效率参谋长",
       "slug": "office-productivity-chief",
       "format": "案例拆解",
@@ -1142,8 +1142,8 @@ const OPS_DATA = {
       "cta": "评论「办公」领取安装包；需要部署教程和答疑可进群。"
     },
     {
-      "day": "2026-07-21",
-      "weekday": "周二",
+      "day": "2026-08-09",
+      "weekday": "周日",
       "skill": "微信私域问题聚类",
       "slug": "wechat-private-domain-question-cluster",
       "format": "避坑提醒",
@@ -1153,8 +1153,8 @@ const OPS_DATA = {
       "cta": "评论关键词领取免费包；复杂场景私信做诊断。"
     },
     {
-      "day": "2026-07-22",
-      "weekday": "周三",
+      "day": "2026-08-10",
+      "weekday": "周一",
       "skill": "社群私信成交话术包",
       "slug": "community-private-message-close-pack",
       "format": "合集打包",

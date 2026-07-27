@@ -32067,7 +32067,7 @@ async function copyText(text) {
 function buildCollabPrompt(chain, linkedTeammates) {
   const teammateLine = linkedTeammates.map((teammate) => `${teammate.name}（${teammate.title}）`).join(" -> ");
   return [
-    `请按这个搭班方案协同完成任务。`,
+    `请按这条协作链协同完成任务。`,
     ``,
     `业务链：${chain.title}`,
     `适合场景：${(chain.audienceNames || []).join("、") || "一人公司 / 创作者 / 卖家 / 白领"}`,
@@ -32101,7 +32101,7 @@ function buildCollabBrief(chain, linkedTeammates, focusSkill) {
   return [
     `# ${chain.title} 协作简报`,
     ``,
-    `- 搭班方案类型：${chain.kicker}`,
+    `- 协作链类型：${chain.kicker}`,
     `- 当前上下文 Skill：${skillLine}`,
     `- 适合场景：${(chain.audienceNames || []).join("、") || "一人公司 / 创作者 / 卖家 / 白领"}`,
     `- 参与同事：${linkedTeammates.map((teammate) => `${teammate.name}（${teammate.title}）`).join(" -> ")}`,
@@ -32296,7 +32296,7 @@ function renderCompanyCollab() {
     return true;
   });
   if (els.companyCollabSummary) {
-    const summary = [`当前显示 ${chains.length} 种搭班方案`];
+    const summary = [`当前显示 ${chains.length} 条协作链`];
     if (collabState.chain !== "all") {
       const chain = chainOptions.find((item) => item.id === collabState.chain);
       if (chain) summary.push(`业务链：${chain.title}`);
@@ -32318,10 +32318,10 @@ function renderCompanyCollab() {
     els.companyCollabGrid.innerHTML = `
       <article class="collab-card">
         <span class="card-kicker">暂无匹配</span>
-        <h3>当前筛选下没有搭班方案</h3>
-        <p class="signal">可以先重置搭班方式，或者换一个岗位 / 工作场景重新看。</p>
+        <h3>当前筛选下没有协作链</h3>
+        <p class="signal">可以先重置协作链，或者换一个岗位 / 工作场景重新看。</p>
         <div class="card-actions">
-          <button class="card-action" type="button" data-reset-collab-grid="true">重置搭班方式</button>
+          <button class="card-action" type="button" data-reset-collab-grid="true">重置协作链</button>
         </div>
       </article>
     `;
@@ -32387,7 +32387,7 @@ function renderPacks() {
     const packaged = matched.filter((skill) => skill.hasPackage).length;
     return `
       <button class="pack-card" type="button" data-pack="${pack.id}">
-        <span class="card-kicker">开箱即用包</span>
+        <span class="card-kicker">场景套装</span>
         <h3>${pack.title}</h3>
         <p class="signal">${pack.summary}</p>
         <p class="small-muted">${pack.promise}</p>
@@ -32549,10 +32549,10 @@ function renderTeammates() {
         <div class="teammate-tags">
           ${teammate.bestFor.map((tag) => `<span class="pill">${tag}</span>`).join("")}
         </div>
-        <p class="small-muted">${bucket.count} 个 Skill，${bucket.five} 个五星；常搭 ${collabCount} 种搭班方案；正式执行包 ${teammate.packagedSkillCount || 0} 个，规划包 ${teammate.planningSkillCount || 0} 个，待整理 ${teammate.plannedSkillCount || 0} 个。</p>
+        <p class="small-muted">${bucket.count} 个 Skill，${bucket.five} 个五星；常搭 ${collabCount} 条协作链；正式执行包 ${teammate.packagedSkillCount || 0} 个，规划包 ${teammate.planningSkillCount || 0} 个，待整理 ${teammate.plannedSkillCount || 0} 个。</p>
         <div class="card-actions">
           <button class="card-action" type="button" data-teammate="${teammate.id}">一键调用这位同事</button>
-          <button class="github-link" type="button" data-open-collab="${teammate.id}">看搭班方案${collabCount ? `（${collabCount}）` : ""}</button>
+          <button class="github-link" type="button" data-open-collab="${teammate.id}">看协作链${collabCount ? `（${collabCount}）` : ""}</button>
           <button class="github-link" type="button" data-planning-teammate="${teammate.id}">看规划包</button>
           ${teammate.workbenchHref ? `<a class="github-link" href="${teammate.workbenchHref}">进入工作台</a>` : ""}
           ${teammate.landingPage ? `<a class="github-link" href="${teammate.landingPage}">进入专题页</a>` : ""}
@@ -32593,48 +32593,7 @@ function renderTeammates() {
 }
 
 function renderDownloadCollections() {
-  const container = els.downloadCollectionGrid;
-  container.className = "accordion-container";
-  
-  
-  // Merge planning data into the accordion
-  const planningSkills = DATA.skills.filter((skill) => skill.packageKind === "planning");
-  const planningCount = planningSkills.length;
-  
-  const planningHTML = planningSkills.map(skill => `
-    <div class="skill-mini-card" style="border-style: dashed; background: #fafafa;">
-      <strong>${skill.name}</strong>
-      <p>${skill.description}</p>
-      <span class="small-muted">期待值: ${skill.score} | ${skill.reason}</span>
-    </div>
-  `).join("");
-
-  const planningAccordion = `
-    <div class="accordion-item" data-accordion-index="999">
-      <div class="accordion-header">
-        <div class="accordion-header-left">
-          <h3>🚀 岗位热度（待招聘的热门员工）</h3>
-          <p>全网高频痛点 · 尚未正式入职 | ${planningCount} 个热门需求</p>
-        </div>
-        <div class="accordion-icon">▼</div>
-      </div>
-      <div class="accordion-body">
-        <div class="accordion-content">
-          <p class="signal">这些是近期呼声最高的业务痛点，正在紧急培训中，即将上岗。</p>
-          <div class="skill-mini-list">
-            ${planningHTML}
-          </div>
-          <div style="margin-top: 8px;">
-            <a class="ghost-link" href="./planning-center.html">查看详细数据分析</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
-
-  container.innerHTML = planningAccordion + container.innerHTML;
-
-  container.innerHTML += DATA.downloadCollections.map((collection, index) => {
+  els.downloadCollectionGrid.innerHTML = DATA.downloadCollections.map((collection) => {
     const teammate = DATA.teammates.find((item) => item.id === collection.teammateId) || DATA.teammates[0];
     const matched = sortedSkills(DATA.skills.filter((skill) => {
       if (collection.preset?.teammate && skill.teammateId !== collection.preset.teammate) return false;
@@ -32644,54 +32603,34 @@ function renderDownloadCollections() {
       return skill.stars >= (collection.preset?.minStars || 0);
     }));
     const packaged = matched.filter((skill) => skill.hasPackage).length;
-    
-    const skillHTML = matched.map(skill => `
-      <div class="skill-mini-card">
-        <strong>${skill.name}</strong>
-        <p>${skill.description}</p>
-        <a class="github-link ${skill.hasPackage ? '' : 'disabled'}" ${skill.hasPackage ? `href="${teammate.packageDownload}" download` : ''}>
-          ${skill.hasPackage ? '下载单项' : '私信获取'}
-        </a>
-      </div>
-    `).join("");
-
     return `
-      <div class="accordion-item" data-accordion-index="${index}">
-        <div class="accordion-header">
-          <div class="accordion-header-left">
-            <h3>${collection.title}</h3>
-            <p>${teammate.name} · ${teammate.department} | ${matched.length} 个相关 Skill</p>
-          </div>
-          <div class="accordion-icon">▼</div>
+      <article class="download-collection-card">
+        <span class="card-kicker">${collection.kicker}</span>
+        <h3>${collection.title}</h3>
+        <div class="teammate-mini" style="--teammate: ${teammate.color}">
+          <span class="teammate-avatar small">${teammate.avatar}</span>
+          <span>
+            <strong>${teammate.name} · ${teammate.title}</strong>
+            <span>${teammate.department}</span>
+          </span>
         </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p class="signal">${collection.summary}</p>
-            <div class="skill-mini-list">
-              ${skillHTML}
-            </div>
-            <div style="margin-top: 8px; display: flex; gap: 12px; align-items: center;">
-              ${teammate.packageDownload ? `<a class="github-link primary" href="${teammate.packageDownload}" download>打包下载全部 (${packaged})</a>` : ''}
-              ${teammate.landingPage ? `<a class="ghost-link" href="${teammate.landingPage}">查看专题页</a>` : ''}
-            </div>
-          </div>
+        <p class="signal">${collection.summary}</p>
+        <div class="value-tags">
+          ${collection.highlights.map((tag) => `<span class="pill">${tag}</span>`).join("")}
         </div>
-      </div>
+        <p class="small-muted">${matched.length} 个相关 Skill，${packaged} 个当前可下载。</p>
+        <div class="collection-foot">
+          <button class="card-action" type="button" data-open-collection="${collection.id}">查看这批 Skill</button>
+          ${teammate.landingPage ? `<a class="github-link" href="${teammate.landingPage}">看专题页</a>` : ""}
+          ${teammate.packageDownload ? `<a class="github-link" href="${teammate.packageDownload}" download>下载员工包</a>` : `<span class="github-link disabled">员工包待生成</span>`}
+        </div>
+      </article>
     `;
   }).join("");
-
-  // Add click listeners for accordion
-  container.querySelectorAll('.accordion-header').forEach(header => {
-    header.addEventListener('click', () => {
-      const item = header.parentElement;
-      const isOpen = item.classList.contains('open');
-      
-      // Close all others (optional: remove this if you want multiple open at once)
-      container.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('open'));
-      
-      if (!isOpen) {
-        item.classList.add('open');
-      }
+  els.downloadCollectionGrid.querySelectorAll("[data-open-collection]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const collection = DATA.downloadCollections.find((item) => item.id === button.dataset.openCollection);
+      applyPreset(collection?.preset || {});
     });
   });
 }
@@ -32881,7 +32820,7 @@ function renderSkills() {
     const teammate = teammateFor(skill);
     const gh = githubUrl(skill);
     const githubClass = gh ? (DATA.repoExists ? "" : "pending") : "disabled";
-    const githubLabel = DATA.repoExists ? "GitHub" : "私信获取";
+    const githubLabel = DATA.repoExists ? "GitHub" : "GitHub待发布";
     const downloadButton = skill.hasPackage
       ? `<a class="card-action" href="${skill.download}" download>${skill.downloadLabel || "下载 zip"}</a>`
       : `<span class="github-link disabled">待制作</span>`;
@@ -33094,12 +33033,12 @@ function openSkill(slug, options = {}) {
     {
       title: "进入对应合集",
       body: skill.packageKind === "planning"
-        ? "这条方向更适合先在档案中心里看清楚适合谁、怎么开始、何时升级。"
+        ? "这条方向更适合先在规划包中心里看清楚适合谁、怎么开始、何时升级。"
         : relatedPack ? `它更适合放进「${relatedPack.title}」这种完整业务场景里一起用。` : "更推荐和同业务场景的其他 Skill 一起用，而不是孤立使用。",
       href: skill.packageKind === "planning"
         ? `./planning-center.html?teammate=${skill.teammateId}&slug=${skill.slug}`
         : relatedPack ? `./index.html?pack=${relatedPack.id}&minStars=4#downloads` : `./index.html?category=${encodeURIComponent(skill.category)}&minStars=4#downloads`,
-      cta: skill.packageKind === "planning" ? "进入档案中心" : "查看这一批"
+      cta: skill.packageKind === "planning" ? "进入规划包中心" : "查看这一批"
     },
   ];
   const workbenchSteps = [
@@ -33197,7 +33136,7 @@ function openSkill(slug, options = {}) {
       <p class="small-muted">${skill.categoryNote}</p>
       <div class="card-actions">
         ${skill.hasPackage ? `<a class="card-action" href="${skill.download}" download>${skill.downloadLabel || "下载 Skill zip"}</a>` : `<span class="github-link disabled">暂无 zip，待制作</span>`}
-        <a class="github-link ${gh ? (DATA.repoExists ? "" : "pending") : "disabled"}" href="${gh || "#"}">私信获取源码</a>
+        <a class="github-link ${gh ? (DATA.repoExists ? "" : "pending") : "disabled"}" href="${gh || "#"}">打开 GitHub 链接</a>
         ${skill.source ? `<a class="github-link" href="${skill.source}">查看源码 SKILL.md</a>` : `<span class="github-link disabled">源码待生成</span>`}
       </div>
       ${DATA.repoBase && !DATA.repoExists ? `<p class="small-muted">已按你的 GitHub 账号 ${DATA.githubOwner} 预留链接；但仓库还没创建/推送，点击后可能暂时 404。</p>` : ""}
@@ -33231,7 +33170,7 @@ function openCollabChain(chainId) {
   const resourceSteps = [
     ...(chain.bundleDownload ? [{
       title: chain.bundleLabel || "下载链路合集包",
-      body: "把这种搭班方案的说明、调用提示词、上下文 Skill、员工包和模板包一次带走。",
+      body: "把这条协作链的说明、调用提示词、上下文 Skill、员工包和模板包一次带走。",
       href: chain.bundleDownload,
       download: true,
       cta: chain.bundleLabel || "下载链路合集包"
@@ -33532,7 +33471,7 @@ function init() {
   if (DATA.repoBase && DATA.repoExists) {
     els.repoNote.textContent = `GitHub 已连接：${DATA.repoBase}`;
   } else if (DATA.repoBase) {
-    els.repoNote.textContent = `GitHub 账号：${DATA.githubOwner}，如果需要源码，请截图发到小红书私信获取。`;
+    els.repoNote.textContent = `GitHub 账号：${DATA.githubOwner}，已预留 xiaohongshuredskill 仓库链接，发布前可能 404。`;
   }
   renderOptions();
   renderCompanyWorkflow();

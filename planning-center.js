@@ -30523,7 +30523,7 @@ function renderTeammates(current) {
 
 function renderBrief(current) {
   const currentMetrics = metricsFor(current);
-  els.title.textContent = current ? `${current.title} · 岗位热度` : "岗位热度";
+  els.title.textContent = current ? `${current.title} · 规划作战包中心` : "规划作战包中心";
   els.headline.textContent = current
     ? `当前查看的是「${current.title}」。这是一条更适合先验证、先打样、先排优先级，再决定要不要升级成正式执行版 Skill 的高需求方向。`
     : "这里收的是已经有下载物、但更适合先验证、打样、排优先级的规划作战包。";
@@ -30675,7 +30675,7 @@ function renderRoutes(current) {
   els.routes.innerHTML = [
     {
       kicker: "机会验证",
-      title: "外脑能力库",
+      title: "强 Skill 雷达",
       body: "回到这项 Skill 的高星外部信号集合，先判断它是不是还在持续被市场验证。",
       href: contextHref('./skill-radar.html', { skill: current.slug }),
       cta: "去雷达中心"

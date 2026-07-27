@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>内部版商业验证器</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .validator-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+      .validator-card,
+      .validator-panel,
+      .validator-table-wrap,
+      .validator-code,
+      .validator-detail-card {
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 20px;
+        background: rgba(255, 250, 240, 0.82);
+        box-shadow: 0 14px 40px rgba(37, 44, 36, 0.08);
+      }
+      .validator-card.lead {
+        grid-column: span 2;
+        background: radial-gradient(circle at 96% 10%, rgba(198, 92, 63, 0.18), transparent 10rem), rgba(255, 250, 240, 0.88);
+      }
+      .validator-kicker {
+        color: var(--clay);
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .validator-score {
+        font-size: 46px;
+        font-weight: 950;
+        letter-spacing: -0.04em;
+      }
+      .direction-layout,
+      .detail-layout,
+      .pipeline-layout {
+        display: grid;
+        grid-template-columns: 0.72fr 1.28fr;
+        gap: 18px;
+        align-items: start;
+      }
+      .direction-list,
+      .detail-list {
+        display: grid;
+        gap: 12px;
+      }
+      .direction-button,
+      .detail-button {
+        cursor: pointer;
+        text-align: left;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 16px;
+        background: rgba(255, 250, 240, 0.78);
+        font: inherit;
+        color: inherit;
+      }
+      .direction-button.active,
+      .detail-button.active {
+        background: var(--acid);
+        font-weight: 900;
+      }
+      .direction-button small,
+      .detail-button small,
+      .small-muted {
+        display: block;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .direction-pill {
+        display: inline-flex;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 6px 10px;
+        margin-right: 8px;
+        font-size: 12px;
+        font-weight: 800;
+        background: rgba(255, 250, 240, 0.88);
+      }
+      .validator-detail-card h3,
+      .validator-panel h3 {
+        margin-bottom: 10px;
+      }
+      .validator-list,
+      .validator-bullets {
+        display: grid;
+        gap: 10px;
+      }
+      .validator-list code,
+      .validator-bullets code {
+        font-size: 12px;
+      }
+      .validator-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(255, 250, 240, 0.78);
+        overflow: hidden;
+      }
+      .validator-table th,
+      .validator-table td {
+        padding: 12px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+      .validator-table th {
+        color: var(--clay);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .dimension-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .dimension-card {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 16px;
+        background: rgba(255, 250, 240, 0.76);
+      }
+      .dimension-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+      .dimension-score {
+        font-size: 26px;
+        font-weight: 900;
+      }
+      .dimension-block {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid var(--line);
+      }
+      .dimension-block strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+      .legend-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .legend-card {
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 16px;
+        background: rgba(255, 250, 240, 0.74);
+      }
+      .pipeline-card {
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 18px;
+        background: rgba(255, 250, 240, 0.78);
+      }
+      .validator-code {
+        white-space: pre-wrap;
+        overflow-x: auto;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        line-height: 1.6;
+      }
+      @media (max-width: 960px) {
+        .validator-grid,
+        .legend-grid,
+        .dimension-grid,
+        .pipeline-layout,
+        .direction-layout,
+        .detail-layout {
+          grid-template-columns: 1fr;
+        }
+        .validator-card.lead {
+          grid-column: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">一人公司</span>
+          <span>和它的员工们</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./index.html">Skill 库</a>
+          <a class="ghost-link" href="./research-workbench.html">调研工作台</a>
+          <a class="ghost-link" href="./planning-center.html">规划作战包</a>
+          <a class="ghost-link" href="./performance-review.html">数据复盘</a>
+          <a class="ghost-link" href="../docs/internal-business-validator-system-2026-07.md">规则文档</a>
+          <a class="ghost-link" href="../docs/internal-business-validator-projects-2026-07.json">样例 JSON</a>
+          <a class="ghost-link" href="../docs/internal-business-validator-7day-template.csv">7天回填表</a>
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Internal Validator</p>
+          <h1>先用同一套证据和算账规则，判断哪条主线该优先推。</h1>
+          <p class="hero-subtitle">
+            这是给你自己用的内部版商业验证器，不是对外产品页。它统一评估
+            `海外接单`、`小红书 RedSkill`、`闲鱼虚拟资料` 三条主线，并把判断拆成
+            生成器、评审器和计算器三段。
+          </p>
+        </div>
+        <aside class="hero-panel">
+          <div class="metric"><strong id="trackCount">0</strong><span>当前主线</span></div>
+          <div class="metric"><strong id="dimensionCount">0</strong><span>证据型五维</span></div>
+          <div class="metric"><strong id="engineCount">0</strong><span>独立引擎</span></div>
+          <p class="panel-note">第一屏只回答三件事：值不值得做、最大风险、明天第一步。</p>
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Three Answers</p><h2>先给结论，不先给长报告</h2></div>
+        </div>
+        <div id="summaryGrid" class="validator-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Directions</p><h2>三条当前主线</h2></div>
+        </div>
+        <div class="direction-layout">
+          <div id="directionList" class="direction-list"></div>
+          <article id="directionDetail" class="validator-detail-card"></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Dimensions</p><h2>证据型五维</h2></div>
+        </div>
+        <div id="dimensionGrid" class="dimension-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Evidence Types</p><h2>证据类型和边界</h2></div>
+        </div>
+        <div id="legendGrid" class="legend-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Compare</p><h2>横向比较表</h2></div>
+        </div>
+        <div class="validator-table-wrap" style="overflow:auto">
+          <table id="comparisonTable" class="validator-table"></table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Three Engines</p><h2>生成器 / 评审器 / 计算器</h2></div>
+        </div>
+        <div id="pipelineGrid" class="validator-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">JSON</p><h2>标准化商业项目骨架</h2></div>
+        </div>
+        <pre id="schemaBox" class="validator-code"></pre>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div><p class="eyebrow">7-Day Plan</p><h2>当前方向的 7 天验证动作</h2></div>
+        </div>
+        <div id="dayPlanGrid" class="validator-grid"></div>
+      </section>
+    </main>
+    <script src="./business-validator.js"></script>
+  </body>
+</html>

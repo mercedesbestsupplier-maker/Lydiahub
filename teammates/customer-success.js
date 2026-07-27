@@ -2825,7 +2825,7 @@ const DATA = {
         }
       ],
       "primaryHref": "../index.html?collabChain=crossborder-conversion-chain#company-collab",
-      "primaryCta": "回到首页看这个搭班方案",
+      "primaryCta": "回到首页看这条协作链",
       "secondaryHref": "../research-workbench.html?desk=overseas-research",
       "secondaryCta": "先看跨境机会"
     },
@@ -2865,7 +2865,7 @@ const DATA = {
         }
       ],
       "primaryHref": "../index.html?collabChain=china-creator-chain#company-collab",
-      "primaryCta": "回到首页看这个搭班方案",
+      "primaryCta": "回到首页看这条协作链",
       "secondaryHref": "../research-workbench.html?desk=china-research",
       "secondaryCta": "让林夏先判断"
     }
@@ -3352,8 +3352,8 @@ function renderCollabChains() {
   if (!DATA.collabChains?.length) {
     els.collabChains.innerHTML = `
       <article class="featured-card">
-        <span class="card-kicker">搭班方案待补充</span>
-        <h3>这位同事暂时没有编入首页搭班方案</h3>
+        <span class="card-kicker">协作链待补充</span>
+        <h3>这位同事暂时没有编入首页主协作链</h3>
         <p class="signal">她仍然可以单独作为岗位能力使用；后续会继续把高需求业务链补齐。</p>
       </article>
     `;
@@ -3516,7 +3516,7 @@ function renderSkills() {
   els.skills.innerHTML = DATA.skills.map((skill) => {
     const gh = githubUrl(skill);
     const githubClass = gh ? (DATA.repoExists ? "" : "pending") : "disabled";
-    const githubLabel = DATA.repoExists ? "GitHub" : "私信获取";
+    const githubLabel = DATA.repoExists ? "GitHub" : "GitHub待发布";
     const downloadButton = skill.hasPackage
       ? `<a class="card-action" href="${assetHref(skill.download)}" download>${skill.downloadLabel || "下载 zip"}</a>`
       : `<span class="github-link disabled">待制作</span>`;

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex HQ 一人公司驾驶舱</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="hero hq-hero">
+      <nav class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/avatars/logo.svg" alt="logo" class="brand-logo" /><span class="brand-mark">Codex HQ</span>
+          <span>一人公司驾驶舱</span>
+        </a>
+        <div class="top-actions">
+          <a class="ghost-link" href="./index.html">Skill 库</a>
+          <a class="ghost-link" href="./growth-board.html">运营作战板</a>
+          <a class="ghost-link" href="./skill-radar.html">强 Skill 雷达</a>
+          <a class="ghost-link" href="./performance-review.html">数据复盘</a>
+          <a class="ghost-link" href="./launch-kits.html">发布素材包</a>
+        </div>
+      </nav>
+      <section class="hq-command-bar">
+        <div class="hq-command-copy">
+          <p class="eyebrow">Codex-Native Prototype</p>
+          <h1>把一人公司的任务、自动化和角色协作，收进一个单屏中枢。</h1>
+          <p class="hero-subtitle">
+            这不是长首页，也不是营销落地页。
+            重点是今天要推进什么、谁在负责、哪里被卡住、下一步该派给谁。
+          </p>
+        </div>
+        <div class="hq-command-actions">
+          <label class="search-box">
+            <span>搜索任务</span>
+            <input id="hqSearchInput" type="search" placeholder="搜索任务、负责人、来源 task、关键动作" />
+          </label>
+          <button id="hqResetBtn" class="primary-btn" type="button">重置视图</button>
+        </div>
+      </section>
+    </header>
+
+    <main class="hq-main">
+      <section class="section hq-shell">
+        <div id="hqOverview" class="hq-overview"></div>
+
+        <div class="hq-layout">
+          <aside class="hq-sidebar">
+            <article class="filters-card hq-panel">
+              <div>
+                <p class="eyebrow">Role Rail</p>
+                <h3>角色视角</h3>
+                <p class="small-muted">切换成 CEO、Research、Content、Ops 或 Review，看今天谁该接棒。</p>
+              </div>
+              <div id="hqRoleRail" class="hq-role-rail"></div>
+            </article>
+
+            <article class="filters-card hq-panel">
+              <div>
+                <p class="eyebrow">Automations</p>
+                <h3>自动化哨兵</h3>
+                <p class="small-muted">这些不是后台装饰，而是持续接球、催办和回收结果的活体流程。</p>
+              </div>
+              <div id="hqAutomationList" class="hq-automation-list"></div>
+            </article>
+
+            <article class="filters-card hq-panel">
+              <div>
+                <p class="eyebrow">Active Focus</p>
+                <h3>当前视图</h3>
+              </div>
+              <div id="hqFocusNote" class="hq-focus-note"></div>
+            </article>
+          </aside>
+
+          <section class="hq-board-panel">
+            <div class="section-heading hq-board-head">
+              <div>
+                <p class="eyebrow">Main Board</p>
+                <h2>今日作战板</h2>
+                <p id="hqBoardSummary" class="small-muted">按状态和角色筛任务，点卡片打开右侧任务抽屉。</p>
+              </div>
+              <div id="hqFilterPills" class="card-meta"></div>
+            </div>
+
+            <div id="hqBoard" class="hq-board"></div>
+
+            <article class="hq-event-panel">
+              <div class="section-heading hq-event-head">
+                <div>
+                  <p class="eyebrow">Recent Moves</p>
+                  <h3>最近动作流</h3>
+                </div>
+                <span class="small-muted">模拟 Codex task、subtask、automation 的动作回流。</span>
+              </div>
+              <div id="hqEventFeed" class="hq-event-feed"></div>
+            </article>
+          </section>
+
+          <aside class="hq-drawer">
+            <article class="hq-drawer-card">
+              <div id="hqDrawerBody"></div>
+            </article>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <script src="./hq.js"></script>
+  </body>
+</html>

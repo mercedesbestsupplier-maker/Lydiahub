@@ -4062,14 +4062,14 @@ function renderWorkbenchDetail() {
       },
       {
         kicker: "升级成正式 Skill",
-        title: "去岗位热度",
+        title: "去规划作战包中心",
         body: "如果你已经判断这条需求值得长期做，就去规划中心看怎么升级成正式技能。",
         href: currentSkill ? contextHref('./planning-center.html', { teammate: currentSkill.teammateId, slug: currentSkill.slug }) : "./planning-center.html",
         cta: "去规划中心"
       },
       {
         kicker: "回到总库",
-        title: "去外脑能力库",
+        title: "去强 Skill 雷达",
         body: "如果你想继续从市场信号反推机会，就去雷达里看外部高星证据。",
         href: currentSkill ? contextHref('./skill-radar.html', { skill: currentSkill.slug }) : "./skill-radar.html",
         cta: "去雷达中心"
