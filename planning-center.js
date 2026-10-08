@@ -30205,6 +30205,7 @@ const DATA = {
     }
   ]
 };
+if (window.applyPublicAvailability) window.applyPublicAvailability(DATA);
 
 const params = new URLSearchParams(window.location.search);
 const state = {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>一人公司的 AI 团队工作台</title>
+    <title>一人公司的 AI 团队工作台 · 历史规划原型</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -36,7 +36,7 @@
           <p class="hero-subtitle">
             围绕一人公司的真实业务，把内容、选品、拓客、成交、交付、客服和风控
             组织成一套可执行的一人公司工作台。
-            每位同事都有自己的性格、岗位、能力包和可下载 Skill。
+            每个岗位都有对应的能力设想；公开资源状态以页面顶部提示为准。
           </p>
           <div class="hero-controls">
             <label class="search-box">
@@ -49,7 +49,7 @@
         <aside class="hero-panel">
           <div class="metric">
             <strong id="totalSkills">100</strong>
-            <span>全市场 Skill</span>
+            <span>规划条目</span>
           </div>
           <div class="metric">
             <strong id="fiveStarCount">0</strong>
@@ -57,7 +57,7 @@
           </div>
           <div class="metric">
             <strong id="teammateCount">12</strong>
-            <span>公司同事</span>
+            <span>岗位角色</span>
           </div>
           <p id="repoNote" class="panel-note">星级代表优先做成商品和引流入口的程度；同事代表它在一人公司里的岗位归属。</p>
         </aside>
@@ -92,7 +92,7 @@
       <section id="featured" class="section featured-section">
         <div class="section-heading">
           <p class="eyebrow">第三步</p>
-          <h2>今天最值得先试的 Skill</h2>
+          <h2>今天优先验证的 Skill 方向</h2>
         </div>
         <div id="featuredGrid" class="featured-grid"></div>
       </section>
@@ -253,6 +253,7 @@
       <div id="dialogContent"></div>
     </dialog>
 
+    <script src="./public-status.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

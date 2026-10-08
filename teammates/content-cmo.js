@@ -8880,6 +8880,7 @@ const DATA = {
   "repoBase": "https://github.com/mercedesbestsupplier-maker/xiaohongshuredskill",
   "repoExists": false
 };
+if (window.applyPublicAvailability) window.applyPublicAvailability(DATA);
 
 const els = {
   skillCount: document.querySelector("#teammateSkillCount"),

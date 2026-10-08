@@ -31794,6 +31794,7 @@ const DATA = {
   "repoExists": false,
   "githubOwner": "mercedesbestsupplier-maker"
 };
+if (window.applyPublicAvailability) window.applyPublicAvailability(DATA);
 
 const state = {
   skill: "",
